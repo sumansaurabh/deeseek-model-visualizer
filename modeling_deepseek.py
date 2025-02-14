@@ -78,6 +78,30 @@ _CONFIG_FOR_DOC = "DeepseekV3Config"
 
 
 def _get_unpad_data(attention_mask):
+    """Retrieve unpadded data from the attention mask.
+
+    This function processes the given attention mask to extract the indices
+    of non-zero elements, compute cumulative sequence lengths, and determine
+    the maximum sequence length in the batch. It is particularly useful in
+    scenarios where attention masks are used to manage variable-length
+    sequences in batch processing.
+
+    Args:
+        attention_mask (torch.Tensor): A tensor representing the attention mask, where non-zero values
+            indicate valid tokens and zero values indicate padding.
+
+    Returns:
+        tuple: A tuple containing:
+            - indices (torch.Tensor): A flattened tensor of indices corresponding to
+            non-zero elements
+            in the attention mask.
+            - cu_seqlens (torch.Tensor): A tensor of cumulative sequence lengths,
+            padded to facilitate
+            batch processing.
+            - max_seqlen_in_batch (int): The maximum sequence length found in the
+            input batch.
+    """
+
     seqlens_in_batch = attention_mask.sum(dim=-1, dtype=torch.int32)
     indices = torch.nonzero(attention_mask.flatten(), as_tuple=False).flatten()
     max_seqlen_in_batch = seqlens_in_batch.max().item()
@@ -101,6 +125,23 @@ class DeepseekV3RMSNorm(nn.Module):
         self.variance_epsilon = eps
 
     def forward(self, hidden_states):
+        """Apply forward transformation to hidden states.
+
+        This function takes the hidden states as input, normalizes them by
+        calculating their variance, and scales them using a weight parameter.
+        The normalization is performed by converting the hidden states to a
+        float32 type, computing the variance, and then applying the inverse
+        square root of the variance (with a small epsilon added for numerical
+        stability). Finally, the function returns the scaled hidden states
+        converted back to their original data type.
+
+        Args:
+            hidden_states (torch.Tensor): A tensor representing the hidden states.
+
+        Returns:
+            torch.Tensor: The transformed hidden states after scaling.
+        """
+
         input_dtype = hidden_states.dtype
         hidden_states = hidden_states.to(torch.float32)
         variance = hidden_states.pow(2).mean(-1, keepdim=True)
@@ -132,6 +173,26 @@ class DeepseekV3RotaryEmbedding(nn.Module):
         self.max_seq_len_cached = None
 
     def _set_cos_sin_cache(self, seq_len, device, dtype):
+        """Set the cosine and sine cache for positional embeddings.
+
+        This method computes the cosine and sine values for a given sequence
+        length and stores them in buffers. It first creates a tensor of values
+        based on the sequence length and then calculates the outer product with
+        the inverse frequency. The resulting tensor is then processed to obtain
+        the cosine and sine values, which are stored as non-persistent buffers
+        for efficient retrieval during subsequent operations.
+
+        Args:
+            seq_len (int): The length of the sequence for which to cache cosine and sine values.
+            device (torch.device): The device on which to create the tensors (e.g., CPU or GPU).
+            dtype (torch.dtype): The data type of the tensors to be created.
+
+        Returns:
+            None: This method does not return any value, but it modifies the internal
+                state
+            of the object by caching the computed cosine and sine values.
+        """
+
         self.max_seq_len_cached = seq_len
         t = torch.arange(
             self.max_seq_len_cached, device=device, dtype=self.inv_freq.dtype
@@ -144,6 +205,24 @@ class DeepseekV3RotaryEmbedding(nn.Module):
         self.register_buffer("sin_cached", emb.sin().to(dtype), persistent=False)
 
     def forward(self, x, seq_len=None):
+        """Compute the forward pass for the attention mechanism.
+
+        This method calculates the cosine and sine values used in the attention
+        mechanism based on the input tensor. If the sequence length exceeds the
+        cached maximum sequence length, it updates the cosine and sine cache
+        accordingly. The method returns the cached cosine and sine values for
+        the specified sequence length.
+
+        Args:
+            x (Tensor): Input tensor of shape [bs, num_attention_heads, seq_len, head_size].
+            seq_len (int?): The sequence length to compute the cosine and sine values for.
+                If not provided, defaults to None.
+
+        Returns:
+            Tuple[Tensor, Tensor]: A tuple containing the cached cosine and sine tensors
+                for the specified sequence length.
+        """
+
         # x: [bs, num_attention_heads, seq_len, head_size]
         if self.max_seq_len_cached is None or seq_len > self.max_seq_len_cached:
             self._set_cos_sin_cache(seq_len=seq_len, device=x.device, dtype=x.dtype)
@@ -170,6 +249,26 @@ class DeepseekV3LinearScalingRotaryEmbedding(DeepseekV3RotaryEmbedding):
         super().__init__(dim, max_position_embeddings, base, device)
 
     def _set_cos_sin_cache(self, seq_len, device, dtype):
+        """Set the cosine and sine cache for the given sequence length.
+
+        This method computes the cosine and sine values for a range of
+        frequencies based on the specified sequence length, device, and data
+        type. It first generates a tensor of time steps, scales it by a scaling
+        factor, and then computes the outer product with the inverse
+        frequencies. The resulting embeddings are concatenated and stored as
+        buffers for efficient retrieval during subsequent computations.
+
+        Args:
+            seq_len (int): The length of the sequence for which to cache cosine
+                and sine values.
+            device (torch.device): The device on which to allocate the tensors.
+            dtype (torch.dtype): The data type for the cached tensors.
+
+        Returns:
+            None: This method does not return a value but modifies the internal
+                state of the object by caching the computed cosine and sine values.
+        """
+
         self.max_seq_len_cached = seq_len
         t = torch.arange(
             self.max_seq_len_cached, device=device, dtype=self.inv_freq.dtype
@@ -199,6 +298,22 @@ class DeepseekV3DynamicNTKScalingRotaryEmbedding(DeepseekV3RotaryEmbedding):
         super().__init__(dim, max_position_embeddings, base, device)
 
     def _set_cos_sin_cache(self, seq_len, device, dtype):
+        """Set the cosine and sine cache for positional embeddings.
+
+        This method calculates and caches the cosine and sine values for
+        positional embeddings based on the provided sequence length, device, and
+        data type. If the sequence length exceeds the maximum position
+        embeddings, it computes a scaling factor and the inverse frequency
+        values, which are then used to generate the cached cosine and sine
+        embeddings. The embeddings are stored as buffers for efficient access
+        during model inference.
+
+        Args:
+            seq_len (int): The length of the input sequence.
+            device (torch.device): The device on which to allocate tensors.
+            dtype (torch.dtype): The data type for the cached embeddings.
+        """
+
         self.max_seq_len_cached = seq_len
 
         if seq_len > self.max_position_embeddings:
@@ -226,6 +341,26 @@ class DeepseekV3DynamicNTKScalingRotaryEmbedding(DeepseekV3RotaryEmbedding):
 def yarn_find_correction_dim(
     num_rotations, dim, base=10000, max_position_embeddings=2048
 ):
+    """Calculate the corrected dimension based on the number of rotations.
+
+    This function computes the corrected dimension using the inverse
+    dimension formula. It takes into account the number of rotations and
+    adjusts the dimension based on a logarithmic scale relative to a base
+    value and the maximum position embeddings. The formula used is derived
+    from mathematical principles related to dimensionality adjustments in
+    various applications.
+
+    Args:
+        num_rotations (int): The number of rotations to consider in the calculation.
+        dim (float): The initial dimension value to be corrected.
+        base (float?): The base value for logarithmic scaling. Defaults to 10000.
+        max_position_embeddings (int?): The maximum number of position embeddings.
+            Defaults to 2048.
+
+    Returns:
+        float: The corrected dimension based on the provided parameters.
+    """
+
     return (dim * math.log(max_position_embeddings / (num_rotations * 2 * math.pi))) / (
         2 * math.log(base)
     )
@@ -235,6 +370,27 @@ def yarn_find_correction_dim(
 def yarn_find_correction_range(
     low_rot, high_rot, dim, base=10000, max_position_embeddings=2048
 ):
+    """Find the correction range bounds based on rotation values.
+
+    This function calculates the lower and upper bounds for a correction
+    range based on the provided rotation values. It uses the
+    `yarn_find_correction_dim` function to determine the corresponding
+    dimensions for the given low and high rotation inputs. The results are
+    clamped to ensure they remain within valid bounds, specifically between
+    0 and `dim - 1`.
+
+    Args:
+        low_rot (float): The lower rotation value.
+        high_rot (float): The higher rotation value.
+        dim (int): The dimension size to constrain the bounds.
+        base (int?): The base value used in calculations. Defaults to 10000.
+        max_position_embeddings (int?): The maximum number of position embeddings. Defaults to 2048.
+
+    Returns:
+        tuple: A tuple containing the clamped lower and upper bounds of the correction
+            range.
+    """
+
     low = math.floor(
         yarn_find_correction_dim(low_rot, dim, base, max_position_embeddings)
     )
@@ -245,12 +401,44 @@ def yarn_find_correction_range(
 
 
 def yarn_get_mscale(scale=1, mscale=1):
+    """Calculate the modified scale based on the input scale and mscale.
+
+    This function computes a modified scale value using a logarithmic
+    transformation. If the input scale is less than or equal to 1, it
+    returns a default value of 1.0. For scales greater than 1, it applies
+    the formula: 0.1 * mscale * log(scale) + 1.0.
+
+    Args:
+        scale (float?): The input scale value. Defaults to 1.
+        mscale (float?): The mscale value used in the calculation. Defaults to 1.
+
+    Returns:
+        float: The modified scale value based on the input parameters.
+    """
+
     if scale <= 1:
         return 1.0
     return 0.1 * mscale * math.log(scale) + 1.0
 
 
 def yarn_linear_ramp_mask(min, max, dim):
+    """Generate a linear ramp mask based on minimum and maximum values.
+
+    This function creates a linear ramp mask that linearly interpolates
+    values between a specified minimum and maximum. If the minimum and
+    maximum values are equal, a small value is added to the maximum to
+    prevent singularity. The resulting ramp is clamped between 0 and 1,
+    ensuring that all values lie within this range.
+
+    Args:
+        min (float): The minimum value for the ramp.
+        max (float): The maximum value for the ramp.
+        dim (int): The dimension of the output mask.
+
+    Returns:
+        torch.Tensor: A tensor containing the linear ramp mask.
+    """
+
     if min == max:
         max += 0.001  # Prevent singularity
 
@@ -283,6 +471,26 @@ class DeepseekV3YarnRotaryEmbedding(DeepseekV3RotaryEmbedding):
         super().__init__(dim, max_position_embeddings, base, device)
 
     def _set_cos_sin_cache(self, seq_len, device, dtype):
+        """Set the cosine and sine cache for positional encodings.
+
+        This method computes and caches the cosine and sine values used in
+        positional encodings based on the given sequence length, device, and
+        data type. It calculates the inverse frequency for the positional
+        encodings, applies a correction range, and registers the resulting
+        cosine and sine values as buffers for efficient retrieval during model
+        inference.
+
+        Args:
+            seq_len (int): The length of the sequence for which to cache
+                the cosine and sine values.
+            device (torch.device): The device on which to store the tensors.
+            dtype (torch.dtype): The data type of the tensors to be used.
+
+        Returns:
+            None: This function does not return a value but modifies the
+                internal state of the object by caching the computed values.
+        """
+
         self.max_seq_len_cached = seq_len
         dim = self.dim
 
@@ -329,7 +537,20 @@ class DeepseekV3YarnRotaryEmbedding(DeepseekV3RotaryEmbedding):
 
 # Copied from transformers.models.llama.modeling_llama.rotate_half
 def rotate_half(x):
-    """Rotates half the hidden dims of the input."""
+    """Rotate half of the hidden dimensions of the input tensor.
+
+    This function takes an input tensor and splits it into two halves along
+    the last dimension. The first half is kept as is, while the second half
+    is negated. The two halves are then concatenated along the last
+    dimension to produce the output tensor.
+
+    Args:
+        x (torch.Tensor): The input tensor with at least two dimensions.
+
+    Returns:
+        torch.Tensor: A tensor with the same shape as the input, where the second half of the
+        last dimension has been negated.
+    """
     x1 = x[..., : x.shape[-1] // 2]
     x2 = x[..., x.shape[-1] // 2 :]
     return torch.cat((-x2, x1), dim=-1)
@@ -338,23 +559,38 @@ def rotate_half(x):
 # Copied from transformers.models.llama.modeling_llama.apply_rotary_pos_emb
 def apply_rotary_pos_emb(q, k, cos, sin, position_ids, unsqueeze_dim=1):
     """Applies Rotary Position Embedding to the query and key tensors.
+
+    This function modifies the query and key tensors by applying rotary
+    position embeddings using the provided cosine and sine tensors. The
+    position indices are used to select the appropriate values from the
+    cosine and sine tensors, which are then unsqueezed along the specified
+    dimension to ensure they can be broadcasted correctly with the query and
+    key tensors. This is particularly useful in transformer models for
+    enhancing the positional encoding of tokens.
+
     Args:
         q (`torch.Tensor`): The query tensor.
         k (`torch.Tensor`): The key tensor.
         cos (`torch.Tensor`): The cosine part of the rotary embedding.
         sin (`torch.Tensor`): The sine part of the rotary embedding.
-        position_ids (`torch.Tensor`):
-            The position indices of the tokens corresponding to the query and key tensors. For example, this can be
+        position_ids (`torch.Tensor`): The position indices of the tokens corresponding to the query and key
+            tensors. For example, this can be
             used to pass offsetted position ids when working with a KV-cache.
-        unsqueeze_dim (`int`, *optional*, defaults to 1):
-            The 'unsqueeze_dim' argument specifies the dimension along which to unsqueeze cos[position_ids] and
-            sin[position_ids] so that they can be properly broadcasted to the dimensions of q and k. For example, note
-            that cos[position_ids] and sin[position_ids] have the shape [batch_size, seq_len, head_dim]. Then, if q and
-            k have the shape [batch_size, heads, seq_len, head_dim], then setting unsqueeze_dim=1 makes
-            cos[position_ids] and sin[position_ids] broadcastable to the shapes of q and k. Similarly, if q and k have
-            the shape [batch_size, seq_len, heads, head_dim], then set unsqueeze_dim=2.
+        unsqueeze_dim (`int`, *optional*, defaults to 1): The 'unsqueeze_dim' argument specifies the dimension along which to
+            unsqueeze cos[position_ids] and
+            sin[position_ids] so that they can be properly broadcasted to the
+            dimensions of q and k. For example, note
+            that cos[position_ids] and sin[position_ids] have the shape [batch_size,
+            seq_len, head_dim]. Then, if q and
+            k have the shape [batch_size, heads, seq_len, head_dim], then setting
+            unsqueeze_dim=1 makes
+            cos[position_ids] and sin[position_ids] broadcastable to the shapes of q
+            and k. Similarly, if q and k have
+            the shape [batch_size, seq_len, heads, head_dim], then set
+            unsqueeze_dim=2.
+
     Returns:
-        `tuple(torch.Tensor)` comprising of the query and key tensors rotated using the Rotary Position Embedding.
+        the Rotary Position Embedding.
     """
     cos = cos[position_ids].unsqueeze(unsqueeze_dim)
     sin = sin[position_ids].unsqueeze(unsqueeze_dim)
@@ -385,6 +621,21 @@ class DeepseekV3MLP(nn.Module):
         self.act_fn = ACT2FN[config.hidden_act]
 
     def forward(self, x):
+        """Forward pass through the neural network layer.
+
+        This method computes the forward pass by applying a series of
+        transformations to the input tensor `x`. It first applies the gate
+        projection followed by an activation function, then multiplies the
+        result with the output of the upward projection. Finally, it applies the
+        downward projection to produce the final output.
+
+        Args:
+            x (Tensor): The input tensor to the layer.
+
+        Returns:
+            Tensor: The output tensor after applying the forward pass transformations.
+        """
+
         down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
         return down_proj
 
@@ -415,11 +666,48 @@ class MoEGate(nn.Module):
         self.reset_parameters()
 
     def reset_parameters(self) -> None:
+        """Reset the parameters of the model's weight using Kaiming uniform
+        initialization.
+
+        This function applies Kaiming uniform initialization to the model's
+        weight parameter. Kaiming initialization is designed to keep the
+        variance of activations across layers in a neural network stable, which
+        can help improve training performance.
+
+        Returns:
+            None: This function does not return any value.
+        """
+
         import torch.nn.init as init
 
         init.kaiming_uniform_(self.weight, a=math.sqrt(5))
 
     def forward(self, hidden_states):
+        """Forward pass for the gating mechanism in a mixture of experts model.
+
+        This method computes the gating scores based on the provided hidden
+        states. It reshapes the hidden states and applies a linear
+        transformation to obtain logits. Depending on the specified scoring
+        function, it calculates the scores using either a sigmoid function or
+        raises an error if the scoring function is unsupported. The method then
+        selects the top-k experts based on the computed scores and applies a
+        normalization step if required. Finally, it returns the indices of the
+        top-k experts and their corresponding weights.
+
+        Args:
+            hidden_states (torch.Tensor): A tensor of shape (batch_size, sequence_length, hidden_dim)
+                representing the hidden states from the previous layer.
+
+        Returns:
+            tuple: A tuple containing:
+                - topk_idx (torch.Tensor): Indices of the selected top-k experts.
+                - topk_weight (torch.Tensor): Weights corresponding to the selected
+                top-k experts.
+
+        Raises:
+            NotImplementedError: If an unsupported scoring function or top-k method is specified.
+        """
+
         bsz, seq_len, h = hidden_states.shape
         ### compute gating score
         hidden_states = hidden_states.view(-1, h)
@@ -520,6 +808,23 @@ class DeepseekV3MoE(nn.Module):
             )
 
     def forward(self, hidden_states):
+        """Forward pass through the model using hidden states.
+
+        This method processes the input hidden states by applying a gating
+        mechanism to select the top-k experts and their corresponding weights.
+        It reshapes the hidden states for further processing and, if not in
+        training mode, performs inference using the selected experts.
+        Additionally, if shared experts are configured, their output is added to
+        the result.
+
+        Args:
+            hidden_states (torch.Tensor): The input tensor containing hidden states
+
+        Returns:
+            torch.Tensor: The output tensor after applying the gating mechanism and
+            any shared experts.
+        """
+
         identity = hidden_states
         orig_shape = hidden_states.shape
         topk_idx, topk_weight = self.gate(hidden_states)
@@ -533,6 +838,25 @@ class DeepseekV3MoE(nn.Module):
 
     @torch.no_grad()
     def moe_infer(self, x, topk_ids, topk_weight):
+        """Perform model inference using a set of experts based on input tokens.
+
+        This method takes input tokens and distributes them among a set of
+        experts for processing. It calculates the number of tokens assigned to
+        each expert and gathers the outputs from each expert after processing.
+        The function handles the distribution of tokens across multiple
+        processes if necessary, ensuring that the outputs are correctly gathered
+        and returned in the expected format.
+
+        Args:
+            x (torch.Tensor): The input tensor containing tokens to be processed.
+            topk_ids (torch.Tensor): Indices of the top-k tokens for each expert.
+            topk_weight (torch.Tensor): Weights associated with the top-k tokens.
+
+        Returns:
+            torch.Tensor: The final output tensor after processing by the experts,
+            weighted by the top-k weights.
+        """
+
         cnts = topk_ids.new_zeros((topk_ids.shape[0], len(self.experts)))
         cnts.scatter_(1, topk_ids, 1)
         tokens_per_expert = cnts.sum(dim=0)
@@ -610,9 +934,23 @@ class DeepseekV3MoE(nn.Module):
 
 # Copied from transformers.models.llama.modeling_llama.repeat_kv
 def repeat_kv(hidden_states: torch.Tensor, n_rep: int) -> torch.Tensor:
-    """
-    This is the equivalent of torch.repeat_interleave(x, dim=1, repeats=n_rep). The hidden states go from (batch,
-    num_key_value_heads, seqlen, head_dim) to (batch, num_attention_heads, seqlen, head_dim)
+    """Repeat key-value hidden states for attention mechanisms.
+
+    This function takes the hidden states of a model and repeats them along
+    the specified dimension, effectively expanding the representation of
+    key-value pairs for attention heads. The input tensor is expected to
+    have the shape (batch, num_key_value_heads, seqlen, head_dim) and will
+    be reshaped to (batch, num_attention_heads, seqlen, head_dim) after
+    repeating the key-value pairs.
+
+    Args:
+        hidden_states (torch.Tensor): A tensor containing the hidden states with shape
+            (batch, num_key_value_heads, seqlen, head_dim).
+        n_rep (int): The number of times to repeat each key-value pair.
+
+    Returns:
+        torch.Tensor: A tensor with the repeated hidden states, reshaped to
+            (batch, num_key_value_heads * n_rep, seqlen, head_dim).
     """
     batch, num_key_value_heads, slen, head_dim = hidden_states.shape
     if n_rep == 1:
@@ -695,6 +1033,20 @@ class DeepseekV3Attention(nn.Module):
                 self.softmax_scale = self.softmax_scale * mscale * mscale
 
     def _init_rope(self):
+        """Initialize the rotary embedding based on the configuration.
+
+        This method sets up the rotary embedding for the model. It checks the
+        configuration for the type of scaling to be applied to the rotary
+        embeddings. If no scaling is specified, it defaults to using a standard
+        rotary embedding. Depending on the specified scaling type, it
+        initializes the appropriate rotary embedding class with the necessary
+        parameters. The supported scaling types include linear, dynamic, and
+        yarn. If an unknown scaling type is provided, a ValueError is raised.
+
+        Raises:
+            ValueError: If the scaling type specified in the configuration is
+        """
+
         if self.config.rope_scaling is None:
             self.rotary_emb = DeepseekV3RotaryEmbedding(
                 self.qk_rope_head_dim,
@@ -741,6 +1093,23 @@ class DeepseekV3Attention(nn.Module):
                 raise ValueError(f"Unknown RoPE scaling type {scaling_type}")
 
     def _shape(self, tensor: torch.Tensor, seq_len: int, bsz: int):
+        """Reshape a tensor for multi-head attention.
+
+        This function reshapes the input tensor to prepare it for multi-head
+        attention by rearranging its dimensions. It first views the tensor in a
+        specified shape based on the batch size, sequence length, number of
+        heads, and the dimension of each head. Then, it transposes the
+        dimensions to align them correctly for further processing.
+
+        Args:
+            tensor (torch.Tensor): The input tensor to be reshaped.
+            seq_len (int): The sequence length for the input tensor.
+            bsz (int): The batch size for the input tensor.
+
+        Returns:
+            torch.Tensor: The reshaped tensor ready for multi-head attention.
+        """
+
         return (
             tensor.view(bsz, seq_len, self.num_heads, self.v_head_dim)
             .transpose(1, 2)
@@ -757,6 +1126,40 @@ class DeepseekV3Attention(nn.Module):
         use_cache: bool = False,
         **kwargs,
     ) -> Tuple[torch.Tensor, Optional[torch.Tensor], Optional[Tuple[torch.Tensor]]]:
+        """Compute the forward pass of the attention mechanism.
+
+        This function processes the input hidden states through various
+        projections and computes the attention weights and output. It handles
+        optional parameters such as attention masks and past key values for
+        efficient decoding. The function also applies rotary positional
+        embeddings to the query and key states, and ensures that the shapes of
+        the tensors are consistent throughout the computation.
+
+        Args:
+            hidden_states (torch.Tensor): The input tensor containing hidden states.
+            attention_mask (Optional[torch.Tensor]?): A mask to prevent attention
+                to certain positions. Defaults to None.
+            position_ids (Optional[torch.LongTensor]?): Position IDs for the input
+                sequence. Defaults to None.
+            past_key_value (Optional[Cache]?): Cached key and value states from
+                previous decoding steps. Defaults to None.
+            output_attentions (bool?): Whether to return attention weights.
+                Defaults to False.
+            use_cache (bool?): Whether to use caching for key/value states.
+                Defaults to False.
+            **kwargs: Additional keyword arguments.
+
+        Returns:
+            Tuple[torch.Tensor, Optional[torch.Tensor], Optional[Tuple[torch.Tensor]]]:
+            A tuple containing the attention output, attention weights (if
+                requested),
+            and updated past key values.
+
+        Raises:
+            ValueError: If the cache structure has changed or if the sizes of attention
+                weights or outputs do not match expected dimensions.
+        """
+
         if "padding_mask" in kwargs:
             warnings.warn(
                 "Passing `padding_mask` is deprecated and will be removed in v4.37. Please make sure use `attention_mask` instead.`"
@@ -882,6 +1285,30 @@ class DeepseekV3FlashAttention2(DeepseekV3Attention):
         use_cache: bool = False,
         **kwargs,
     ) -> Tuple[torch.Tensor, Optional[torch.Tensor], Optional[Tuple[torch.Tensor]]]:
+        """Perform the forward pass of the attention mechanism.
+
+        This function computes the attention output based on the provided hidden
+        states and optional parameters. It handles the projection of queries,
+        keys, and values, applies rotary positional embeddings, and performs the
+        attention calculation using Flash Attention. The function also manages
+        the input data types and can utilize cached key-value pairs for
+        efficiency.
+
+        Args:
+            hidden_states (torch.Tensor): The input tensor containing hidden states.
+            attention_mask (Optional[torch.LongTensor]?): A mask to avoid attending to certain positions. Defaults to None.
+            position_ids (Optional[torch.LongTensor]?): Position IDs for the input sequence. Defaults to None.
+            past_key_value (Optional[Cache]?): Cached key-value pairs from previous computations. Defaults to None.
+            output_attentions (bool?): Whether to return attention weights. Defaults to False.
+            use_cache (bool?): Whether to use cached key-value pairs. Defaults to False.
+            **kwargs: Additional keyword arguments, including deprecated `padding_mask`.
+
+        Returns:
+            Tuple[torch.Tensor, Optional[torch.Tensor], Optional[Tuple[torch.Tensor]]]: A tuple containing the attention output, attention weights (if
+                requested),
+                and updated cached key-value pairs.
+        """
+
         # DeepseekV3FlashAttention2 attention does not support output_attentions
         if "padding_mask" in kwargs:
             warnings.warn(
@@ -1017,23 +1444,29 @@ class DeepseekV3FlashAttention2(DeepseekV3Attention):
         dropout=0.0,
         softmax_scale=None,
     ):
-        """
-        Calls the forward method of Flash Attention - if the input hidden states contain at least one padding token
-        first unpad the input, then computes the attention scores and pad the final attention scores.
+        """Compute the forward pass of Flash Attention with optional padding
+        handling.
+
+        This function processes the input query, key, and value states to
+        compute attention scores. If the input contains padding tokens, it first
+        removes the padding, computes the attention scores, and then re-pads the
+        output to match the original input shape. The function supports dropout
+        and softmax scaling for enhanced performance in attention mechanisms.
+
         Args:
-            query_states (`torch.Tensor`):
-                Input query states to be passed to Flash Attention API
-            key_states (`torch.Tensor`):
-                Input key states to be passed to Flash Attention API
-            value_states (`torch.Tensor`):
-                Input value states to be passed to Flash Attention API
-            attention_mask (`torch.Tensor`):
-                The padding mask - corresponds to a tensor of size `(batch_size, seq_len)` where 0 stands for the
-                position of padding tokens and 1 for the position of non-padding tokens.
-            dropout (`int`, *optional*):
-                Attention dropout
-            softmax_scale (`float`, *optional*):
-                The scaling of QK^T before applying softmax. Default to 1 / sqrt(head_dim)
+            query_states (torch.Tensor): Input query states to be passed to Flash Attention API.
+            key_states (torch.Tensor): Input key states to be passed to Flash Attention API.
+            value_states (torch.Tensor): Input value states to be passed to Flash Attention API.
+            attention_mask (torch.Tensor): The padding mask - corresponds to a tensor of size `(batch_size,
+                seq_len)` where 0 stands for
+                the position of padding tokens and 1 for the position of non-padding
+                tokens.
+            dropout (int?): Attention dropout. Defaults to 0.0.
+            softmax_scale (float?): The scaling of QK^T before applying softmax. Defaults to 1 /
+                sqrt(head_dim).
+
+        Returns:
+            torch.Tensor: The computed attention output after processing the input states.
         """
         if not self._flash_attn_uses_top_left_mask:
             causal = self.is_causal
@@ -1089,6 +1522,38 @@ class DeepseekV3FlashAttention2(DeepseekV3Attention):
     def _upad_input(
         self, query_layer, key_layer, value_layer, attention_mask, query_length
     ):
+        """Unpad input layers for attention mechanism.
+
+        This function processes the input layers (query, key, and value) by
+        removing padding based on the provided attention mask. It reshapes the
+        layers and adjusts the indices and sequence lengths accordingly. The
+        function handles different cases for the query length, ensuring that the
+        output layers are correctly aligned for further processing in the
+        attention mechanism.
+
+        Args:
+            query_layer (torch.Tensor): The query layer tensor of shape
+                (batch_size, num_heads, query_length, head_dim).
+            key_layer (torch.Tensor): The key layer tensor of shape
+                (batch_size, num_heads, kv_seq_len, head_dim).
+            value_layer (torch.Tensor): The value layer tensor of shape
+                (batch_size, num_heads, kv_seq_len, head_dim).
+            attention_mask (torch.Tensor): The attention mask tensor used to
+                determine which elements to unpad.
+            query_length (int): The length of the query sequence.
+
+        Returns:
+            tuple: A tuple containing:
+                - query_layer (torch.Tensor): The processed query layer.
+                - key_layer (torch.Tensor): The processed key layer.
+                - value_layer (torch.Tensor): The processed value layer.
+                - indices_q (torch.Tensor): Indices for the query layer.
+                - cu_seqlens (tuple): A tuple containing cumulative sequence lengths
+                for query and key layers.
+                - max_seqlen_in_batch (tuple): A tuple containing the maximum
+                sequence lengths in the batch for query and key layers.
+        """
+
         indices_k, cu_seqlens_k, max_seqlen_in_batch_k = _get_unpad_data(attention_mask)
         batch_size, kv_seq_len, num_key_value_heads, head_dim = key_layer.shape
 
@@ -1175,19 +1640,31 @@ class DeepseekV3DecoderLayer(nn.Module):
     ) -> Tuple[
         torch.FloatTensor, Optional[Tuple[torch.FloatTensor, torch.FloatTensor]]
     ]:
-        """
+        """Forward pass through the model layer.
+
+        This method processes the input hidden states through a series of
+        transformations, including layer normalization, self-attention, and a
+        fully connected feed-forward network. It can also return attention
+        weights and cached key-value states for efficient decoding.
+
         Args:
-            hidden_states (`torch.FloatTensor`): input to the layer of shape `(batch, seq_len, embed_dim)`
-            attention_mask (`torch.FloatTensor`, *optional*):
-                attention mask of size `(batch_size, sequence_length)` if flash attention is used or `(batch_size, 1,
-                query_sequence_length, key_sequence_length)` if default attention is used.
-            output_attentions (`bool`, *optional*):
-                Whether or not to return the attentions tensors of all attention layers. See `attentions` under
-                returned tensors for more detail.
-            use_cache (`bool`, *optional*):
-                If set to `True`, `past_key_values` key value states are returned and can be used to speed up decoding
-                (see `past_key_values`).
-            past_key_value (`Tuple(torch.FloatTensor)`, *optional*): cached past key and value projection states
+            hidden_states (torch.FloatTensor): Input to the layer of shape `(batch, seq_len, embed_dim)`.
+            attention_mask (torch.FloatTensor?): Attention mask of size `(batch_size, sequence_length)` if flash
+                attention is used or
+                `(batch_size, 1, query_sequence_length, key_sequence_length)` if default
+                attention is used.
+            position_ids (torch.LongTensor?): Position IDs for the input tokens.
+            past_key_value (Tuple[torch.Tensor]?): Cached past key and value projection states.
+            output_attentions (bool?): Whether or not to return the attention tensors of all attention layers.
+                Defaults to False.
+            use_cache (bool?): If set to `True`, past key values are returned to speed up decoding.
+                Defaults to False.
+            **kwargs: Additional keyword arguments.
+
+        Returns:
+            Tuple[torch.FloatTensor, Optional[Tuple[torch.FloatTensor, torch.FloatTensor]]]: A tuple containing the processed hidden states and optionally the
+                attention weights and
+                present key-value states if requested.
         """
         if "padding_mask" in kwargs:
             warnings.warn(
@@ -1255,6 +1732,26 @@ class DeepseekV3PreTrainedModel(PreTrainedModel):
     _supports_cache_class = True
 
     def _init_weights(self, module):
+        """Initialize weights for a given neural network module.
+
+        This function initializes the weights of the specified module based on
+        the configuration's initializer range. It handles both linear layers and
+        embedding layers. For linear layers, it sets the weights to a normal
+        distribution with a mean of 0 and a specified standard deviation. If the
+        linear layer has a bias, it initializes the bias to zero. For embedding
+        layers, it also initializes the weights to a normal distribution and
+        sets the weight at the padding index to zero if a padding index is
+        specified.
+
+        Args:
+            module (nn.Module): The neural network module (either nn.Linear or nn.Embedding)
+                whose weights are to be initialized.
+
+        Returns:
+            None: This function modifies the weights of the module in place and does not
+                return a value.
+        """
+
         std = self.config.initializer_range
         if isinstance(module, nn.Linear):
             module.weight.data.normal_(mean=0.0, std=std)
@@ -1375,6 +1872,34 @@ class DeepseekV3Model(DeepseekV3PreTrainedModel):
         output_hidden_states: Optional[bool] = None,
         return_dict: Optional[bool] = None,
     ) -> Union[Tuple, BaseModelOutputWithPast]:
+        """Forward pass through the model.
+
+        This method processes the input data through the model's layers,
+        applying attention mechanisms and returning the output. It can handle
+        various input formats and configurations, including caching previous key
+        values for efficiency. The function also manages the generation of
+        position IDs and attention masks as necessary.
+
+        Args:
+            input_ids (torch.LongTensor?): Tensor containing input token IDs.
+            attention_mask (torch.Tensor?): Mask to avoid attending to padding tokens.
+            position_ids (torch.LongTensor?): Tensor containing position IDs for the input tokens.
+            past_key_values (List[torch.FloatTensor]?): Cached key values from previous decoder layers.
+            inputs_embeds (torch.FloatTensor?): Tensor containing input embeddings.
+            use_cache (bool?): Whether to use caching for the past key values.
+            output_attentions (bool?): Whether to return attention weights.
+            output_hidden_states (bool?): Whether to return hidden states from all layers.
+            return_dict (bool?): Whether to return a dictionary instead of a tuple.
+
+        Returns:
+            Union[Tuple, BaseModelOutputWithPast]: The output of the model, which can include hidden states, attentions,
+                and cached values, depending on the specified options.
+
+        Raises:
+            ValueError: If both input_ids and inputs_embeds are specified or if neither is
+                provided.
+        """
+
         output_attentions = (
             output_attentions
             if output_attentions is not None
@@ -1542,25 +2067,55 @@ class DeepseekV3ForCausalLM(DeepseekV3PreTrainedModel):
         output_hidden_states: Optional[bool] = None,
         return_dict: Optional[bool] = None,
     ) -> Union[Tuple, CausalLMOutputWithPast]:
-        r"""
+        """Forward pass for the model.
+
+        This method performs a forward pass through the model, processing the
+        input tensors and returning the model's output. It computes the logits
+        for the input sequence and, if labels are provided, calculates the loss
+        for masked language modeling. The method also supports various
+        configurations such as attention masks, position IDs, and caching of
+        past key values.
+
         Args:
-            labels (`torch.LongTensor` of shape `(batch_size, sequence_length)`, *optional*):
-                Labels for computing the masked language modeling loss. Indices should either be in `[0, transformers.,
-                config.vocab_size]` or -100 (see `input_ids` docstring). Tokens with indices set to `-100` are ignored
-                (masked), the loss is only computed for the tokens with labels in `[0, transformers., config.vocab_size]`.
+            input_ids (torch.LongTensor?): Input tensor containing token IDs.
+            attention_mask (torch.Tensor?): Mask to avoid performing attention on padding token indices.
+            position_ids (torch.LongTensor?): Optional position IDs for the input tokens.
+            past_key_values (List[torch.FloatTensor]?): Cached key and value pairs from previous decoder layers for faster
+                decoding.
+            inputs_embeds (torch.FloatTensor?): Optional input embeddings instead of input IDs.
+            labels (torch.LongTensor?): Labels for computing the masked language modeling loss. Indices should
+                either be in `[0, transformers.config.vocab_size]` or -100.
+                Tokens with indices set to `-100` are ignored (masked), and the loss is
+                only computed for tokens with valid labels.
+            use_cache (bool?): Whether to use cache for past key values.
+            output_attentions (bool?): Whether to return attention weights.
+            output_hidden_states (bool?): Whether to return hidden states.
+            return_dict (bool?): Whether to return a dictionary instead of a tuple.
+
         Returns:
-        Example:
-        ```python
-        >>> from transformers import AutoTokenizer, DeepseekV3ForCausalLM
-        >>> model = DeepseekV3ForCausalLM.from_pretrained(PATH_TO_CONVERTED_WEIGHTS)
-        >>> tokenizer = AutoTokenizer.from_pretrained(PATH_TO_CONVERTED_TOKENIZER)
-        >>> prompt = "Hey, are you conscious? Can you talk to me?"
-        >>> inputs = tokenizer(prompt, return_tensors="pt")
-        >>> # Generate
-        >>> generate_ids = model.generate(inputs.input_ids, max_length=30)
-        >>> tokenizer.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
-        "Hey, are you conscious? Can you talk to me?\nI'm not conscious, but I can talk to you."
-        ```"""
+            Union[Tuple, CausalLMOutputWithPast]: If `return_dict` is False, returns a tuple containing the logits and
+                other outputs.
+                If `return_dict` is True, returns an instance of
+                `CausalLMOutputWithPast` containing loss, logits, past key values,
+                hidden states, and attentions.
+
+        Examples:
+            ```python
+            >>> from transformers import AutoTokenizer, DeepseekV3ForCausalLM
+            >>> model =
+            DeepseekV3ForCausalLM.from_pretrained(PATH_TO_CONVERTED_WEIGHTS)
+            >>> tokenizer =
+            AutoTokenizer.from_pretrained(PATH_TO_CONVERTED_TOKENIZER)
+            >>> prompt = "Hey, are you conscious? Can you talk to me?"
+            >>> inputs = tokenizer(prompt, return_tensors="pt")
+            >>> # Generate
+            >>> generate_ids = model.generate(inputs.input_ids, max_length=30)
+            >>> tokenizer.batch_decode(generate_ids, skip_special_tokens=True,
+            clean_up_tokenization_spaces=False)[0]
+            "Hey, are you conscious? Can you talk to me?\nI'm not conscious, but I
+            can talk to you."
+            ```
+        """
         output_attentions = (
             output_attentions
             if output_attentions is not None
@@ -1625,6 +2180,29 @@ class DeepseekV3ForCausalLM(DeepseekV3PreTrainedModel):
         inputs_embeds=None,
         **kwargs,
     ):
+        """Prepare inputs for the generation process.
+
+        This function processes the input IDs, past key values, attention mask,
+        and input embeddings to create a dictionary of model inputs suitable for
+        the generation step. It handles various scenarios, such as adjusting the
+        input IDs based on the past key values and attention mask, creating
+        position IDs if not provided, and ensuring that the inputs do not exceed
+        the maximum cache length.
+
+        Args:
+            input_ids (Tensor): The input IDs for the generation process.
+            past_key_values (Cache or tuple?): The past key values used for caching. If provided, it
+                can be an instance of Cache or a tuple containing past key values.
+            attention_mask (Tensor?): The attention mask indicating which tokens should be attended to.
+            inputs_embeds (Tensor?): The input embeddings to be used instead of input IDs.
+            **kwargs: Additional keyword arguments that may include 'position_ids',
+                'use_cache', etc.
+
+        Returns:
+            dict: A dictionary containing the prepared model inputs, which includes
+                'input_ids', 'position_ids',
+        """
+
         if past_key_values is not None:
             if isinstance(past_key_values, Cache):
                 cache_length = past_key_values.get_seq_length()
@@ -1683,6 +2261,23 @@ class DeepseekV3ForCausalLM(DeepseekV3PreTrainedModel):
 
     @staticmethod
     def _reorder_cache(past_key_values, beam_idx):
+        """Reorder the cached past key values based on beam indices.
+
+        This function takes a collection of past key values and reorders them
+        according to the specified beam indices. It iterates through each layer
+        of past key values, selecting the relevant past states for the given
+        beam indices and returning a new tuple containing the reordered past key
+        values.
+
+        Args:
+            past_key_values (tuple): A tuple of past key values, where each element corresponds to a layer of
+                past states.
+            beam_idx (Tensor): A tensor containing the indices used to reorder the past states.
+
+        Returns:
+            tuple: A tuple containing the reordered past key values for each layer.
+        """
+
         reordered_past = ()
         for layer_past in past_key_values:
             reordered_past += (
@@ -1737,11 +2332,34 @@ class DeepseekV3ForSequenceClassification(DeepseekV3PreTrainedModel):
         output_hidden_states: Optional[bool] = None,
         return_dict: Optional[bool] = None,
     ) -> Union[Tuple, SequenceClassifierOutputWithPast]:
-        r"""
-        labels (`torch.LongTensor` of shape `(batch_size,)`, *optional*):
-            Labels for computing the sequence classification/regression loss. Indices should be in `[0, transformers.,
-            config.num_labels - 1]`. If `config.num_labels == 1` a regression loss is computed (Mean-Square loss), If
-            `config.num_labels > 1` a classification loss is computed (Cross-Entropy).
+        """Forward pass for the model, computing logits and optionally the loss.
+
+        This method processes the input tensors through the model to obtain the
+        output logits. It can also compute the loss if labels are provided. The
+        function handles various configurations for sequence classification or
+        regression tasks based on the number of labels and the specified problem
+        type. Additionally, it manages attention masks, position IDs, and past
+        key values to optimize the transformer model's performance.
+
+        Args:
+            input_ids (torch.LongTensor?): Tensor of input token IDs.
+            attention_mask (torch.Tensor?): Mask to avoid attending to padding tokens.
+            position_ids (torch.LongTensor?): Tensor of position IDs for input tokens.
+            past_key_values (List[torch.FloatTensor]?): Past key values for caching.
+            inputs_embeds (torch.FloatTensor?): Precomputed embeddings for input tokens.
+            labels (torch.LongTensor?): Labels for computing the sequence classification/regression loss.
+            use_cache (bool?): Whether to use cache for past key values.
+            output_attentions (bool?): Whether to return attention weights.
+            output_hidden_states (bool?): Whether to return hidden states.
+            return_dict (bool?): Whether to return a dictionary instead of a tuple.
+
+        Returns:
+            Union[Tuple, SequenceClassifierOutputWithPast]: The output logits and optionally the loss
+            and other outputs depending on the return_dict flag.
+
+        Raises:
+            ValueError: If batch sizes greater than 1 are provided without a defined padding
+                token.
         """
         return_dict = (
             return_dict if return_dict is not None else self.config.use_return_dict
