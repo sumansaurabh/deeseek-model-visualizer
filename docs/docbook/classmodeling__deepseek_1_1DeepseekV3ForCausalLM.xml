@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM" xml:lang="en-US">
+<title>modeling_deepseek.DeepseekV3ForCausalLM Class Reference</title>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary></indexterm>
+Inheritance diagram for modeling_deepseek.DeepseekV3ForCausalLM:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3ForCausalLM__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for modeling_deepseek.DeepseekV3ForCausalLM:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3ForCausalLM__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1aed4faa6621f4870fd6552fd04b92dc53">__init__</link> (self, config)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1ab1878b3d66cfe81b5fbcec20780c9a8a">get_input_embeddings</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1af6b35f00f1a33c0d79b8b3535422fda6">set_input_embeddings</link> (self, value)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a34d6acbb961f016ac722ce7750e9dee9">get_output_embeddings</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a1c13f841d9294cfb47727ac3dc7030b5">set_output_embeddings</link> (self, new_embeddings)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a44b823f01d922a75f964d72a9d28343f">set_decoder</link> (self, decoder)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1ac922b83ff8476b87ba63d94d5836c2c5">get_decoder</link> (self)</para>
+</listitem>
+            <listitem><para>Union[Tuple, CausalLMOutputWithPast] <link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1ad418bf03e1ce9c23aa5e3ad6a4bf2672">forward</link> (self, torch.LongTensor input_ids=None, Optional[torch.Tensor] attention_mask=None, Optional[torch.LongTensor] position_ids=None, Optional[List[torch.FloatTensor]] past_key_values=None, Optional[torch.FloatTensor] inputs_embeds=None, Optional[torch.LongTensor] labels=None, Optional[bool] use_cache=None, Optional[bool] output_attentions=None, Optional[bool] output_hidden_states=None, Optional[bool] return_dict=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1aa0665c472444548a23e07d2441a57990">prepare_inputs_for_generation</link> (self, input_ids, past_key_values=None, attention_mask=None, inputs_embeds=None, **kwargs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1aad4697749ec5e14181f5180403c62678">model</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a083b08366f44ab692ef2667058e6fb6f">vocab_size</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a6be372824ccd084ed5cb22b425f4988c">lm_head</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1add132503d3e9b761cf4bcfc9b254a1ed">_reorder_cache</link> (past_key_values, beam_idx)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a565a7fe638ed802fe23dc2d0460003f6">_tied_weights_keys</link> = [&quot;lm_head.weight&quot;]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Static Protected Attributes inherited from <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel">modeling_deepseek.DeepseekV3PreTrainedModel</link>        <itemizedlist>
+            <listitem><para>list <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a6dde6aaabc5e04752f0051ba1fe1d00d">_no_split_modules</link> = [&quot;DeepseekV3DecoderLayer&quot;]</para>
+</listitem>
+            <listitem><para>str <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a47f21952aca9700e377488241fd4c7b1">_skip_keys_device_placement</link> = &quot;past_key_values&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a5d49dfaef213615f338caaf8006e6961">_supports_flash_attn_2</link> = True</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a419ff99c5c6047a575432bbab7dbac66">_supports_cache_class</link> = True</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Static Public Attributes inherited from <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel">modeling_deepseek.DeepseekV3PreTrainedModel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a7d474bb0e4ceee261dbc5408308d19e5">config_class</link> = DeepseekV3Config</para>
+</listitem>
+            <listitem><para>str <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae91340ec2f86af3258cd154b9b9c37f7">base_model_prefix</link> = &quot;model&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a26ecbd5751fe120046a3ac63de76a119">supports_gradient_checkpointing</link> = True</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Member Functions inherited from <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel">modeling_deepseek.DeepseekV3PreTrainedModel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae39464b603daeade9cd604bbcb8a786a">_init_weights</link> (self, module)</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1aed4faa6621f4870fd6552fd04b92dc53"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>modeling_deepseek.DeepseekV3ForCausalLM</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForCausalLM.__init__ ( self,  config)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1add132503d3e9b761cf4bcfc9b254a1ed"/><section>
+    <title>_reorder_cache()</title>
+<indexterm><primary>_reorder_cache</primary><secondary>modeling_deepseek.DeepseekV3ForCausalLM</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary><secondary>_reorder_cache</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForCausalLM._reorder_cache ( past_key_values,  beam_idx)<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Reorder the cached past key values based on beam indices.
+
+This function takes a collection of past key values and reorders them
+according to the specified beam indices. It iterates through each layer
+of past key values, selecting the relevant past states for the given
+beam indices and returning a new tuple containing the reordered past key
+values.
+
+Args:
+    past_key_values (tuple): A tuple of past key values, where each element corresponds to a layer of
+        past states.
+    beam_idx (Tensor): A tensor containing the indices used to reorder the past states.
+
+Returns:
+    tuple: A tuple containing the reordered past key values for each layer.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1ad418bf03e1ce9c23aa5e3ad6a4bf2672"/><section>
+    <title>forward()</title>
+<indexterm><primary>forward</primary><secondary>modeling_deepseek.DeepseekV3ForCausalLM</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary><secondary>forward</secondary></indexterm>
+<para><computeroutput> Union[Tuple, CausalLMOutputWithPast] modeling_deepseek.DeepseekV3ForCausalLM.forward ( self, torch.LongTensor  input_ids = <computeroutput>None</computeroutput>
+, Optional[torch.Tensor]  attention_mask = <computeroutput>None</computeroutput>
+, Optional[torch.LongTensor]  position_ids = <computeroutput>None</computeroutput>
+, Optional[List[torch.FloatTensor]]  past_key_values = <computeroutput>None</computeroutput>
+, Optional[torch.FloatTensor]  inputs_embeds = <computeroutput>None</computeroutput>
+, Optional[torch.LongTensor]  labels = <computeroutput>None</computeroutput>
+, Optional[bool]  use_cache = <computeroutput>None</computeroutput>
+, Optional[bool]  output_attentions = <computeroutput>None</computeroutput>
+, Optional[bool]  output_hidden_states = <computeroutput>None</computeroutput>
+, Optional[bool]  return_dict = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Forward pass for the model.
+
+This method performs a forward pass through the model, processing the
+input tensors and returning the model&apos;s output. It computes the logits
+for the input sequence and, if labels are provided, calculates the loss
+for masked language modeling. The method also supports various
+configurations such as attention masks, position IDs, and caching of
+past key values.
+
+Args:
+    input_ids (torch.LongTensor?): Input tensor containing token IDs.
+    attention_mask (torch.Tensor?): Mask to avoid performing attention on padding token indices.
+    position_ids (torch.LongTensor?): Optional position IDs for the input tokens.
+    past_key_values (List[torch.FloatTensor]?): Cached key and value pairs from previous decoder layers for faster
+        decoding.
+    inputs_embeds (torch.FloatTensor?): Optional input embeddings instead of input IDs.
+    labels (torch.LongTensor?): Labels for computing the masked language modeling loss. Indices should
+        either be in `[0, transformers.config.vocab_size]` or -100.
+        Tokens with indices set to `-100` are ignored (masked), and the loss is
+        only computed for tokens with valid labels.
+    use_cache (bool?): Whether to use cache for past key values.
+    output_attentions (bool?): Whether to return attention weights.
+    output_hidden_states (bool?): Whether to return hidden states.
+    return_dict (bool?): Whether to return a dictionary instead of a tuple.
+
+Returns:
+    Union[Tuple, CausalLMOutputWithPast]: If `return_dict` is False, returns a tuple containing the logits and
+        other outputs.
+        If `return_dict` is True, returns an instance of
+        `CausalLMOutputWithPast` containing loss, logits, past key values,
+        hidden states, and attentions.
+
+Examples:
+    ```python
+    &gt;&gt;&gt; from transformers import AutoTokenizer, DeepseekV3ForCausalLM
+    &gt;&gt;&gt; model =
+    DeepseekV3ForCausalLM.from_pretrained(PATH_TO_CONVERTED_WEIGHTS)
+    &gt;&gt;&gt; tokenizer =
+    AutoTokenizer.from_pretrained(PATH_TO_CONVERTED_TOKENIZER)
+    &gt;&gt;&gt; prompt = &quot;Hey, are you conscious? Can you talk to me?&quot;
+    &gt;&gt;&gt; inputs = tokenizer(prompt, return_tensors=&quot;pt&quot;)
+    &gt;&gt;&gt; # Generate
+    &gt;&gt;&gt; generate_ids = model.generate(inputs.input_ids, max_length=30)
+    &gt;&gt;&gt; tokenizer.batch_decode(generate_ids, skip_special_tokens=True,
+    clean_up_tokenization_spaces=False)[0]
+    &quot;Hey, are you conscious? Can you talk to me?\nI&apos;m not conscious, but I
+    can talk to you.&quot;
+    ```
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1ac922b83ff8476b87ba63d94d5836c2c5"/><section>
+    <title>get_decoder()</title>
+<indexterm><primary>get_decoder</primary><secondary>modeling_deepseek.DeepseekV3ForCausalLM</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary><secondary>get_decoder</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForCausalLM.get_decoder ( self)</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1ab1878b3d66cfe81b5fbcec20780c9a8a"/><section>
+    <title>get_input_embeddings()</title>
+<indexterm><primary>get_input_embeddings</primary><secondary>modeling_deepseek.DeepseekV3ForCausalLM</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary><secondary>get_input_embeddings</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForCausalLM.get_input_embeddings ( self)</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a34d6acbb961f016ac722ce7750e9dee9"/><section>
+    <title>get_output_embeddings()</title>
+<indexterm><primary>get_output_embeddings</primary><secondary>modeling_deepseek.DeepseekV3ForCausalLM</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary><secondary>get_output_embeddings</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForCausalLM.get_output_embeddings ( self)</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1aa0665c472444548a23e07d2441a57990"/><section>
+    <title>prepare_inputs_for_generation()</title>
+<indexterm><primary>prepare_inputs_for_generation</primary><secondary>modeling_deepseek.DeepseekV3ForCausalLM</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary><secondary>prepare_inputs_for_generation</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForCausalLM.prepare_inputs_for_generation ( self,  input_ids,  past_key_values = <computeroutput>None</computeroutput>
+,  attention_mask = <computeroutput>None</computeroutput>
+,  inputs_embeds = <computeroutput>None</computeroutput>
+, ** kwargs)</computeroutput></para>
+<para><literallayout><computeroutput>Prepare inputs for the generation process.
+
+This function processes the input IDs, past key values, attention mask,
+and input embeddings to create a dictionary of model inputs suitable for
+the generation step. It handles various scenarios, such as adjusting the
+input IDs based on the past key values and attention mask, creating
+position IDs if not provided, and ensuring that the inputs do not exceed
+the maximum cache length.
+
+Args:
+    input_ids (Tensor): The input IDs for the generation process.
+    past_key_values (Cache or tuple?): The past key values used for caching. If provided, it
+        can be an instance of Cache or a tuple containing past key values.
+    attention_mask (Tensor?): The attention mask indicating which tokens should be attended to.
+    inputs_embeds (Tensor?): The input embeddings to be used instead of input IDs.
+    **kwargs: Additional keyword arguments that may include &apos;position_ids&apos;,
+        &apos;use_cache&apos;, etc.
+
+Returns:
+    dict: A dictionary containing the prepared model inputs, which includes
+        &apos;input_ids&apos;, &apos;position_ids&apos;,
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a44b823f01d922a75f964d72a9d28343f"/><section>
+    <title>set_decoder()</title>
+<indexterm><primary>set_decoder</primary><secondary>modeling_deepseek.DeepseekV3ForCausalLM</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary><secondary>set_decoder</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForCausalLM.set_decoder ( self,  decoder)</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1af6b35f00f1a33c0d79b8b3535422fda6"/><section>
+    <title>set_input_embeddings()</title>
+<indexterm><primary>set_input_embeddings</primary><secondary>modeling_deepseek.DeepseekV3ForCausalLM</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary><secondary>set_input_embeddings</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForCausalLM.set_input_embeddings ( self,  value)</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a1c13f841d9294cfb47727ac3dc7030b5"/><section>
+    <title>set_output_embeddings()</title>
+<indexterm><primary>set_output_embeddings</primary><secondary>modeling_deepseek.DeepseekV3ForCausalLM</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary><secondary>set_output_embeddings</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForCausalLM.set_output_embeddings ( self,  new_embeddings)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a565a7fe638ed802fe23dc2d0460003f6"/><section>
+    <title>_tied_weights_keys</title>
+<indexterm><primary>_tied_weights_keys</primary><secondary>modeling_deepseek.DeepseekV3ForCausalLM</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary><secondary>_tied_weights_keys</secondary></indexterm>
+<para><computeroutput>list modeling_deepseek.DeepseekV3ForCausalLM._tied_weights_keys = [&quot;lm_head.weight&quot;]<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a6be372824ccd084ed5cb22b425f4988c"/><section>
+    <title>lm_head</title>
+<indexterm><primary>lm_head</primary><secondary>modeling_deepseek.DeepseekV3ForCausalLM</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary><secondary>lm_head</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForCausalLM.lm_head</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1aad4697749ec5e14181f5180403c62678"/><section>
+    <title>model</title>
+<indexterm><primary>model</primary><secondary>modeling_deepseek.DeepseekV3ForCausalLM</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary><secondary>model</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForCausalLM.model</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a083b08366f44ab692ef2667058e6fb6f"/><section>
+    <title>vocab_size</title>
+<indexterm><primary>vocab_size</primary><secondary>modeling_deepseek.DeepseekV3ForCausalLM</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForCausalLM</primary><secondary>vocab_size</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForCausalLM.vocab_size</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/<link linkend="_modeling__deepseek_8py">modeling_deepseek.py</link></section>
+</section>

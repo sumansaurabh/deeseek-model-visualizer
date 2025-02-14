@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel" kind="class" language="Python" prot="public">
+    <compoundname>modeling_deepseek::DeepseekV3PreTrainedModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PreTrainedModel</basecompoundref>
+    <derivedcompoundref refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM" prot="public" virt="non-virtual">modeling_deepseek.DeepseekV3ForCausalLM</derivedcompoundref>
+    <derivedcompoundref refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification" prot="public" virt="non-virtual">modeling_deepseek.DeepseekV3ForSequenceClassification</derivedcompoundref>
+    <derivedcompoundref refid="classmodeling__deepseek_1_1DeepseekV3Model" prot="public" virt="non-virtual">modeling_deepseek.DeepseekV3Model</derivedcompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a7d474bb0e4ceee261dbc5408308d19e5" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3PreTrainedModel::config_class</definition>
+        <argsstring></argsstring>
+        <name>config_class</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3PreTrainedModel.config_class</qualifiedname>
+        <initializer>=  DeepseekV3Config</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="1726" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="1726" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae91340ec2f86af3258cd154b9b9c37f7" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str modeling_deepseek.DeepseekV3PreTrainedModel::base_model_prefix</definition>
+        <argsstring></argsstring>
+        <name>base_model_prefix</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3PreTrainedModel.base_model_prefix</qualifiedname>
+        <initializer>=  &quot;model&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="1727" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="1727" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a26ecbd5751fe120046a3ac63de76a119" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool modeling_deepseek.DeepseekV3PreTrainedModel::supports_gradient_checkpointing</definition>
+        <argsstring></argsstring>
+        <name>supports_gradient_checkpointing</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3PreTrainedModel.supports_gradient_checkpointing</qualifiedname>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="1728" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="1728" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a6dde6aaabc5e04752f0051ba1fe1d00d" prot="protected" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list modeling_deepseek.DeepseekV3PreTrainedModel::_no_split_modules</definition>
+        <argsstring></argsstring>
+        <name>_no_split_modules</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3PreTrainedModel._no_split_modules</qualifiedname>
+        <initializer>=  [&quot;DeepseekV3DecoderLayer&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="1729" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="1729" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a47f21952aca9700e377488241fd4c7b1" prot="protected" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str modeling_deepseek.DeepseekV3PreTrainedModel::_skip_keys_device_placement</definition>
+        <argsstring></argsstring>
+        <name>_skip_keys_device_placement</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3PreTrainedModel._skip_keys_device_placement</qualifiedname>
+        <initializer>=  &quot;past_key_values&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="1730" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="1730" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a5d49dfaef213615f338caaf8006e6961" prot="protected" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool modeling_deepseek.DeepseekV3PreTrainedModel::_supports_flash_attn_2</definition>
+        <argsstring></argsstring>
+        <name>_supports_flash_attn_2</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3PreTrainedModel._supports_flash_attn_2</qualifiedname>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="1731" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="1731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a419ff99c5c6047a575432bbab7dbac66" prot="protected" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool modeling_deepseek.DeepseekV3PreTrainedModel::_supports_cache_class</definition>
+        <argsstring></argsstring>
+        <name>_supports_cache_class</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3PreTrainedModel._supports_cache_class</qualifiedname>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="1732" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="1732" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae39464b603daeade9cd604bbcb8a786a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3PreTrainedModel._init_weights</definition>
+        <argsstring>(self, module)</argsstring>
+        <name>_init_weights</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3PreTrainedModel._init_weights</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>module</type>
+          <defname>module</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialize weights for a given neural network module.
+
+This function initializes the weights of the specified module based on
+the configuration&apos;s initializer range. It handles both linear layers and
+embedding layers. For linear layers, it sets the weights to a normal
+distribution with a mean of 0 and a specified standard deviation. If the
+linear layer has a bias, it initializes the bias to zero. For embedding
+layers, it also initializes the weights to a normal distribution and
+sets the weight at the padding index to zero if a padding index is
+specified.
+
+Args:
+    module (nn.Module): The neural network module (either nn.Linear or nn.Embedding)
+        whose weights are to be initialized.
+
+Returns:
+    None: This function modifies the weights of the module in place and does not
+        return a value.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="1734" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="1734" bodyend="1765"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>modeling_deepseek.DeepseekV3PreTrainedModel</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>modeling_deepseek.DeepseekV3ForCausalLM</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>modeling_deepseek.DeepseekV3ForSequenceClassification</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>modeling_deepseek.DeepseekV3Model</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3Model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PreTrainedModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>bool</label>
+      </node>
+      <node id="5">
+        <label>list</label>
+      </node>
+      <node id="1">
+        <label>modeling_deepseek.DeepseekV3PreTrainedModel</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>#_skip_keys_device_placement</edgelabel>
+          <edgelabel>+base_model_prefix</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>#_supports_cache_class</edgelabel>
+          <edgelabel>#_supports_flash_attn_2</edgelabel>
+          <edgelabel>+supports_gradient_checkpointing</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>#_no_split_modules</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+      <node id="2">
+        <label>PreTrainedModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="1725" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="1725" bodyend="1765"/>
+    <listofallmembers>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae39464b603daeade9cd604bbcb8a786a" prot="protected" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3PreTrainedModel</scope><name>_init_weights</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a6dde6aaabc5e04752f0051ba1fe1d00d" prot="protected" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3PreTrainedModel</scope><name>_no_split_modules</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a47f21952aca9700e377488241fd4c7b1" prot="protected" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3PreTrainedModel</scope><name>_skip_keys_device_placement</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a419ff99c5c6047a575432bbab7dbac66" prot="protected" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3PreTrainedModel</scope><name>_supports_cache_class</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a5d49dfaef213615f338caaf8006e6961" prot="protected" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3PreTrainedModel</scope><name>_supports_flash_attn_2</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae91340ec2f86af3258cd154b9b9c37f7" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3PreTrainedModel</scope><name>base_model_prefix</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a7d474bb0e4ceee261dbc5408308d19e5" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3PreTrainedModel</scope><name>config_class</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a26ecbd5751fe120046a3ac63de76a119" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3PreTrainedModel</scope><name>supports_gradient_checkpointing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

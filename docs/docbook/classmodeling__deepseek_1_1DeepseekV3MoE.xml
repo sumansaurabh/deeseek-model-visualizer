@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmodeling__deepseek_1_1DeepseekV3MoE" xml:lang="en-US">
+<title>modeling_deepseek.DeepseekV3MoE Class Reference</title>
+<indexterm><primary>modeling_deepseek.DeepseekV3MoE</primary></indexterm>
+Inheritance diagram for modeling_deepseek.DeepseekV3MoE:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3MoE__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for modeling_deepseek.DeepseekV3MoE:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3MoE__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MoE_1a96905b42a7ed512b23308776564909f2">__init__</link> (self, <link linkend="_classmodeling__deepseek_1_1DeepseekV3MoE_1ad7c503743dd456891b376984f9c69ad6">config</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MoE_1a17e46f3082bc2c1cd4e74fe2ff2685c7">forward</link> (self, hidden_states)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MoE_1ae3d9e2c537bcb2df062cdff8328ba839">moe_infer</link> (self, x, topk_ids, topk_weight)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MoE_1ad7c503743dd456891b376984f9c69ad6">config</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MoE_1a82fcfa5197c93b130f5ebf788cefd7d7">num_experts_per_tok</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MoE_1ae9f212cf75c9114776e9ddf07c9ea7bd">ep_size</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MoE_1a430f75b10752a7984dce84e5387e8ee2">experts_per_rank</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MoE_1ab252352f006c96f59a1966b33eb7fdc4">ep_rank</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MoE_1a4ae045a0a52bd60ae8a3ccd9874f02d7">experts</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MoE_1a2f583653dc523f5a303c379499d0f408">gate</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MoE_1a90c242857bf845ebf2a97c9e4f7fde86">shared_experts</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>A mixed expert module containing shared experts.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MoE_1a96905b42a7ed512b23308776564909f2"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>modeling_deepseek.DeepseekV3MoE</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MoE</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MoE.__init__ ( self,  config)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3MoE_a96905b42a7ed512b23308776564909f2_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3MoE_a96905b42a7ed512b23308776564909f2_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MoE_1a17e46f3082bc2c1cd4e74fe2ff2685c7"/><section>
+    <title>forward()</title>
+<indexterm><primary>forward</primary><secondary>modeling_deepseek.DeepseekV3MoE</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MoE</primary><secondary>forward</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MoE.forward ( self,  hidden_states)</computeroutput></para>
+<para><literallayout><computeroutput>Forward pass through the model using hidden states.
+
+This method processes the input hidden states by applying a gating
+mechanism to select the top-k experts and their corresponding weights.
+It reshapes the hidden states for further processing and, if not in
+training mode, performs inference using the selected experts.
+Additionally, if shared experts are configured, their output is added to
+the result.
+
+Args:
+    hidden_states (torch.Tensor): The input tensor containing hidden states
+
+Returns:
+    torch.Tensor: The output tensor after applying the gating mechanism and
+    any shared experts.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3MoE_a17e46f3082bc2c1cd4e74fe2ff2685c7_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MoE_1ae3d9e2c537bcb2df062cdff8328ba839"/><section>
+    <title>moe_infer()</title>
+<indexterm><primary>moe_infer</primary><secondary>modeling_deepseek.DeepseekV3MoE</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MoE</primary><secondary>moe_infer</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MoE.moe_infer ( self,  x,  topk_ids,  topk_weight)</computeroutput></para>
+<para><literallayout><computeroutput>Perform model inference using a set of experts based on input tokens.
+
+This method takes input tokens and distributes them among a set of
+experts for processing. It calculates the number of tokens assigned to
+each expert and gathers the outputs from each expert after processing.
+The function handles the distribution of tokens across multiple
+processes if necessary, ensuring that the outputs are correctly gathered
+and returned in the expected format.
+
+Args:
+    x (torch.Tensor): The input tensor containing tokens to be processed.
+    topk_ids (torch.Tensor): Indices of the top-k tokens for each expert.
+    topk_weight (torch.Tensor): Weights associated with the top-k tokens.
+
+Returns:
+    torch.Tensor: The final output tensor after processing by the experts,
+    weighted by the top-k weights.
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3MoE_ae3d9e2c537bcb2df062cdff8328ba839_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MoE_1ad7c503743dd456891b376984f9c69ad6"/><section>
+    <title>config</title>
+<indexterm><primary>config</primary><secondary>modeling_deepseek.DeepseekV3MoE</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MoE</primary><secondary>config</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MoE.config</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MoE_1ab252352f006c96f59a1966b33eb7fdc4"/><section>
+    <title>ep_rank</title>
+<indexterm><primary>ep_rank</primary><secondary>modeling_deepseek.DeepseekV3MoE</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MoE</primary><secondary>ep_rank</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MoE.ep_rank</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MoE_1ae9f212cf75c9114776e9ddf07c9ea7bd"/><section>
+    <title>ep_size</title>
+<indexterm><primary>ep_size</primary><secondary>modeling_deepseek.DeepseekV3MoE</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MoE</primary><secondary>ep_size</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MoE.ep_size</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MoE_1a4ae045a0a52bd60ae8a3ccd9874f02d7"/><section>
+    <title>experts</title>
+<indexterm><primary>experts</primary><secondary>modeling_deepseek.DeepseekV3MoE</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MoE</primary><secondary>experts</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MoE.experts</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MoE_1a430f75b10752a7984dce84e5387e8ee2"/><section>
+    <title>experts_per_rank</title>
+<indexterm><primary>experts_per_rank</primary><secondary>modeling_deepseek.DeepseekV3MoE</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MoE</primary><secondary>experts_per_rank</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MoE.experts_per_rank</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MoE_1a2f583653dc523f5a303c379499d0f408"/><section>
+    <title>gate</title>
+<indexterm><primary>gate</primary><secondary>modeling_deepseek.DeepseekV3MoE</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MoE</primary><secondary>gate</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MoE.gate</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MoE_1a82fcfa5197c93b130f5ebf788cefd7d7"/><section>
+    <title>num_experts_per_tok</title>
+<indexterm><primary>num_experts_per_tok</primary><secondary>modeling_deepseek.DeepseekV3MoE</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MoE</primary><secondary>num_experts_per_tok</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MoE.num_experts_per_tok</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MoE_1a90c242857bf845ebf2a97c9e4f7fde86"/><section>
+    <title>shared_experts</title>
+<indexterm><primary>shared_experts</primary><secondary>modeling_deepseek.DeepseekV3MoE</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MoE</primary><secondary>shared_experts</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MoE.shared_experts</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/<link linkend="_modeling__deepseek_8py">modeling_deepseek.py</link></section>
+</section>

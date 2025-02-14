@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>deeseek-model-visualizer</title>
+    </info>
+<chapter>
+    <title>Namespace Documentation</title>
+<xi:include href="namespacemodeling__deepseek.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="classmodeling__deepseek_1_1DeepseekV3Attention.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmodeling__deepseek_1_1DeepseekV3DecoderLayer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmodeling__deepseek_1_1DeepseekV3FlashAttention2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmodeling__deepseek_1_1DeepseekV3ForCausalLM.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmodeling__deepseek_1_1DeepseekV3MLP.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmodeling__deepseek_1_1DeepseekV3Model.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmodeling__deepseek_1_1DeepseekV3MoE.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmodeling__deepseek_1_1DeepseekV3RMSNorm.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmodeling__deepseek_1_1MoEGate.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="modeling__deepseek_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

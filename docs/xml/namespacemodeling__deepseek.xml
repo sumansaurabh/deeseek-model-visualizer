@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacemodeling__deepseek" kind="namespace" language="Python">
+    <compoundname>modeling_deepseek</compoundname>
+    <innerclass refid="classmodeling__deepseek_1_1DeepseekV3Attention" prot="public">modeling_deepseek::DeepseekV3Attention</innerclass>
+    <innerclass refid="classmodeling__deepseek_1_1DeepseekV3DecoderLayer" prot="public">modeling_deepseek::DeepseekV3DecoderLayer</innerclass>
+    <innerclass refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding" prot="public">modeling_deepseek::DeepseekV3DynamicNTKScalingRotaryEmbedding</innerclass>
+    <innerclass refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2" prot="public">modeling_deepseek::DeepseekV3FlashAttention2</innerclass>
+    <innerclass refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM" prot="public">modeling_deepseek::DeepseekV3ForCausalLM</innerclass>
+    <innerclass refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification" prot="public">modeling_deepseek::DeepseekV3ForSequenceClassification</innerclass>
+    <innerclass refid="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding" prot="public">modeling_deepseek::DeepseekV3LinearScalingRotaryEmbedding</innerclass>
+    <innerclass refid="classmodeling__deepseek_1_1DeepseekV3MLP" prot="public">modeling_deepseek::DeepseekV3MLP</innerclass>
+    <innerclass refid="classmodeling__deepseek_1_1DeepseekV3Model" prot="public">modeling_deepseek::DeepseekV3Model</innerclass>
+    <innerclass refid="classmodeling__deepseek_1_1DeepseekV3MoE" prot="public">modeling_deepseek::DeepseekV3MoE</innerclass>
+    <innerclass refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel" prot="public">modeling_deepseek::DeepseekV3PreTrainedModel</innerclass>
+    <innerclass refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm" prot="public">modeling_deepseek::DeepseekV3RMSNorm</innerclass>
+    <innerclass refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding" prot="public">modeling_deepseek::DeepseekV3RotaryEmbedding</innerclass>
+    <innerclass refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding" prot="public">modeling_deepseek::DeepseekV3YarnRotaryEmbedding</innerclass>
+    <innerclass refid="classmodeling__deepseek_1_1MoEGate" prot="public">modeling_deepseek::MoEGate</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemodeling__deepseek_1a8d9baef5b34c8ef4b2f1ea6334ba2266" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek._prepare_4d_causal_attention_mask</definition>
+        <argsstring></argsstring>
+        <name>_prepare_4d_causal_attention_mask</name>
+        <qualifiedname>modeling_deepseek._prepare_4d_causal_attention_mask</qualifiedname>
+        <initializer>=  torch.fx.wrap(_prepare_4d_causal_attention_mask)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="72" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodeling__deepseek_1ae57b9b10039f9c6cc3805df718ae3968" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>modeling_deepseek.logger</qualifiedname>
+        <initializer>=  logging.get_logger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="75" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodeling__deepseek_1a881e5dbefaf2df66dcee12dbd1e82010" prot="protected" static="no" mutable="no">
+        <type>str</type>
+        <definition>str modeling_deepseek._CONFIG_FOR_DOC</definition>
+        <argsstring></argsstring>
+        <name>_CONFIG_FOR_DOC</name>
+        <qualifiedname>modeling_deepseek._CONFIG_FOR_DOC</qualifiedname>
+        <initializer>=  &quot;DeepseekV3Config&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="77" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodeling__deepseek_1ab4fe0f13f22eb77598df89bc23c86276" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict modeling_deepseek.ATTENTION_CLASSES</definition>
+        <argsstring></argsstring>
+        <name>ATTENTION_CLASSES</name>
+        <qualifiedname>modeling_deepseek.ATTENTION_CLASSES</qualifiedname>
+        <initializer>=  {
+    &quot;eager&quot;: <ref refid="classmodeling__deepseek_1_1DeepseekV3Attention" kindref="compound">DeepseekV3Attention</ref>,
+    &quot;flash_attention_2&quot;: <ref refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2" kindref="compound">DeepseekV3FlashAttention2</ref>,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="1600" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="1600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodeling__deepseek_1ac35047c78f8be4b60c37f16178f47dbc" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str modeling_deepseek.DeepseekV3_START_DOCSTRING</definition>
+        <argsstring></argsstring>
+        <name>DeepseekV3_START_DOCSTRING</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3_START_DOCSTRING</qualifiedname>
+        <initializer>=  r&quot;&quot;&quot;
+    This model inherits from [`PreTrainedModel`]. Check the superclass documentation for the generic methods the
+    library implements for all its model (such as downloading or saving, resizing the input embeddings, pruning heads
+    etc.)
+    This model is also a PyTorch [torch.nn.Module](https://pytorch.org/docs/stable/nn.html#torch.nn.Module) subclass.
+    Use it as a regular PyTorch Module and refer to the PyTorch documentation for all matter related to general usage
+    and behavior.
+    Parameters:
+        config ([`DeepseekV3Config`]):
+            Model configuration class with all the parameters of the model. Initializing with a config file does not
+            load the weights associated with the model, only the configuration. Check out the
+            [`~PreTrainedModel.from_pretrained`] method to load the model weights.
+&quot;&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="1706" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="1706" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodeling__deepseek_1a0da3ab896abddeea5125328ccd7ba754" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str modeling_deepseek.DeepseekV3_INPUTS_DOCSTRING</definition>
+        <argsstring></argsstring>
+        <name>DeepseekV3_INPUTS_DOCSTRING</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3_INPUTS_DOCSTRING</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="1766" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="1766" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemodeling__deepseek_1aff225c90cb4b2622f8872d0c3f584b3d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek._get_unpad_data</definition>
+        <argsstring>(attention_mask)</argsstring>
+        <name>_get_unpad_data</name>
+        <qualifiedname>modeling_deepseek._get_unpad_data</qualifiedname>
+        <param>
+          <type>attention_mask</type>
+          <defname>attention_mask</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Retrieve unpadded data from the attention mask.
+
+This function processes the given attention mask to extract the indices
+of non-zero elements, compute cumulative sequence lengths, and determine
+the maximum sequence length in the batch. It is particularly useful in
+scenarios where attention masks are used to manage variable-length
+sequences in batch processing.
+
+Args:
+    attention_mask (torch.Tensor): A tensor representing the attention mask, where non-zero values
+        indicate valid tokens and zero values indicate padding.
+
+Returns:
+    tuple: A tuple containing:
+        - indices (torch.Tensor): A flattened tensor of indices corresponding to
+        non-zero elements
+        in the attention mask.
+        - cu_seqlens (torch.Tensor): A tensor of cumulative sequence lengths,
+        padded to facilitate
+        batch processing.
+        - max_seqlen_in_batch (int): The maximum sequence length found in the
+        input batch.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="80" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="80" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodeling__deepseek_1a5773fca3051b7ea373ce0a49be2ea763" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.yarn_find_correction_dim</definition>
+        <argsstring>(num_rotations, dim, base=10000, max_position_embeddings=2048)</argsstring>
+        <name>yarn_find_correction_dim</name>
+        <qualifiedname>modeling_deepseek.yarn_find_correction_dim</qualifiedname>
+        <param>
+          <type>num_rotations</type>
+          <defname>num_rotations</defname>
+        </param>
+        <param>
+          <type>dim</type>
+          <defname>dim</defname>
+        </param>
+        <param>
+          <type>base</type>
+          <defname>base</defname>
+          <defval>10000</defval>
+        </param>
+        <param>
+          <type>max_position_embeddings</type>
+          <defname>max_position_embeddings</defname>
+          <defval>2048</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Calculate the corrected dimension based on the number of rotations.
+
+This function computes the corrected dimension using the inverse
+dimension formula. It takes into account the number of rotations and
+adjusts the dimension based on a logarithmic scale relative to a base
+value and the maximum position embeddings. The formula used is derived
+from mathematical principles related to dimensionality adjustments in
+various applications.
+
+Args:
+    num_rotations (int): The number of rotations to consider in the calculation.
+    dim (float): The initial dimension value to be corrected.
+    base (float?): The base value for logarithmic scaling. Defaults to 10000.
+    max_position_embeddings (int?): The maximum number of position embeddings.
+        Defaults to 2048.
+
+Returns:
+    float: The corrected dimension based on the provided parameters.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="341" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="343" bodyend="369"/>
+        <referencedby refid="namespacemodeling__deepseek_1ab17059a7c13afd5df5eda1a07fe7e6b7" compoundref="modeling__deepseek_8py" startline="372" endline="402">yarn_find_correction_range</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodeling__deepseek_1ab17059a7c13afd5df5eda1a07fe7e6b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.yarn_find_correction_range</definition>
+        <argsstring>(low_rot, high_rot, dim, base=10000, max_position_embeddings=2048)</argsstring>
+        <name>yarn_find_correction_range</name>
+        <qualifiedname>modeling_deepseek.yarn_find_correction_range</qualifiedname>
+        <param>
+          <type>low_rot</type>
+          <defname>low_rot</defname>
+        </param>
+        <param>
+          <type>high_rot</type>
+          <defname>high_rot</defname>
+        </param>
+        <param>
+          <type>dim</type>
+          <defname>dim</defname>
+        </param>
+        <param>
+          <type>base</type>
+          <defname>base</defname>
+          <defval>10000</defval>
+        </param>
+        <param>
+          <type>max_position_embeddings</type>
+          <defname>max_position_embeddings</defname>
+          <defval>2048</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Find the correction range bounds based on rotation values.
+
+This function calculates the lower and upper bounds for a correction
+range based on the provided rotation values. It uses the
+`yarn_find_correction_dim` function to determine the corresponding
+dimensions for the given low and high rotation inputs. The results are
+clamped to ensure they remain within valid bounds, specifically between
+0 and `dim - 1`.
+
+Args:
+    low_rot (float): The lower rotation value.
+    high_rot (float): The higher rotation value.
+    dim (int): The dimension size to constrain the bounds.
+    base (int?): The base value used in calculations. Defaults to 10000.
+    max_position_embeddings (int?): The maximum number of position embeddings. Defaults to 2048.
+
+Returns:
+    tuple: A tuple containing the clamped lower and upper bounds of the correction
+        range.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="370" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="372" bodyend="402"/>
+        <references refid="namespacemodeling__deepseek_1a5773fca3051b7ea373ce0a49be2ea763" compoundref="modeling__deepseek_8py" startline="343" endline="369">yarn_find_correction_dim</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodeling__deepseek_1a34b414bdb0bddfa5b31edbc45c4a85de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.yarn_get_mscale</definition>
+        <argsstring>(scale=1, mscale=1)</argsstring>
+        <name>yarn_get_mscale</name>
+        <qualifiedname>modeling_deepseek.yarn_get_mscale</qualifiedname>
+        <param>
+          <type>scale</type>
+          <defname>scale</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>mscale</type>
+          <defname>mscale</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Calculate the modified scale based on the input scale and mscale.
+
+This function computes a modified scale value using a logarithmic
+transformation. If the input scale is less than or equal to 1, it
+returns a default value of 1.0. For scales greater than 1, it applies
+the formula: 0.1 * mscale * log(scale) + 1.0.
+
+Args:
+    scale (float?): The input scale value. Defaults to 1.
+    mscale (float?): The mscale value used in the calculation. Defaults to 1.
+
+Returns:
+    float: The modified scale value based on the input parameters.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="403" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="403" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodeling__deepseek_1a241d0772b349f4669077765b46345cdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.yarn_linear_ramp_mask</definition>
+        <argsstring>(min, max, dim)</argsstring>
+        <name>yarn_linear_ramp_mask</name>
+        <qualifiedname>modeling_deepseek.yarn_linear_ramp_mask</qualifiedname>
+        <param>
+          <type>min</type>
+          <defname>min</defname>
+        </param>
+        <param>
+          <type>max</type>
+          <defname>max</defname>
+        </param>
+        <param>
+          <type>dim</type>
+          <defname>dim</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generate a linear ramp mask based on minimum and maximum values.
+
+This function creates a linear ramp mask that linearly interpolates
+values between a specified minimum and maximum. If the minimum and
+maximum values are equal, a small value is added to the maximum to
+prevent singularity. The resulting ramp is clamped between 0 and 1,
+ensuring that all values lie within this range.
+
+Args:
+    min (float): The minimum value for the ramp.
+    max (float): The maximum value for the ramp.
+    dim (int): The dimension of the output mask.
+
+Returns:
+    torch.Tensor: A tensor containing the linear ramp mask.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="424" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="424" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodeling__deepseek_1ac3015cd18af85cbf60800ee0a8091b87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.rotate_half</definition>
+        <argsstring>(x)</argsstring>
+        <name>rotate_half</name>
+        <qualifiedname>modeling_deepseek.rotate_half</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Rotate half of the hidden dimensions of the input tensor.
+
+This function takes an input tensor and splits it into two halves along
+the last dimension. The first half is kept as is, while the second half
+is negated. The two halves are then concatenated along the last
+dimension to produce the output tensor.
+
+Args:
+    x (torch.Tensor): The input tensor with at least two dimensions.
+
+Returns:
+    torch.Tensor: A tensor with the same shape as the input, where the second half of the
+    last dimension has been negated.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="539" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="539" bodyend="559"/>
+        <referencedby refid="namespacemodeling__deepseek_1a1a750b896c05148a865beae617cc3153" compoundref="modeling__deepseek_8py" startline="560" endline="608">apply_rotary_pos_emb</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodeling__deepseek_1a1a750b896c05148a865beae617cc3153" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.apply_rotary_pos_emb</definition>
+        <argsstring>(q, k, cos, sin, position_ids, unsqueeze_dim=1)</argsstring>
+        <name>apply_rotary_pos_emb</name>
+        <qualifiedname>modeling_deepseek.apply_rotary_pos_emb</qualifiedname>
+        <param>
+          <type>q</type>
+          <defname>q</defname>
+        </param>
+        <param>
+          <type>k</type>
+          <defname>k</defname>
+        </param>
+        <param>
+          <type>cos</type>
+          <defname>cos</defname>
+        </param>
+        <param>
+          <type>sin</type>
+          <defname>sin</defname>
+        </param>
+        <param>
+          <type>position_ids</type>
+          <defname>position_ids</defname>
+        </param>
+        <param>
+          <type>unsqueeze_dim</type>
+          <defname>unsqueeze_dim</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Applies Rotary Position Embedding to the query and key tensors.
+
+This function modifies the query and key tensors by applying rotary
+position embeddings using the provided cosine and sine tensors. The
+position indices are used to select the appropriate values from the
+cosine and sine tensors, which are then unsqueezed along the specified
+dimension to ensure they can be broadcasted correctly with the query and
+key tensors. This is particularly useful in transformer models for
+enhancing the positional encoding of tokens.
+
+Args:
+    q (`torch.Tensor`): The query tensor.
+    k (`torch.Tensor`): The key tensor.
+    cos (`torch.Tensor`): The cosine part of the rotary embedding.
+    sin (`torch.Tensor`): The sine part of the rotary embedding.
+    position_ids (`torch.Tensor`): The position indices of the tokens corresponding to the query and key
+        tensors. For example, this can be
+        used to pass offsetted position ids when working with a KV-cache.
+    unsqueeze_dim (`int`, *optional*, defaults to 1): The &apos;unsqueeze_dim&apos; argument specifies the dimension along which to
+        unsqueeze cos[position_ids] and
+        sin[position_ids] so that they can be properly broadcasted to the
+        dimensions of q and k. For example, note
+        that cos[position_ids] and sin[position_ids] have the shape [batch_size,
+        seq_len, head_dim]. Then, if q and
+        k have the shape [batch_size, heads, seq_len, head_dim], then setting
+        unsqueeze_dim=1 makes
+        cos[position_ids] and sin[position_ids] broadcastable to the shapes of q
+        and k. Similarly, if q and k have
+        the shape [batch_size, seq_len, heads, head_dim], then set
+        unsqueeze_dim=2.
+
+Returns:
+    the Rotary Position Embedding.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="560" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="560" bodyend="608"/>
+        <references refid="namespacemodeling__deepseek_1ac3015cd18af85cbf60800ee0a8091b87" compoundref="modeling__deepseek_8py" startline="539" endline="559">rotate_half</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodeling__deepseek_1a5bf7ad188a9dfd9846300c6e3708cd1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>torch.Tensor</type>
+        <definition> torch.Tensor modeling_deepseek.repeat_kv</definition>
+        <argsstring>(torch.Tensor hidden_states, int n_rep)</argsstring>
+        <name>repeat_kv</name>
+        <qualifiedname>modeling_deepseek.repeat_kv</qualifiedname>
+        <param>
+          <type>torch.Tensor</type>
+          <declname>hidden_states</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_rep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Repeat key-value hidden states for attention mechanisms.
+
+This function takes the hidden states of a model and repeats them along
+the specified dimension, effectively expanding the representation of
+key-value pairs for attention heads. The input tensor is expected to
+have the shape (batch, num_key_value_heads, seqlen, head_dim) and will
+be reshaped to (batch, num_attention_heads, seqlen, head_dim) after
+repeating the key-value pairs.
+
+Args:
+    hidden_states (torch.Tensor): A tensor containing the hidden states with shape
+        (batch, num_key_value_heads, seqlen, head_dim).
+    n_rep (int): The number of times to repeat each key-value pair.
+
+Returns:
+    torch.Tensor: A tensor with the repeated hidden states, reshaped to
+        (batch, num_key_value_heads * n_rep, seqlen, head_dim).
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="936" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="936" bodyend="964"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim> PyTorch DeepSeek model.</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

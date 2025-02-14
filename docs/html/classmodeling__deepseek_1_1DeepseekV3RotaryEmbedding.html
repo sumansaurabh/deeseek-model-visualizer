@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>deeseek-model-visualizer: modeling_deepseek.DeepseekV3RotaryEmbedding Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">deeseek-model-visualizer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">modeling_deepseek.DeepseekV3RotaryEmbedding Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for modeling_deepseek.DeepseekV3RotaryEmbedding:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for modeling_deepseek.DeepseekV3RotaryEmbedding:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding__coll__graph.svg" width="226" height="304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af854f8ee2ae1c1b1ee3cbb3a79f6aeff" id="r_af854f8ee2ae1c1b1ee3cbb3a79f6aeff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af854f8ee2ae1c1b1ee3cbb3a79f6aeff">__init__</a> (self, <a class="el" href="#aa8e8d5b5d8ed37578d435e3767839f23">dim</a>, <a class="el" href="#aa2ff22ce2ac8aa4b7f5187637af71004">max_position_embeddings</a>=2048, <a class="el" href="#a015f24ad70439d3fb24fc901df9f7309">base</a>=10000, device=None)</td></tr>
+<tr class="separator:af854f8ee2ae1c1b1ee3cbb3a79f6aeff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3522f95c36edff62dcdf56d23ad6bfc" id="r_af3522f95c36edff62dcdf56d23ad6bfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3522f95c36edff62dcdf56d23ad6bfc">forward</a> (self, x, seq_len=None)</td></tr>
+<tr class="separator:af3522f95c36edff62dcdf56d23ad6bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aa8e8d5b5d8ed37578d435e3767839f23" id="r_aa8e8d5b5d8ed37578d435e3767839f23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8e8d5b5d8ed37578d435e3767839f23">dim</a></td></tr>
+<tr class="separator:aa8e8d5b5d8ed37578d435e3767839f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ff22ce2ac8aa4b7f5187637af71004" id="r_aa2ff22ce2ac8aa4b7f5187637af71004"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2ff22ce2ac8aa4b7f5187637af71004">max_position_embeddings</a></td></tr>
+<tr class="separator:aa2ff22ce2ac8aa4b7f5187637af71004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015f24ad70439d3fb24fc901df9f7309" id="r_a015f24ad70439d3fb24fc901df9f7309"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a015f24ad70439d3fb24fc901df9f7309">base</a></td></tr>
+<tr class="separator:a015f24ad70439d3fb24fc901df9f7309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaacc804689a5d12fc0b95ffa05cf224b" id="r_aaacc804689a5d12fc0b95ffa05cf224b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaacc804689a5d12fc0b95ffa05cf224b">max_seq_len_cached</a></td></tr>
+<tr class="separator:aaacc804689a5d12fc0b95ffa05cf224b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae01ef97644accdcf3fe2fe1b1aef2ca2" id="r_ae01ef97644accdcf3fe2fe1b1aef2ca2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae01ef97644accdcf3fe2fe1b1aef2ca2">_set_cos_sin_cache</a> (self, seq_len, device, dtype)</td></tr>
+<tr class="separator:ae01ef97644accdcf3fe2fe1b1aef2ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af854f8ee2ae1c1b1ee3cbb3a79f6aeff" name="af854f8ee2ae1c1b1ee3cbb3a79f6aeff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af854f8ee2ae1c1b1ee3cbb3a79f6aeff">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3RotaryEmbedding.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dim</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>max_position_embeddings</em><span class="paramdefsep"> = </span><span class="paramdefval">2048</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>base</em><span class="paramdefsep"> = </span><span class="paramdefval">10000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>device</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding.html#a88b7ec792d696d9aca729412cc9cef65">modeling_deepseek.DeepseekV3LinearScalingRotaryEmbedding</a>, <a class="el" href="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding.html#ab9b04c5d525c2cab59b63c01d831887b">modeling_deepseek.DeepseekV3DynamicNTKScalingRotaryEmbedding</a>, and <a class="el" href="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding.html#a7e381647020b937d72ecb2b8da32415f">modeling_deepseek.DeepseekV3YarnRotaryEmbedding</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_af854f8ee2ae1c1b1ee3cbb3a79f6aeff_cgraph.svg" width="234" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_af854f8ee2ae1c1b1ee3cbb3a79f6aeff_icgraph.svg" width="234" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae01ef97644accdcf3fe2fe1b1aef2ca2" name="ae01ef97644accdcf3fe2fe1b1aef2ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae01ef97644accdcf3fe2fe1b1aef2ca2">&#9670;&#160;</a></span>_set_cos_sin_cache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3RotaryEmbedding._set_cos_sin_cache </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>seq_len</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>device</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dtype</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Set the cosine and sine cache for positional embeddings.
+
+This method computes the cosine and sine values for a given sequence
+length and stores them in buffers. It first creates a tensor of values
+based on the sequence length and then calculates the outer product with
+the inverse frequency. The resulting tensor is then processed to obtain
+the cosine and sine values, which are stored as non-persistent buffers
+for efficient retrieval during subsequent operations.
+
+Args:
+    seq_len (int): The length of the sequence for which to cache cosine and sine values.
+    device (torch.device): The device on which to create the tensors (e.g., CPU or GPU).
+    dtype (torch.dtype): The data type of the tensors to be created.
+
+Returns:
+    None: This method does not return any value, but it modifies the internal
+        state
+    of the object by caching the computed cosine and sine values.
+</pre> 
+<p>Reimplemented in <a class="el" href="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding.html#a8e7b2346a4ecceac9140a465b2798e09">modeling_deepseek.DeepseekV3LinearScalingRotaryEmbedding</a>, <a class="el" href="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding.html#a7bc816eb10147956ba9463291fe22749">modeling_deepseek.DeepseekV3DynamicNTKScalingRotaryEmbedding</a>, and <a class="el" href="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding.html#a6f5c4d2f0bb03b152f6c4a6a6045f8ad">modeling_deepseek.DeepseekV3YarnRotaryEmbedding</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_ae01ef97644accdcf3fe2fe1b1aef2ca2_icgraph.svg" width="504" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af3522f95c36edff62dcdf56d23ad6bfc" name="af3522f95c36edff62dcdf56d23ad6bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3522f95c36edff62dcdf56d23ad6bfc">&#9670;&#160;</a></span>forward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3RotaryEmbedding.forward </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>seq_len</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Compute the forward pass for the attention mechanism.
+
+This method calculates the cosine and sine values used in the attention
+mechanism based on the input tensor. If the sequence length exceeds the
+cached maximum sequence length, it updates the cosine and sine cache
+accordingly. The method returns the cached cosine and sine values for
+the specified sequence length.
+
+Args:
+    x (Tensor): Input tensor of shape [bs, num_attention_heads, seq_len, head_size].
+    seq_len (int?): The sequence length to compute the cosine and sine values for.
+        If not provided, defaults to None.
+
+Returns:
+    Tuple[Tensor, Tensor]: A tuple containing the cached cosine and sine tensors
+        for the specified sequence length.
+</pre> <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_af3522f95c36edff62dcdf56d23ad6bfc_cgraph.svg" width="572" height="302"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a015f24ad70439d3fb24fc901df9f7309" name="a015f24ad70439d3fb24fc901df9f7309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015f24ad70439d3fb24fc901df9f7309">&#9670;&#160;</a></span>base</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3RotaryEmbedding.base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8e8d5b5d8ed37578d435e3767839f23" name="aa8e8d5b5d8ed37578d435e3767839f23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8e8d5b5d8ed37578d435e3767839f23">&#9670;&#160;</a></span>dim</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3RotaryEmbedding.dim</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2ff22ce2ac8aa4b7f5187637af71004" name="aa2ff22ce2ac8aa4b7f5187637af71004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ff22ce2ac8aa4b7f5187637af71004">&#9670;&#160;</a></span>max_position_embeddings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3RotaryEmbedding.max_position_embeddings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaacc804689a5d12fc0b95ffa05cf224b" name="aaacc804689a5d12fc0b95ffa05cf224b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaacc804689a5d12fc0b95ffa05cf224b">&#9670;&#160;</a></span>max_seq_len_cached</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3RotaryEmbedding.max_seq_len_cached</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/<a class="el" href="modeling__deepseek_8py.html">modeling_deepseek.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemodeling__deepseek.html">modeling_deepseek</a></li><li class="navelem"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding.html">DeepseekV3RotaryEmbedding</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

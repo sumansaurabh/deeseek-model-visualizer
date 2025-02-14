@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="en-US">
+  <compound refid="classmodeling__deepseek_1_1DeepseekV3Attention" kind="class"><name>modeling_deepseek::DeepseekV3Attention</name>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a1c8144674d02a5016d53ce346a834635" kind="variable"><name>config</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1acb98b03c694a7a30e512e64f162022c0" kind="variable"><name>layer_idx</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a23c871a2bfab6ae4d668f5f11c377d11" kind="variable"><name>attention_dropout</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a50654aa78257260bec49426d84d51fd2" kind="variable"><name>hidden_size</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a106f42b8983b3692f2bf53fb4ebfafec" kind="variable"><name>num_heads</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1abd28a02abd5cb87bccbe03f62c0a32ef" kind="variable"><name>max_position_embeddings</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a7586cfe9b481f9eef2e366c5911335f9" kind="variable"><name>rope_theta</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a28efd11dc4520e5fc75f76b013526805" kind="variable"><name>q_lora_rank</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a38ac896a065b4b2eb72d06bd4f04e7bb" kind="variable"><name>qk_rope_head_dim</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a539d7500b502ff50d7bbc38edd33a73b" kind="variable"><name>kv_lora_rank</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1afad36c4bc568470c3e63315c27dbf842" kind="variable"><name>v_head_dim</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1af16a31590d1f904d5c3d1ef5ecbd6425" kind="variable"><name>qk_nope_head_dim</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a9021aec986b43147703e3f62f78da126" kind="variable"><name>q_head_dim</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1aa218d0a1c4085dfd2c671e9bc854c825" kind="variable"><name>is_causal</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1ac81d4a3c2486393475ff466c10d401df" kind="variable"><name>q_proj</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1ae4b3cd0ae7aaca036aa15b0cd108c761" kind="variable"><name>q_a_proj</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a37dc6c493e38448e95f12007fe3abd5e" kind="variable"><name>q_a_layernorm</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1ab02ecb424285128723576b38da574438" kind="variable"><name>q_b_proj</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1aff10fd45c557e43af334db72bf01d4a0" kind="variable"><name>kv_a_proj_with_mqa</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a7b8fb461c7671364ae3abade34e0b41a" kind="variable"><name>kv_a_layernorm</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a71018a8b18e43fc3eb602feb40f6f27f" kind="variable"><name>kv_b_proj</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a4ca46ab8a8834ac6f78efd4a8ba7e2fa" kind="variable"><name>o_proj</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a9c64003a9864d569a2a21ddf17ef125a" kind="variable"><name>softmax_scale</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a1251ce70b3712e5e7daff0f9b44d7297" kind="variable"><name>rotary_emb</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1af98a39d0d876f3b54ff08c7387056498" kind="function"><name>__init__</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a1c0152e78a4d68499bc73ba94f63de6a" kind="function"><name>forward</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1af94174b8b0c46789f152137852a0772d" kind="function"><name>_init_rope</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a0deae3082b58a29cbe17f5761ed7d3f8" kind="function"><name>_shape</name></member>
+  </compound>
+  <compound refid="classmodeling__deepseek_1_1DeepseekV3DecoderLayer" kind="class"><name>modeling_deepseek::DeepseekV3DecoderLayer</name>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1aafb921ae2f0eb627a0fadaa574547b59" kind="variable"><name>hidden_size</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1af4a351d35571620416cd9097bac15779" kind="variable"><name>self_attn</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1ac8f6b1665d09c12e725df870f2d294c3" kind="variable"><name>mlp</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1a09e3b71724ac8f1936cffd262396fa3f" kind="variable"><name>input_layernorm</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1a1b637af6c56f95970da448336bb826d7" kind="variable"><name>post_attention_layernorm</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1a4065b3e08dbfb6e735546322339d9134" kind="function"><name>__init__</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1ac380b4dd3b1abc3371cb2654a4e11071" kind="function"><name>forward</name></member>
+  </compound>
+  <compound refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding" kind="class"><name>modeling_deepseek::DeepseekV3DynamicNTKScalingRotaryEmbedding</name>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding_1a7f3bf0b3f2166a8d7a92f3edb75b9ada" kind="variable"><name>scaling_factor</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding_1a1aa7ce7af86c8ec232856099e8223969" kind="variable"><name>max_seq_len_cached</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding_1a8f9ba629164b9c536d3b6ac860adbf6c" kind="variable"><name>max_position_embeddings</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding_1a6b5502b5e0630e580645660ebf46d942" kind="variable"><name>dim</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding_1ab9b04c5d525c2cab59b63c01d831887b" kind="function"><name>__init__</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding_1a7bc816eb10147956ba9463291fe22749" kind="function"><name>_set_cos_sin_cache</name></member>
+  </compound>
+  <compound refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2" kind="class"><name>modeling_deepseek::DeepseekV3FlashAttention2</name>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a38bd7b5da9b61cabffc696b79568cc35" kind="variable"><name>_flash_attn_uses_top_left_mask</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a386d163029586f73f88fc97b29742ce9" kind="variable"><name>qk_nope_head_dim</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a6f0bd7faa6641c6cf187f3f19fb23ad1" kind="variable"><name>kv_lora_rank</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1aac3d7b7bbdfc37a526a6d4dd239a1b10" kind="variable"><name>num_heads</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a04bc6b4d5023bbcd82290a4341ff63db" kind="variable"><name>v_head_dim</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a3e7d72c513cb9bf73f9c325206f797d8" kind="variable"><name>layer_idx</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1abaca9a82eff189a07de13ace872c840f" kind="variable"><name>config</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a206c4a159e26bc17a1d26b653abf4a73" kind="function"><name>__init__</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a2b99380feb66ac755ca513ced0472aea" kind="function"><name>forward</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a6fff8930135ac4423b89be7762c7b384" kind="function"><name>_flash_attention_forward</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1af35949d3bd3ad87dac8be0cebda1f1dd" kind="function"><name>_upad_input</name></member>
+  </compound>
+  <compound refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM" kind="class"><name>modeling_deepseek::DeepseekV3ForCausalLM</name>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a565a7fe638ed802fe23dc2d0460003f6" kind="variable"><name>_tied_weights_keys</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1aad4697749ec5e14181f5180403c62678" kind="variable"><name>model</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a083b08366f44ab692ef2667058e6fb6f" kind="variable"><name>vocab_size</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a6be372824ccd084ed5cb22b425f4988c" kind="variable"><name>lm_head</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1aed4faa6621f4870fd6552fd04b92dc53" kind="function"><name>__init__</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1ab1878b3d66cfe81b5fbcec20780c9a8a" kind="function"><name>get_input_embeddings</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1af6b35f00f1a33c0d79b8b3535422fda6" kind="function"><name>set_input_embeddings</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a34d6acbb961f016ac722ce7750e9dee9" kind="function"><name>get_output_embeddings</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a1c13f841d9294cfb47727ac3dc7030b5" kind="function"><name>set_output_embeddings</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1a44b823f01d922a75f964d72a9d28343f" kind="function"><name>set_decoder</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1ac922b83ff8476b87ba63d94d5836c2c5" kind="function"><name>get_decoder</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1ad418bf03e1ce9c23aa5e3ad6a4bf2672" kind="function"><name>forward</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1aa0665c472444548a23e07d2441a57990" kind="function"><name>prepare_inputs_for_generation</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForCausalLM_1add132503d3e9b761cf4bcfc9b254a1ed" kind="function"><name>_reorder_cache</name></member>
+  </compound>
+  <compound refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification" kind="class"><name>modeling_deepseek::DeepseekV3ForSequenceClassification</name>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a1f6de83af3dd6afb28cbbb210140ef5e" kind="variable"><name>num_labels</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1acb029dadf3b1efc6c53745e936d9196c" kind="variable"><name>model</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a42e3c0a1e37298d4bf81407969d258f3" kind="variable"><name>score</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1ad3f02d6db56704c70fd4599cd00d38e1" kind="function"><name>__init__</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a59604452d77a43090aa4b2013f72c1f8" kind="function"><name>get_input_embeddings</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a5ddc1b3a59c71d5951369ec1ae9d6807" kind="function"><name>set_input_embeddings</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a392a427c3f5ed209e815703be6ba6b93" kind="function"><name>forward</name></member>
+  </compound>
+  <compound refid="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding" kind="class"><name>modeling_deepseek::DeepseekV3LinearScalingRotaryEmbedding</name>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding_1ac154d5c78a36bbd7a676fc51dc4d868c" kind="variable"><name>scaling_factor</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding_1a20f2051e0be20d6227f68ee713ea632b" kind="variable"><name>max_seq_len_cached</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding_1a88b7ec792d696d9aca729412cc9cef65" kind="function"><name>__init__</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding_1a8e7b2346a4ecceac9140a465b2798e09" kind="function"><name>_set_cos_sin_cache</name></member>
+  </compound>
+  <compound refid="classmodeling__deepseek_1_1DeepseekV3MLP" kind="class"><name>modeling_deepseek::DeepseekV3MLP</name>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a21b62497b6d89e9367e3bfc2a0cdae23" kind="variable"><name>config</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1ad6ec7ad20f7ad22a1a3b4dfc08c77232" kind="variable"><name>hidden_size</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1ad0dce99a7a4ce56663b7e56dc360c612" kind="variable"><name>intermediate_size</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a04c5b1fca10614d4ec0576a3328ed95a" kind="variable"><name>gate_proj</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a7f3065c6feff10e2c47e6e4036c4d59d" kind="variable"><name>up_proj</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a9f19556d227dc20ec1c038bf1c231702" kind="variable"><name>down_proj</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a6c78de28c06d079513715a8f72571fb8" kind="variable"><name>act_fn</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1ae9b26577d4b936f5b0385dfa5f4f467d" kind="function"><name>__init__</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a2d3ccef3b5a7595610caa94ae8076687" kind="function"><name>forward</name></member>
+  </compound>
+  <compound refid="classmodeling__deepseek_1_1DeepseekV3Model" kind="class"><name>modeling_deepseek::DeepseekV3Model</name>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Model_1abeef639068a6f00f0986c029c30ee089" kind="variable"><name>padding_idx</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Model_1a7706358bbac28fbc7fe2f248721ff686" kind="variable"><name>vocab_size</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Model_1a50d53b622234a098e9cb05bf3eb4b174" kind="variable"><name>embed_tokens</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Model_1ac4ef5e6402248501a75e09fe50fc97d5" kind="variable"><name>layers</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Model_1a543831f9b414c380f6ee9c64bb79bd03" kind="variable"><name>norm</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Model_1ab4d2c150b00d38ba41b62f22259582b3" kind="variable"><name>gradient_checkpointing</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Model_1afca7caa92c5ca69a6376bbc3aee899bc" kind="variable"><name>_use_flash_attention_2</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Model_1a0185e9c89d2431d6436819d9026272e8" kind="function"><name>__init__</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Model_1a520ce2820f7dc3ac6f4ac0c993d4d174" kind="function"><name>get_input_embeddings</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Model_1a3c509ee0055737fc20efddf9eaef30b9" kind="function"><name>set_input_embeddings</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3Model_1a52079f13dedc7af8e831139b6180b7c1" kind="function"><name>forward</name></member>
+  </compound>
+  <compound refid="classmodeling__deepseek_1_1DeepseekV3MoE" kind="class"><name>modeling_deepseek::DeepseekV3MoE</name>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MoE_1ad7c503743dd456891b376984f9c69ad6" kind="variable"><name>config</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MoE_1a82fcfa5197c93b130f5ebf788cefd7d7" kind="variable"><name>num_experts_per_tok</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MoE_1ae9f212cf75c9114776e9ddf07c9ea7bd" kind="variable"><name>ep_size</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MoE_1a430f75b10752a7984dce84e5387e8ee2" kind="variable"><name>experts_per_rank</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MoE_1ab252352f006c96f59a1966b33eb7fdc4" kind="variable"><name>ep_rank</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MoE_1a4ae045a0a52bd60ae8a3ccd9874f02d7" kind="variable"><name>experts</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MoE_1a2f583653dc523f5a303c379499d0f408" kind="variable"><name>gate</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MoE_1a90c242857bf845ebf2a97c9e4f7fde86" kind="variable"><name>shared_experts</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MoE_1a96905b42a7ed512b23308776564909f2" kind="function"><name>__init__</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MoE_1a17e46f3082bc2c1cd4e74fe2ff2685c7" kind="function"><name>forward</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3MoE_1ae3d9e2c537bcb2df062cdff8328ba839" kind="function"><name>moe_infer</name></member>
+  </compound>
+  <compound refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel" kind="class"><name>modeling_deepseek::DeepseekV3PreTrainedModel</name>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a7d474bb0e4ceee261dbc5408308d19e5" kind="variable"><name>config_class</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae91340ec2f86af3258cd154b9b9c37f7" kind="variable"><name>base_model_prefix</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a26ecbd5751fe120046a3ac63de76a119" kind="variable"><name>supports_gradient_checkpointing</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a6dde6aaabc5e04752f0051ba1fe1d00d" kind="variable"><name>_no_split_modules</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a47f21952aca9700e377488241fd4c7b1" kind="variable"><name>_skip_keys_device_placement</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a5d49dfaef213615f338caaf8006e6961" kind="variable"><name>_supports_flash_attn_2</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a419ff99c5c6047a575432bbab7dbac66" kind="variable"><name>_supports_cache_class</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae39464b603daeade9cd604bbcb8a786a" kind="function"><name>_init_weights</name></member>
+  </compound>
+  <compound refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm" kind="class"><name>modeling_deepseek::DeepseekV3RMSNorm</name>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1aaa589372f55dbb8c3ebc78a3f9ea590f" kind="variable"><name>weight</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1a0f2b51b768f967bd503eb17b34a55d26" kind="variable"><name>variance_epsilon</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1af2508deb9797766a4044f127e7726f0f" kind="function"><name>__init__</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1a2bb202d26033b0c66c354225063f05da" kind="function"><name>forward</name></member>
+  </compound>
+  <compound refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding" kind="class"><name>modeling_deepseek::DeepseekV3RotaryEmbedding</name>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1aa8e8d5b5d8ed37578d435e3767839f23" kind="variable"><name>dim</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1aa2ff22ce2ac8aa4b7f5187637af71004" kind="variable"><name>max_position_embeddings</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1a015f24ad70439d3fb24fc901df9f7309" kind="variable"><name>base</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1aaacc804689a5d12fc0b95ffa05cf224b" kind="variable"><name>max_seq_len_cached</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1af854f8ee2ae1c1b1ee3cbb3a79f6aeff" kind="function"><name>__init__</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1af3522f95c36edff62dcdf56d23ad6bfc" kind="function"><name>forward</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1ae01ef97644accdcf3fe2fe1b1aef2ca2" kind="function"><name>_set_cos_sin_cache</name></member>
+  </compound>
+  <compound refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding" kind="class"><name>modeling_deepseek::DeepseekV3YarnRotaryEmbedding</name>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1a0450cef3403d2d07eb74172126e825f7" kind="variable"><name>scaling_factor</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1a9bcb88b24920df2af9a1a6699f4cfc71" kind="variable"><name>original_max_position_embeddings</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1aa848f331156c2c3622f170f063147586" kind="variable"><name>beta_fast</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1a7186257b9000a06e47cf4f5e2d11f35a" kind="variable"><name>beta_slow</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1a977c90d71cc8ead486782f3d33b5786e" kind="variable"><name>mscale</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1a56a46e30963d56baf32ab412f87b173d" kind="variable"><name>mscale_all_dim</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1a3f2beb6f11dce391469b0897ad79b447" kind="variable"><name>max_seq_len_cached</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1a0b2cef3a2a3f0c6f985291f2d302084c" kind="variable"><name>base</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1a7e381647020b937d72ecb2b8da32415f" kind="function"><name>__init__</name></member>
+    <member refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1a6f5c4d2f0bb03b152f6c4a6a6045f8ad" kind="function"><name>_set_cos_sin_cache</name></member>
+  </compound>
+  <compound refid="classmodeling__deepseek_1_1MoEGate" kind="class"><name>modeling_deepseek::MoEGate</name>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1a175a68827b832da6b31df800506cd7cc" kind="variable"><name>config</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1a5fe88e1d4ff6abb14c97196173a34f8e" kind="variable"><name>top_k</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1a4c5d307e8b47dfd7d6302dcdeb0632c3" kind="variable"><name>n_routed_experts</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1afee88d90fd7377e9d5e2e0ca3dd2c05d" kind="variable"><name>routed_scaling_factor</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1a77ec2442dea904601fc1e35f890e1860" kind="variable"><name>scoring_func</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1a9a42f726280fd1bc15330b7f3216e95b" kind="variable"><name>seq_aux</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1afa00ffb1dabc5b300a441e48b241b412" kind="variable"><name>topk_method</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1ae44ae50f6e7b07c1ee1d265f3935f57c" kind="variable"><name>n_group</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1a420ede75d878914bf57a1a8b0635022b" kind="variable"><name>topk_group</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1a14f1676e0baa38cd3f641c97cb95c694" kind="variable"><name>norm_topk_prob</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1a3aed25f433556ffd76640df5d7093be3" kind="variable"><name>gating_dim</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1a75b199559cf3835df724f8c1c3485d28" kind="variable"><name>weight</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1a6496432799fc3ed30118819f88722080" kind="variable"><name>e_score_correction_bias</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1ac50ed7ab225f5cff4ae21ddf15de0cd5" kind="function"><name>__init__</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1a08b5f10d1d2dcd7922399d226056e1be" kind="function"><name>reset_parameters</name></member>
+    <member refid="classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4" kind="function"><name>forward</name></member>
+  </compound>
+  <compound refid="namespacemodeling__deepseek" kind="namespace"><name>modeling_deepseek</name>
+    <member refid="namespacemodeling__deepseek_1a8d9baef5b34c8ef4b2f1ea6334ba2266" kind="variable"><name>_prepare_4d_causal_attention_mask</name></member>
+    <member refid="namespacemodeling__deepseek_1ae57b9b10039f9c6cc3805df718ae3968" kind="variable"><name>logger</name></member>
+    <member refid="namespacemodeling__deepseek_1a881e5dbefaf2df66dcee12dbd1e82010" kind="variable"><name>_CONFIG_FOR_DOC</name></member>
+    <member refid="namespacemodeling__deepseek_1ab4fe0f13f22eb77598df89bc23c86276" kind="variable"><name>ATTENTION_CLASSES</name></member>
+    <member refid="namespacemodeling__deepseek_1ac35047c78f8be4b60c37f16178f47dbc" kind="variable"><name>DeepseekV3_START_DOCSTRING</name></member>
+    <member refid="namespacemodeling__deepseek_1a0da3ab896abddeea5125328ccd7ba754" kind="variable"><name>DeepseekV3_INPUTS_DOCSTRING</name></member>
+    <member refid="namespacemodeling__deepseek_1aff225c90cb4b2622f8872d0c3f584b3d" kind="function"><name>_get_unpad_data</name></member>
+    <member refid="namespacemodeling__deepseek_1a5773fca3051b7ea373ce0a49be2ea763" kind="function"><name>yarn_find_correction_dim</name></member>
+    <member refid="namespacemodeling__deepseek_1ab17059a7c13afd5df5eda1a07fe7e6b7" kind="function"><name>yarn_find_correction_range</name></member>
+    <member refid="namespacemodeling__deepseek_1a34b414bdb0bddfa5b31edbc45c4a85de" kind="function"><name>yarn_get_mscale</name></member>
+    <member refid="namespacemodeling__deepseek_1a241d0772b349f4669077765b46345cdf" kind="function"><name>yarn_linear_ramp_mask</name></member>
+    <member refid="namespacemodeling__deepseek_1ac3015cd18af85cbf60800ee0a8091b87" kind="function"><name>rotate_half</name></member>
+    <member refid="namespacemodeling__deepseek_1a1a750b896c05148a865beae617cc3153" kind="function"><name>apply_rotary_pos_emb</name></member>
+    <member refid="namespacemodeling__deepseek_1a5bf7ad188a9dfd9846300c6e3708cd1a" kind="function"><name>repeat_kv</name></member>
+  </compound>
+  <compound refid="namespacenn" kind="namespace"><name>nn</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="modeling__deepseek_8py" kind="file"><name>modeling_deepseek.py</name>
+  </compound>
+  <compound refid="dir_852f8bde979f03b739cb9acfa98ebff4" kind="dir"><name>/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer</name>
+  </compound>
+</doxygenindex>

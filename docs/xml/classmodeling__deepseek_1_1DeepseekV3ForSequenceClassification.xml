@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification" kind="class" language="Python" prot="public">
+    <compoundname>modeling_deepseek::DeepseekV3ForSequenceClassification</compoundname>
+    <basecompoundref refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel" prot="public" virt="non-virtual">modeling_deepseek.DeepseekV3PreTrainedModel</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a1f6de83af3dd6afb28cbbb210140ef5e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3ForSequenceClassification::num_labels</definition>
+        <argsstring></argsstring>
+        <name>num_labels</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3ForSequenceClassification.num_labels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="2308" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="2308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1acb029dadf3b1efc6c53745e936d9196c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3ForSequenceClassification::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3ForSequenceClassification.model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="2309" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="2309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a42e3c0a1e37298d4bf81407969d258f3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3ForSequenceClassification::score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3ForSequenceClassification.score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="2310" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="2310" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1ad3f02d6db56704c70fd4599cd00d38e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3ForSequenceClassification.__init__</definition>
+        <argsstring>(self, config)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3ForSequenceClassification.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>config</type>
+          <defname>config</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="2306" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="2306" bodyend="2314"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a59604452d77a43090aa4b2013f72c1f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3ForSequenceClassification.get_input_embeddings</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_input_embeddings</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3ForSequenceClassification.get_input_embeddings</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="2315" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="2315" bodyend="2317"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a5ddc1b3a59c71d5951369ec1ae9d6807" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3ForSequenceClassification.set_input_embeddings</definition>
+        <argsstring>(self, value)</argsstring>
+        <name>set_input_embeddings</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3ForSequenceClassification.set_input_embeddings</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="2318" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="2318" bodyend="2320"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a392a427c3f5ed209e815703be6ba6b93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Union[Tuple, SequenceClassifierOutputWithPast]</type>
+        <definition> Union[Tuple, SequenceClassifierOutputWithPast] modeling_deepseek.DeepseekV3ForSequenceClassification.forward</definition>
+        <argsstring>(self, torch.LongTensor input_ids=None, Optional[torch.Tensor] attention_mask=None, Optional[torch.LongTensor] position_ids=None, Optional[List[torch.FloatTensor]] past_key_values=None, Optional[torch.FloatTensor] inputs_embeds=None, Optional[torch.LongTensor] labels=None, Optional[bool] use_cache=None, Optional[bool] output_attentions=None, Optional[bool] output_hidden_states=None, Optional[bool] return_dict=None)</argsstring>
+        <name>forward</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3ForSequenceClassification.forward</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>torch.LongTensor</type>
+          <declname>input_ids</declname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>attention_mask</declname>
+          <array>[torch.Tensor]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>position_ids</declname>
+          <array>[torch.LongTensor]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional]</type>
+          <declname>past_key_values</declname>
+          <array>[List[torch.FloatTensor]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>inputs_embeds</declname>
+          <array>[torch.FloatTensor]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>labels</declname>
+          <array>[torch.LongTensor]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>use_cache</declname>
+          <array>[bool]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>output_attentions</declname>
+          <array>[bool]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>output_hidden_states</declname>
+          <array>[bool]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>return_dict</declname>
+          <array>[bool]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Forward pass for the model, computing logits and optionally the loss.
+
+This method processes the input tensors through the model to obtain the
+output logits. It can also compute the loss if labels are provided. The
+function handles various configurations for sequence classification or
+regression tasks based on the number of labels and the specified problem
+type. Additionally, it manages attention masks, position IDs, and past
+key values to optimize the transformer model&apos;s performance.
+
+Args:
+    input_ids (torch.LongTensor?): Tensor of input token IDs.
+    attention_mask (torch.Tensor?): Mask to avoid attending to padding tokens.
+    position_ids (torch.LongTensor?): Tensor of position IDs for input tokens.
+    past_key_values (List[torch.FloatTensor]?): Past key values for caching.
+    inputs_embeds (torch.FloatTensor?): Precomputed embeddings for input tokens.
+    labels (torch.LongTensor?): Labels for computing the sequence classification/regression loss.
+    use_cache (bool?): Whether to use cache for past key values.
+    output_attentions (bool?): Whether to return attention weights.
+    output_hidden_states (bool?): Whether to return hidden states.
+    return_dict (bool?): Whether to return a dictionary instead of a tuple.
+
+Returns:
+    Union[Tuple, SequenceClassifierOutputWithPast]: The output logits and optionally the loss
+    and other outputs depending on the return_dict flag.
+
+Raises:
+    ValueError: If batch sizes greater than 1 are provided without a defined padding
+        token.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="2322" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="2334" bodyend="2444"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>modeling_deepseek.DeepseekV3ForSequenceClassification</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>modeling_deepseek.DeepseekV3PreTrainedModel</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PreTrainedModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>bool</label>
+      </node>
+      <node id="6">
+        <label>list</label>
+      </node>
+      <node id="1">
+        <label>modeling_deepseek.DeepseekV3ForSequenceClassification</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>modeling_deepseek.DeepseekV3PreTrainedModel</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>#_skip_keys_device_placement</edgelabel>
+          <edgelabel>+base_model_prefix</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>#_supports_cache_class</edgelabel>
+          <edgelabel>#_supports_flash_attn_2</edgelabel>
+          <edgelabel>+supports_gradient_checkpointing</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>#_no_split_modules</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>str</label>
+      </node>
+      <node id="3">
+        <label>PreTrainedModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="2305" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="2305" bodyend="2444"/>
+    <listofallmembers>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1ad3f02d6db56704c70fd4599cd00d38e1" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3ForSequenceClassification</scope><name>__init__</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a392a427c3f5ed209e815703be6ba6b93" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3ForSequenceClassification</scope><name>forward</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a59604452d77a43090aa4b2013f72c1f8" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3ForSequenceClassification</scope><name>get_input_embeddings</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1acb029dadf3b1efc6c53745e936d9196c" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3ForSequenceClassification</scope><name>model</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a1f6de83af3dd6afb28cbbb210140ef5e" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3ForSequenceClassification</scope><name>num_labels</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a42e3c0a1e37298d4bf81407969d258f3" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3ForSequenceClassification</scope><name>score</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a5ddc1b3a59c71d5951369ec1ae9d6807" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3ForSequenceClassification</scope><name>set_input_embeddings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

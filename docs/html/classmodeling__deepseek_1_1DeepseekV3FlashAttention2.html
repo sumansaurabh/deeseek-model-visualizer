@@ -1,0 +1,623 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>deeseek-model-visualizer: modeling_deepseek.DeepseekV3FlashAttention2 Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">deeseek-model-visualizer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classmodeling__deepseek_1_1DeepseekV3FlashAttention2.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="classmodeling__deepseek_1_1DeepseekV3FlashAttention2-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">modeling_deepseek.DeepseekV3FlashAttention2 Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for modeling_deepseek.DeepseekV3FlashAttention2:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmodeling__deepseek_1_1DeepseekV3FlashAttention2__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for modeling_deepseek.DeepseekV3FlashAttention2:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmodeling__deepseek_1_1DeepseekV3FlashAttention2__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a206c4a159e26bc17a1d26b653abf4a73" id="r_a206c4a159e26bc17a1d26b653abf4a73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a206c4a159e26bc17a1d26b653abf4a73">__init__</a> (self, *args, **kwargs)</td></tr>
+<tr class="separator:a206c4a159e26bc17a1d26b653abf4a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b99380feb66ac755ca513ced0472aea" id="r_a2b99380feb66ac755ca513ced0472aea"><td class="memItemLeft" align="right" valign="top">Tuple[torch.Tensor, Optional[torch.Tensor], Optional[Tuple[torch.Tensor]]]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b99380feb66ac755ca513ced0472aea">forward</a> (self, torch.Tensor hidden_states, Optional[torch.LongTensor] attention_mask=None, Optional[torch.LongTensor] position_ids=None, Optional[Cache] past_key_value=None, bool output_attentions=False, bool use_cache=False, **kwargs)</td></tr>
+<tr class="separator:a2b99380feb66ac755ca513ced0472aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a386d163029586f73f88fc97b29742ce9" id="r_a386d163029586f73f88fc97b29742ce9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a386d163029586f73f88fc97b29742ce9">qk_nope_head_dim</a></td></tr>
+<tr class="separator:a386d163029586f73f88fc97b29742ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f0bd7faa6641c6cf187f3f19fb23ad1" id="r_a6f0bd7faa6641c6cf187f3f19fb23ad1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f0bd7faa6641c6cf187f3f19fb23ad1">kv_lora_rank</a></td></tr>
+<tr class="separator:a6f0bd7faa6641c6cf187f3f19fb23ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac3d7b7bbdfc37a526a6d4dd239a1b10" id="r_aac3d7b7bbdfc37a526a6d4dd239a1b10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac3d7b7bbdfc37a526a6d4dd239a1b10">num_heads</a></td></tr>
+<tr class="separator:aac3d7b7bbdfc37a526a6d4dd239a1b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04bc6b4d5023bbcd82290a4341ff63db" id="r_a04bc6b4d5023bbcd82290a4341ff63db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04bc6b4d5023bbcd82290a4341ff63db">v_head_dim</a></td></tr>
+<tr class="separator:a04bc6b4d5023bbcd82290a4341ff63db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7d72c513cb9bf73f9c325206f797d8" id="r_a3e7d72c513cb9bf73f9c325206f797d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e7d72c513cb9bf73f9c325206f797d8">layer_idx</a></td></tr>
+<tr class="separator:a3e7d72c513cb9bf73f9c325206f797d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaca9a82eff189a07de13ace872c840f" id="r_abaca9a82eff189a07de13ace872c840f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abaca9a82eff189a07de13ace872c840f">config</a></td></tr>
+<tr class="separator:abaca9a82eff189a07de13ace872c840f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html">modeling_deepseek.DeepseekV3Attention</a></td></tr>
+<tr class="memitem:a1c8144674d02a5016d53ce346a834635 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a1c8144674d02a5016d53ce346a834635"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a1c8144674d02a5016d53ce346a834635">config</a></td></tr>
+<tr class="separator:a1c8144674d02a5016d53ce346a834635 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb98b03c694a7a30e512e64f162022c0 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_acb98b03c694a7a30e512e64f162022c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#acb98b03c694a7a30e512e64f162022c0">layer_idx</a></td></tr>
+<tr class="separator:acb98b03c694a7a30e512e64f162022c0 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c871a2bfab6ae4d668f5f11c377d11 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a23c871a2bfab6ae4d668f5f11c377d11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a23c871a2bfab6ae4d668f5f11c377d11">attention_dropout</a></td></tr>
+<tr class="separator:a23c871a2bfab6ae4d668f5f11c377d11 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50654aa78257260bec49426d84d51fd2 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a50654aa78257260bec49426d84d51fd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a50654aa78257260bec49426d84d51fd2">hidden_size</a></td></tr>
+<tr class="separator:a50654aa78257260bec49426d84d51fd2 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106f42b8983b3692f2bf53fb4ebfafec inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a106f42b8983b3692f2bf53fb4ebfafec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a106f42b8983b3692f2bf53fb4ebfafec">num_heads</a></td></tr>
+<tr class="separator:a106f42b8983b3692f2bf53fb4ebfafec inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd28a02abd5cb87bccbe03f62c0a32ef inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_abd28a02abd5cb87bccbe03f62c0a32ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#abd28a02abd5cb87bccbe03f62c0a32ef">max_position_embeddings</a></td></tr>
+<tr class="separator:abd28a02abd5cb87bccbe03f62c0a32ef inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7586cfe9b481f9eef2e366c5911335f9 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a7586cfe9b481f9eef2e366c5911335f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a7586cfe9b481f9eef2e366c5911335f9">rope_theta</a></td></tr>
+<tr class="separator:a7586cfe9b481f9eef2e366c5911335f9 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28efd11dc4520e5fc75f76b013526805 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a28efd11dc4520e5fc75f76b013526805"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a28efd11dc4520e5fc75f76b013526805">q_lora_rank</a></td></tr>
+<tr class="separator:a28efd11dc4520e5fc75f76b013526805 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ac896a065b4b2eb72d06bd4f04e7bb inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a38ac896a065b4b2eb72d06bd4f04e7bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a38ac896a065b4b2eb72d06bd4f04e7bb">qk_rope_head_dim</a></td></tr>
+<tr class="separator:a38ac896a065b4b2eb72d06bd4f04e7bb inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539d7500b502ff50d7bbc38edd33a73b inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a539d7500b502ff50d7bbc38edd33a73b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a539d7500b502ff50d7bbc38edd33a73b">kv_lora_rank</a></td></tr>
+<tr class="separator:a539d7500b502ff50d7bbc38edd33a73b inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad36c4bc568470c3e63315c27dbf842 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_afad36c4bc568470c3e63315c27dbf842"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#afad36c4bc568470c3e63315c27dbf842">v_head_dim</a></td></tr>
+<tr class="separator:afad36c4bc568470c3e63315c27dbf842 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af16a31590d1f904d5c3d1ef5ecbd6425 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_af16a31590d1f904d5c3d1ef5ecbd6425"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#af16a31590d1f904d5c3d1ef5ecbd6425">qk_nope_head_dim</a></td></tr>
+<tr class="separator:af16a31590d1f904d5c3d1ef5ecbd6425 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9021aec986b43147703e3f62f78da126 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a9021aec986b43147703e3f62f78da126"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a9021aec986b43147703e3f62f78da126">q_head_dim</a></td></tr>
+<tr class="separator:a9021aec986b43147703e3f62f78da126 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa218d0a1c4085dfd2c671e9bc854c825 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_aa218d0a1c4085dfd2c671e9bc854c825"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#aa218d0a1c4085dfd2c671e9bc854c825">is_causal</a></td></tr>
+<tr class="separator:aa218d0a1c4085dfd2c671e9bc854c825 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac81d4a3c2486393475ff466c10d401df inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_ac81d4a3c2486393475ff466c10d401df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#ac81d4a3c2486393475ff466c10d401df">q_proj</a></td></tr>
+<tr class="separator:ac81d4a3c2486393475ff466c10d401df inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b3cd0ae7aaca036aa15b0cd108c761 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_ae4b3cd0ae7aaca036aa15b0cd108c761"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#ae4b3cd0ae7aaca036aa15b0cd108c761">q_a_proj</a></td></tr>
+<tr class="separator:ae4b3cd0ae7aaca036aa15b0cd108c761 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37dc6c493e38448e95f12007fe3abd5e inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a37dc6c493e38448e95f12007fe3abd5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a37dc6c493e38448e95f12007fe3abd5e">q_a_layernorm</a></td></tr>
+<tr class="separator:a37dc6c493e38448e95f12007fe3abd5e inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02ecb424285128723576b38da574438 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_ab02ecb424285128723576b38da574438"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#ab02ecb424285128723576b38da574438">q_b_proj</a></td></tr>
+<tr class="separator:ab02ecb424285128723576b38da574438 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff10fd45c557e43af334db72bf01d4a0 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_aff10fd45c557e43af334db72bf01d4a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#aff10fd45c557e43af334db72bf01d4a0">kv_a_proj_with_mqa</a></td></tr>
+<tr class="separator:aff10fd45c557e43af334db72bf01d4a0 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8fb461c7671364ae3abade34e0b41a inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a7b8fb461c7671364ae3abade34e0b41a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a7b8fb461c7671364ae3abade34e0b41a">kv_a_layernorm</a></td></tr>
+<tr class="separator:a7b8fb461c7671364ae3abade34e0b41a inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71018a8b18e43fc3eb602feb40f6f27f inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a71018a8b18e43fc3eb602feb40f6f27f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a71018a8b18e43fc3eb602feb40f6f27f">kv_b_proj</a></td></tr>
+<tr class="separator:a71018a8b18e43fc3eb602feb40f6f27f inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca46ab8a8834ac6f78efd4a8ba7e2fa inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a4ca46ab8a8834ac6f78efd4a8ba7e2fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a4ca46ab8a8834ac6f78efd4a8ba7e2fa">o_proj</a></td></tr>
+<tr class="separator:a4ca46ab8a8834ac6f78efd4a8ba7e2fa inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c64003a9864d569a2a21ddf17ef125a inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a9c64003a9864d569a2a21ddf17ef125a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a9c64003a9864d569a2a21ddf17ef125a">softmax_scale</a></td></tr>
+<tr class="separator:a9c64003a9864d569a2a21ddf17ef125a inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1251ce70b3712e5e7daff0f9b44d7297 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a1251ce70b3712e5e7daff0f9b44d7297"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a1251ce70b3712e5e7daff0f9b44d7297">rotary_emb</a></td></tr>
+<tr class="separator:a1251ce70b3712e5e7daff0f9b44d7297 inherit pub_attribs_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6fff8930135ac4423b89be7762c7b384" id="r_a6fff8930135ac4423b89be7762c7b384"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fff8930135ac4423b89be7762c7b384">_flash_attention_forward</a> (self, query_states, key_states, value_states, attention_mask, query_length, dropout=0.0, <a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a9c64003a9864d569a2a21ddf17ef125a">softmax_scale</a>=None)</td></tr>
+<tr class="separator:a6fff8930135ac4423b89be7762c7b384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35949d3bd3ad87dac8be0cebda1f1dd" id="r_af35949d3bd3ad87dac8be0cebda1f1dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af35949d3bd3ad87dac8be0cebda1f1dd">_upad_input</a> (self, query_layer, key_layer, value_layer, attention_mask, query_length)</td></tr>
+<tr class="separator:af35949d3bd3ad87dac8be0cebda1f1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classmodeling__deepseek_1_1DeepseekV3Attention"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classmodeling__deepseek_1_1DeepseekV3Attention')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html">modeling_deepseek.DeepseekV3Attention</a></td></tr>
+<tr class="memitem:af94174b8b0c46789f152137852a0772d inherit pro_methods_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_af94174b8b0c46789f152137852a0772d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#af94174b8b0c46789f152137852a0772d">_init_rope</a> (self)</td></tr>
+<tr class="separator:af94174b8b0c46789f152137852a0772d inherit pro_methods_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0deae3082b58a29cbe17f5761ed7d3f8 inherit pro_methods_classmodeling__deepseek_1_1DeepseekV3Attention" id="r_a0deae3082b58a29cbe17f5761ed7d3f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a0deae3082b58a29cbe17f5761ed7d3f8">_shape</a> (self, torch.Tensor tensor, int seq_len, int bsz)</td></tr>
+<tr class="separator:a0deae3082b58a29cbe17f5761ed7d3f8 inherit pro_methods_classmodeling__deepseek_1_1DeepseekV3Attention"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a38bd7b5da9b61cabffc696b79568cc35" id="r_a38bd7b5da9b61cabffc696b79568cc35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38bd7b5da9b61cabffc696b79568cc35">_flash_attn_uses_top_left_mask</a></td></tr>
+<tr class="separator:a38bd7b5da9b61cabffc696b79568cc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">DeepseekV3 flash attention module. This module inherits from `DeepseekV3Attention` as the weights of the module stays
+untouched. The only required change would be on the forward pass where it needs to correctly call the public API of
+flash attention and deal with padding tokens in case the input contains any of them.
+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a206c4a159e26bc17a1d26b653abf4a73" name="a206c4a159e26bc17a1d26b653abf4a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a206c4a159e26bc17a1d26b653abf4a73">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3FlashAttention2.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">*</td>          <td class="paramname"><span class="paramname"><em>args</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">**</td>          <td class="paramname"><span class="paramname"><em>kwargs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#af98a39d0d876f3b54ff08c7387056498">modeling_deepseek.DeepseekV3Attention</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6fff8930135ac4423b89be7762c7b384" name="a6fff8930135ac4423b89be7762c7b384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fff8930135ac4423b89be7762c7b384">&#9670;&#160;</a></span>_flash_attention_forward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3FlashAttention2._flash_attention_forward </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>query_states</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>key_states</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>value_states</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>attention_mask</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>query_length</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dropout</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>softmax_scale</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Compute the forward pass of Flash Attention with optional padding
+handling.
+
+This function processes the input query, key, and value states to
+compute attention scores. If the input contains padding tokens, it first
+removes the padding, computes the attention scores, and then re-pads the
+output to match the original input shape. The function supports dropout
+and softmax scaling for enhanced performance in attention mechanisms.
+
+Args:
+    query_states (torch.Tensor): Input query states to be passed to Flash Attention API.
+    key_states (torch.Tensor): Input key states to be passed to Flash Attention API.
+    value_states (torch.Tensor): Input value states to be passed to Flash Attention API.
+    attention_mask (torch.Tensor): The padding mask - corresponds to a tensor of size `(batch_size,
+        seq_len)` where 0 stands for
+        the position of padding tokens and 1 for the position of non-padding
+        tokens.
+    dropout (int?): Attention dropout. Defaults to 0.0.
+    softmax_scale (float?): The scaling of QK^T before applying softmax. Defaults to 1 /
+        sqrt(head_dim).
+
+Returns:
+    torch.Tensor: The computed attention output after processing the input states.
+</pre> 
+</div>
+</div>
+<a id="af35949d3bd3ad87dac8be0cebda1f1dd" name="af35949d3bd3ad87dac8be0cebda1f1dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35949d3bd3ad87dac8be0cebda1f1dd">&#9670;&#160;</a></span>_upad_input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3FlashAttention2._upad_input </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>query_layer</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>key_layer</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>value_layer</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>attention_mask</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>query_length</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Unpad input layers for attention mechanism.
+
+This function processes the input layers (query, key, and value) by
+removing padding based on the provided attention mask. It reshapes the
+layers and adjusts the indices and sequence lengths accordingly. The
+function handles different cases for the query length, ensuring that the
+output layers are correctly aligned for further processing in the
+attention mechanism.
+
+Args:
+    query_layer (torch.Tensor): The query layer tensor of shape
+        (batch_size, num_heads, query_length, head_dim).
+    key_layer (torch.Tensor): The key layer tensor of shape
+        (batch_size, num_heads, kv_seq_len, head_dim).
+    value_layer (torch.Tensor): The value layer tensor of shape
+        (batch_size, num_heads, kv_seq_len, head_dim).
+    attention_mask (torch.Tensor): The attention mask tensor used to
+        determine which elements to unpad.
+    query_length (int): The length of the query sequence.
+
+Returns:
+    tuple: A tuple containing:
+        - query_layer (torch.Tensor): The processed query layer.
+        - key_layer (torch.Tensor): The processed key layer.
+        - value_layer (torch.Tensor): The processed value layer.
+        - indices_q (torch.Tensor): Indices for the query layer.
+        - cu_seqlens (tuple): A tuple containing cumulative sequence lengths
+        for query and key layers.
+        - max_seqlen_in_batch (tuple): A tuple containing the maximum
+        sequence lengths in the batch for query and key layers.
+</pre> 
+</div>
+</div>
+<a id="a2b99380feb66ac755ca513ced0472aea" name="a2b99380feb66ac755ca513ced0472aea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b99380feb66ac755ca513ced0472aea">&#9670;&#160;</a></span>forward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Tuple[torch.Tensor, Optional[torch.Tensor], Optional[Tuple[torch.Tensor]]] modeling_deepseek.DeepseekV3FlashAttention2.forward </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">torch.Tensor</td>          <td class="paramname"><span class="paramname"><em>hidden_states</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[torch.LongTensor] </td>          <td class="paramname"><span class="paramname"><em>attention_mask</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[torch.LongTensor] </td>          <td class="paramname"><span class="paramname"><em>position_ids</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[Cache] </td>          <td class="paramname"><span class="paramname"><em>past_key_value</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool </td>          <td class="paramname"><span class="paramname"><em>output_attentions</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool </td>          <td class="paramname"><span class="paramname"><em>use_cache</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">**</td>          <td class="paramname"><span class="paramname"><em>kwargs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Perform the forward pass of the attention mechanism.
+
+This function computes the attention output based on the provided hidden
+states and optional parameters. It handles the projection of queries,
+keys, and values, applies rotary positional embeddings, and performs the
+attention calculation using Flash Attention. The function also manages
+the input data types and can utilize cached key-value pairs for
+efficiency.
+
+Args:
+    hidden_states (torch.Tensor): The input tensor containing hidden states.
+    attention_mask (Optional[torch.LongTensor]?): A mask to avoid attending to certain positions. Defaults to None.
+    position_ids (Optional[torch.LongTensor]?): Position IDs for the input sequence. Defaults to None.
+    past_key_value (Optional[Cache]?): Cached key-value pairs from previous computations. Defaults to None.
+    output_attentions (bool?): Whether to return attention weights. Defaults to False.
+    use_cache (bool?): Whether to use cached key-value pairs. Defaults to False.
+    **kwargs: Additional keyword arguments, including deprecated `padding_mask`.
+
+Returns:
+    Tuple[torch.Tensor, Optional[torch.Tensor], Optional[Tuple[torch.Tensor]]]: A tuple containing the attention output, attention weights (if
+        requested),
+        and updated cached key-value pairs.
+</pre> 
+<p>Reimplemented from <a class="el" href="classmodeling__deepseek_1_1DeepseekV3Attention.html#a1c0152e78a4d68499bc73ba94f63de6a">modeling_deepseek.DeepseekV3Attention</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a38bd7b5da9b61cabffc696b79568cc35" name="a38bd7b5da9b61cabffc696b79568cc35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38bd7b5da9b61cabffc696b79568cc35">&#9670;&#160;</a></span>_flash_attn_uses_top_left_mask</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3FlashAttention2._flash_attn_uses_top_left_mask</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abaca9a82eff189a07de13ace872c840f" name="abaca9a82eff189a07de13ace872c840f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaca9a82eff189a07de13ace872c840f">&#9670;&#160;</a></span>config</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3FlashAttention2.config</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f0bd7faa6641c6cf187f3f19fb23ad1" name="a6f0bd7faa6641c6cf187f3f19fb23ad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f0bd7faa6641c6cf187f3f19fb23ad1">&#9670;&#160;</a></span>kv_lora_rank</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3FlashAttention2.kv_lora_rank</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e7d72c513cb9bf73f9c325206f797d8" name="a3e7d72c513cb9bf73f9c325206f797d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7d72c513cb9bf73f9c325206f797d8">&#9670;&#160;</a></span>layer_idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3FlashAttention2.layer_idx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac3d7b7bbdfc37a526a6d4dd239a1b10" name="aac3d7b7bbdfc37a526a6d4dd239a1b10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac3d7b7bbdfc37a526a6d4dd239a1b10">&#9670;&#160;</a></span>num_heads</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3FlashAttention2.num_heads</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a386d163029586f73f88fc97b29742ce9" name="a386d163029586f73f88fc97b29742ce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a386d163029586f73f88fc97b29742ce9">&#9670;&#160;</a></span>qk_nope_head_dim</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3FlashAttention2.qk_nope_head_dim</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04bc6b4d5023bbcd82290a4341ff63db" name="a04bc6b4d5023bbcd82290a4341ff63db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04bc6b4d5023bbcd82290a4341ff63db">&#9670;&#160;</a></span>v_head_dim</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3FlashAttention2.v_head_dim</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/<a class="el" href="modeling__deepseek_8py.html">modeling_deepseek.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemodeling__deepseek.html">modeling_deepseek</a></li><li class="navelem"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3FlashAttention2.html">DeepseekV3FlashAttention2</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

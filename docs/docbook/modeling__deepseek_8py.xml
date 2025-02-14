@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_modeling__deepseek_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3RMSNorm">modeling_deepseek.DeepseekV3RMSNorm</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding">modeling_deepseek.DeepseekV3RotaryEmbedding</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding">modeling_deepseek.DeepseekV3LinearScalingRotaryEmbedding</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding">modeling_deepseek.DeepseekV3DynamicNTKScalingRotaryEmbedding</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding">modeling_deepseek.DeepseekV3YarnRotaryEmbedding</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3MLP">modeling_deepseek.DeepseekV3MLP</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1MoEGate">modeling_deepseek.MoEGate</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3MoE">modeling_deepseek.DeepseekV3MoE</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention">modeling_deepseek.DeepseekV3Attention</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2">modeling_deepseek.DeepseekV3FlashAttention2</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer">modeling_deepseek.DeepseekV3DecoderLayer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel">modeling_deepseek.DeepseekV3PreTrainedModel</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3Model">modeling_deepseek.DeepseekV3Model</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM">modeling_deepseek.DeepseekV3ForCausalLM</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification">modeling_deepseek.DeepseekV3ForSequenceClassification</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacemodeling__deepseek">modeling_deepseek</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1aff225c90cb4b2622f8872d0c3f584b3d">modeling_deepseek._get_unpad_data</link> (attention_mask)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1a5773fca3051b7ea373ce0a49be2ea763">modeling_deepseek.yarn_find_correction_dim</link> (num_rotations, dim, base=10000, max_position_embeddings=2048)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1ab17059a7c13afd5df5eda1a07fe7e6b7">modeling_deepseek.yarn_find_correction_range</link> (low_rot, high_rot, dim, base=10000, max_position_embeddings=2048)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1a34b414bdb0bddfa5b31edbc45c4a85de">modeling_deepseek.yarn_get_mscale</link> (scale=1, mscale=1)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1a241d0772b349f4669077765b46345cdf">modeling_deepseek.yarn_linear_ramp_mask</link> (min, max, dim)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1ac3015cd18af85cbf60800ee0a8091b87">modeling_deepseek.rotate_half</link> (x)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1a1a750b896c05148a865beae617cc3153">modeling_deepseek.apply_rotary_pos_emb</link> (q, k, cos, sin, position_ids, unsqueeze_dim=1)</para>
+</listitem>
+            <listitem><para>torch.Tensor <link linkend="_namespacemodeling__deepseek_1a5bf7ad188a9dfd9846300c6e3708cd1a">modeling_deepseek.repeat_kv</link> (torch.Tensor hidden_states, int n_rep)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1a8d9baef5b34c8ef4b2f1ea6334ba2266">modeling_deepseek._prepare_4d_causal_attention_mask</link> = torch.fx.wrap(_prepare_4d_causal_attention_mask)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1ae57b9b10039f9c6cc3805df718ae3968">modeling_deepseek.logger</link> = logging.get_logger(__name__)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacemodeling__deepseek_1a881e5dbefaf2df66dcee12dbd1e82010">modeling_deepseek._CONFIG_FOR_DOC</link> = &quot;DeepseekV3Config&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_namespacemodeling__deepseek_1ab4fe0f13f22eb77598df89bc23c86276">modeling_deepseek.ATTENTION_CLASSES</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacemodeling__deepseek_1ac35047c78f8be4b60c37f16178f47dbc">modeling_deepseek.DeepseekV3_START_DOCSTRING</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacemodeling__deepseek_1a0da3ab896abddeea5125328ccd7ba754">modeling_deepseek.DeepseekV3_INPUTS_DOCSTRING</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>
