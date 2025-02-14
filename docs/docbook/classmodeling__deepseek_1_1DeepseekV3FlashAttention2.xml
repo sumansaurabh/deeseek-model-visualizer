@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2" xml:lang="en-US">
+<title>modeling_deepseek.DeepseekV3FlashAttention2 Class Reference</title>
+<indexterm><primary>modeling_deepseek.DeepseekV3FlashAttention2</primary></indexterm>
+Inheritance diagram for modeling_deepseek.DeepseekV3FlashAttention2:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3FlashAttention2__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for modeling_deepseek.DeepseekV3FlashAttention2:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3FlashAttention2__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a206c4a159e26bc17a1d26b653abf4a73">__init__</link> (self, *args, **kwargs)</para>
+</listitem>
+            <listitem><para>Tuple[torch.Tensor, Optional[torch.Tensor], Optional[Tuple[torch.Tensor]]] <link linkend="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a2b99380feb66ac755ca513ced0472aea">forward</link> (self, torch.Tensor hidden_states, Optional[torch.LongTensor] attention_mask=None, Optional[torch.LongTensor] position_ids=None, Optional[Cache] past_key_value=None, bool output_attentions=False, bool use_cache=False, **kwargs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a386d163029586f73f88fc97b29742ce9">qk_nope_head_dim</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a6f0bd7faa6641c6cf187f3f19fb23ad1">kv_lora_rank</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1aac3d7b7bbdfc37a526a6d4dd239a1b10">num_heads</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a04bc6b4d5023bbcd82290a4341ff63db">v_head_dim</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a3e7d72c513cb9bf73f9c325206f797d8">layer_idx</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1abaca9a82eff189a07de13ace872c840f">config</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention">modeling_deepseek.DeepseekV3Attention</link>        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a1c8144674d02a5016d53ce346a834635">config</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1acb98b03c694a7a30e512e64f162022c0">layer_idx</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a23c871a2bfab6ae4d668f5f11c377d11">attention_dropout</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a50654aa78257260bec49426d84d51fd2">hidden_size</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a106f42b8983b3692f2bf53fb4ebfafec">num_heads</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1abd28a02abd5cb87bccbe03f62c0a32ef">max_position_embeddings</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a7586cfe9b481f9eef2e366c5911335f9">rope_theta</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a28efd11dc4520e5fc75f76b013526805">q_lora_rank</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a38ac896a065b4b2eb72d06bd4f04e7bb">qk_rope_head_dim</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a539d7500b502ff50d7bbc38edd33a73b">kv_lora_rank</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1afad36c4bc568470c3e63315c27dbf842">v_head_dim</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1af16a31590d1f904d5c3d1ef5ecbd6425">qk_nope_head_dim</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a9021aec986b43147703e3f62f78da126">q_head_dim</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1aa218d0a1c4085dfd2c671e9bc854c825">is_causal</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1ac81d4a3c2486393475ff466c10d401df">q_proj</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1ae4b3cd0ae7aaca036aa15b0cd108c761">q_a_proj</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a37dc6c493e38448e95f12007fe3abd5e">q_a_layernorm</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1ab02ecb424285128723576b38da574438">q_b_proj</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1aff10fd45c557e43af334db72bf01d4a0">kv_a_proj_with_mqa</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a7b8fb461c7671364ae3abade34e0b41a">kv_a_layernorm</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a71018a8b18e43fc3eb602feb40f6f27f">kv_b_proj</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a4ca46ab8a8834ac6f78efd4a8ba7e2fa">o_proj</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a9c64003a9864d569a2a21ddf17ef125a">softmax_scale</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a1251ce70b3712e5e7daff0f9b44d7297">rotary_emb</link></para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a6fff8930135ac4423b89be7762c7b384">_flash_attention_forward</link> (self, query_states, key_states, value_states, attention_mask, query_length, dropout=0.0, <link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a9c64003a9864d569a2a21ddf17ef125a">softmax_scale</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1af35949d3bd3ad87dac8be0cebda1f1dd">_upad_input</link> (self, query_layer, key_layer, value_layer, attention_mask, query_length)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Member Functions inherited from <link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention">modeling_deepseek.DeepseekV3Attention</link>        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1af94174b8b0c46789f152137852a0772d">_init_rope</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a0deae3082b58a29cbe17f5761ed7d3f8">_shape</link> (self, torch.Tensor tensor, int seq_len, int bsz)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a38bd7b5da9b61cabffc696b79568cc35">_flash_attn_uses_top_left_mask</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>DeepseekV3 flash attention module. This module inherits from `DeepseekV3Attention` as the weights of the module stays
+untouched. The only required change would be on the forward pass where it needs to correctly call the public API of
+flash attention and deal with padding tokens in case the input contains any of them.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a206c4a159e26bc17a1d26b653abf4a73"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>modeling_deepseek.DeepseekV3FlashAttention2</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3FlashAttention2</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3FlashAttention2.__init__ ( self, * args, ** kwargs)</computeroutput></para><para>
+Reimplemented from <link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1af98a39d0d876f3b54ff08c7387056498">modeling_deepseek.DeepseekV3Attention</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a6fff8930135ac4423b89be7762c7b384"/><section>
+    <title>_flash_attention_forward()</title>
+<indexterm><primary>_flash_attention_forward</primary><secondary>modeling_deepseek.DeepseekV3FlashAttention2</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3FlashAttention2</primary><secondary>_flash_attention_forward</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3FlashAttention2._flash_attention_forward ( self,  query_states,  key_states,  value_states,  attention_mask,  query_length,  dropout = <computeroutput>0.0</computeroutput>
+,  softmax_scale = <computeroutput>None</computeroutput>
+)<computeroutput>[protected]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Calls the forward method of Flash Attention - if the input hidden states contain at least one padding token
+first unpad the input, then computes the attention scores and pad the final attention scores.
+Args:
+    query_states (`torch.Tensor`):
+        Input query states to be passed to Flash Attention API
+    key_states (`torch.Tensor`):
+        Input key states to be passed to Flash Attention API
+    value_states (`torch.Tensor`):
+        Input value states to be passed to Flash Attention API
+    attention_mask (`torch.Tensor`):
+        The padding mask - corresponds to a tensor of size `(batch_size, seq_len)` where 0 stands for the
+        position of padding tokens and 1 for the position of non-padding tokens.
+    dropout (`int`, *optional*):
+        Attention dropout
+    softmax_scale (`float`, *optional*):
+        The scaling of QK^T before applying softmax. Default to 1 / sqrt(head_dim)
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1af35949d3bd3ad87dac8be0cebda1f1dd"/><section>
+    <title>_upad_input()</title>
+<indexterm><primary>_upad_input</primary><secondary>modeling_deepseek.DeepseekV3FlashAttention2</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3FlashAttention2</primary><secondary>_upad_input</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3FlashAttention2._upad_input ( self,  query_layer,  key_layer,  value_layer,  attention_mask,  query_length)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a2b99380feb66ac755ca513ced0472aea"/><section>
+    <title>forward()</title>
+<indexterm><primary>forward</primary><secondary>modeling_deepseek.DeepseekV3FlashAttention2</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3FlashAttention2</primary><secondary>forward</secondary></indexterm>
+<para><computeroutput> Tuple[torch.Tensor, Optional[torch.Tensor], Optional[Tuple[torch.Tensor]]] modeling_deepseek.DeepseekV3FlashAttention2.forward ( self, torch.Tensor hidden_states, Optional[torch.LongTensor]  attention_mask = <computeroutput>None</computeroutput>
+, Optional[torch.LongTensor]  position_ids = <computeroutput>None</computeroutput>
+, Optional[Cache]  past_key_value = <computeroutput>None</computeroutput>
+, bool  output_attentions = <computeroutput>False</computeroutput>
+, bool  use_cache = <computeroutput>False</computeroutput>
+, ** kwargs)</computeroutput></para><para>
+Reimplemented from <link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention_1a1c0152e78a4d68499bc73ba94f63de6a">modeling_deepseek.DeepseekV3Attention</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a38bd7b5da9b61cabffc696b79568cc35"/><section>
+    <title>_flash_attn_uses_top_left_mask</title>
+<indexterm><primary>_flash_attn_uses_top_left_mask</primary><secondary>modeling_deepseek.DeepseekV3FlashAttention2</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3FlashAttention2</primary><secondary>_flash_attn_uses_top_left_mask</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3FlashAttention2._flash_attn_uses_top_left_mask<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1abaca9a82eff189a07de13ace872c840f"/><section>
+    <title>config</title>
+<indexterm><primary>config</primary><secondary>modeling_deepseek.DeepseekV3FlashAttention2</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3FlashAttention2</primary><secondary>config</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3FlashAttention2.config</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a6f0bd7faa6641c6cf187f3f19fb23ad1"/><section>
+    <title>kv_lora_rank</title>
+<indexterm><primary>kv_lora_rank</primary><secondary>modeling_deepseek.DeepseekV3FlashAttention2</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3FlashAttention2</primary><secondary>kv_lora_rank</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3FlashAttention2.kv_lora_rank</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a3e7d72c513cb9bf73f9c325206f797d8"/><section>
+    <title>layer_idx</title>
+<indexterm><primary>layer_idx</primary><secondary>modeling_deepseek.DeepseekV3FlashAttention2</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3FlashAttention2</primary><secondary>layer_idx</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3FlashAttention2.layer_idx</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1aac3d7b7bbdfc37a526a6d4dd239a1b10"/><section>
+    <title>num_heads</title>
+<indexterm><primary>num_heads</primary><secondary>modeling_deepseek.DeepseekV3FlashAttention2</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3FlashAttention2</primary><secondary>num_heads</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3FlashAttention2.num_heads</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a386d163029586f73f88fc97b29742ce9"/><section>
+    <title>qk_nope_head_dim</title>
+<indexterm><primary>qk_nope_head_dim</primary><secondary>modeling_deepseek.DeepseekV3FlashAttention2</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3FlashAttention2</primary><secondary>qk_nope_head_dim</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3FlashAttention2.qk_nope_head_dim</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a04bc6b4d5023bbcd82290a4341ff63db"/><section>
+    <title>v_head_dim</title>
+<indexterm><primary>v_head_dim</primary><secondary>modeling_deepseek.DeepseekV3FlashAttention2</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3FlashAttention2</primary><secondary>v_head_dim</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3FlashAttention2.v_head_dim</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/<link linkend="_modeling__deepseek_8py">modeling_deepseek.py</link></section>
+</section>

@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classmodeling__deepseek_1_1DeepseekV3RMSNorm" kind="class" language="Python" prot="public">
+    <compoundname>modeling_deepseek::DeepseekV3RMSNorm</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">nn.Module</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1aaa589372f55dbb8c3ebc78a3f9ea590f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3RMSNorm::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3RMSNorm.weight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="160" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="160" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1a2bb202d26033b0c66c354225063f05da" compoundref="modeling__deepseek_8py" startline="163" endline="170">modeling_deepseek.DeepseekV3RMSNorm.forward</referencedby>
+        <referencedby refid="classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4" compoundref="modeling__deepseek_8py" startline="482" endline="534">modeling_deepseek.MoEGate.forward</referencedby>
+        <referencedby refid="classmodeling__deepseek_1_1MoEGate_1a08b5f10d1d2dcd7922399d226056e1be" compoundref="modeling__deepseek_8py" startline="477" endline="481">modeling_deepseek.MoEGate.reset_parameters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1a0f2b51b768f967bd503eb17b34a55d26" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3RMSNorm::variance_epsilon</definition>
+        <argsstring></argsstring>
+        <name>variance_epsilon</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3RMSNorm.variance_epsilon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="161" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="161" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1a2bb202d26033b0c66c354225063f05da" compoundref="modeling__deepseek_8py" startline="163" endline="170">modeling_deepseek.DeepseekV3RMSNorm.forward</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1af2508deb9797766a4044f127e7726f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3RMSNorm.__init__</definition>
+        <argsstring>(self, hidden_size, eps=1e-6)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3RMSNorm.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>hidden_size</type>
+          <defname>hidden_size</defname>
+        </param>
+        <param>
+          <type>eps</type>
+          <defname>eps</defname>
+          <defval>1e-6</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>DeepseekV3RMSNorm is equivalent to T5LayerNorm
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="155" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="155" bodyend="162"/>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1af2508deb9797766a4044f127e7726f0f" compoundref="modeling__deepseek_8py" startline="155" endline="162">modeling_deepseek.DeepseekV3RMSNorm.__init__</references>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1af2508deb9797766a4044f127e7726f0f" compoundref="modeling__deepseek_8py" startline="155" endline="162">modeling_deepseek.DeepseekV3RMSNorm.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1a2bb202d26033b0c66c354225063f05da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3RMSNorm.forward</definition>
+        <argsstring>(self, hidden_states)</argsstring>
+        <name>forward</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3RMSNorm.forward</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>hidden_states</type>
+          <defname>hidden_states</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="163" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="163" bodyend="170"/>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1a0f2b51b768f967bd503eb17b34a55d26" compoundref="modeling__deepseek_8py" startline="161">modeling_deepseek.DeepseekV3RMSNorm.variance_epsilon</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1aaa589372f55dbb8c3ebc78a3f9ea590f" compoundref="modeling__deepseek_8py" startline="160">modeling_deepseek.DeepseekV3RMSNorm.weight</references>
+        <references refid="classmodeling__deepseek_1_1MoEGate_1a75b199559cf3835df724f8c1c3485d28" compoundref="modeling__deepseek_8py" startline="468">modeling_deepseek.MoEGate.weight</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>modeling_deepseek.DeepseekV3RMSNorm</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn.Module</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>modeling_deepseek.DeepseekV3RMSNorm</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn.Module</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="154" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="154" bodyend="173"/>
+    <listofallmembers>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1af2508deb9797766a4044f127e7726f0f" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3RMSNorm</scope><name>__init__</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1a2bb202d26033b0c66c354225063f05da" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3RMSNorm</scope><name>forward</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1a0f2b51b768f967bd503eb17b34a55d26" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3RMSNorm</scope><name>variance_epsilon</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1aaa589372f55dbb8c3ebc78a3f9ea590f" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3RMSNorm</scope><name>weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

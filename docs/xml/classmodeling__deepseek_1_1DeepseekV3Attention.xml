@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classmodeling__deepseek_1_1DeepseekV3Attention" kind="class" language="Python" prot="public">
+    <compoundname>modeling_deepseek::DeepseekV3Attention</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">nn.Module</basecompoundref>
+    <derivedcompoundref refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2" prot="public" virt="non-virtual">modeling_deepseek.DeepseekV3FlashAttention2</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a1c8144674d02a5016d53ce346a834635" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="692" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="692" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3MoE_1a17e46f3082bc2c1cd4e74fe2ff2685c7" compoundref="modeling__deepseek_8py" startline="582" endline="593">modeling_deepseek.DeepseekV3MoE.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1acb98b03c694a7a30e512e64f162022c0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::layer_idx</definition>
+        <argsstring></argsstring>
+        <name>layer_idx</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.layer_idx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="693" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a23c871a2bfab6ae4d668f5f11c377d11" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::attention_dropout</definition>
+        <argsstring></argsstring>
+        <name>attention_dropout</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.attention_dropout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="701" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a50654aa78257260bec49426d84d51fd2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::hidden_size</definition>
+        <argsstring></argsstring>
+        <name>hidden_size</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.hidden_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="702" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a106f42b8983b3692f2bf53fb4ebfafec" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::num_heads</definition>
+        <argsstring></argsstring>
+        <name>num_heads</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.num_heads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="703" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="703" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1abd28a02abd5cb87bccbe03f62c0a32ef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::max_position_embeddings</definition>
+        <argsstring></argsstring>
+        <name>max_position_embeddings</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.max_position_embeddings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="705" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="705" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a7586cfe9b481f9eef2e366c5911335f9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::rope_theta</definition>
+        <argsstring></argsstring>
+        <name>rope_theta</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.rope_theta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="706" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="706" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a28efd11dc4520e5fc75f76b013526805" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::q_lora_rank</definition>
+        <argsstring></argsstring>
+        <name>q_lora_rank</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.q_lora_rank</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="707" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a38ac896a065b4b2eb72d06bd4f04e7bb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::qk_rope_head_dim</definition>
+        <argsstring></argsstring>
+        <name>qk_rope_head_dim</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.qk_rope_head_dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="708" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="708" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a539d7500b502ff50d7bbc38edd33a73b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::kv_lora_rank</definition>
+        <argsstring></argsstring>
+        <name>kv_lora_rank</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.kv_lora_rank</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="709" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1afad36c4bc568470c3e63315c27dbf842" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::v_head_dim</definition>
+        <argsstring></argsstring>
+        <name>v_head_dim</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.v_head_dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="710" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1af16a31590d1f904d5c3d1ef5ecbd6425" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::qk_nope_head_dim</definition>
+        <argsstring></argsstring>
+        <name>qk_nope_head_dim</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.qk_nope_head_dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="711" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a9021aec986b43147703e3f62f78da126" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::q_head_dim</definition>
+        <argsstring></argsstring>
+        <name>q_head_dim</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.q_head_dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="712" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="712" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1aa218d0a1c4085dfd2c671e9bc854c825" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::is_causal</definition>
+        <argsstring></argsstring>
+        <name>is_causal</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.is_causal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="714" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="714" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1ac81d4a3c2486393475ff466c10d401df" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::q_proj</definition>
+        <argsstring></argsstring>
+        <name>q_proj</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.q_proj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="717" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="717" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1ae4b3cd0ae7aaca036aa15b0cd108c761" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::q_a_proj</definition>
+        <argsstring></argsstring>
+        <name>q_a_proj</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.q_a_proj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="721" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="721" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a37dc6c493e38448e95f12007fe3abd5e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::q_a_layernorm</definition>
+        <argsstring></argsstring>
+        <name>q_a_layernorm</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.q_a_layernorm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="724" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="724" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1ab02ecb424285128723576b38da574438" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::q_b_proj</definition>
+        <argsstring></argsstring>
+        <name>q_b_proj</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.q_b_proj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="725" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="725" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1aff10fd45c557e43af334db72bf01d4a0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::kv_a_proj_with_mqa</definition>
+        <argsstring></argsstring>
+        <name>kv_a_proj_with_mqa</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.kv_a_proj_with_mqa</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="729" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="729" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a7b8fb461c7671364ae3abade34e0b41a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::kv_a_layernorm</definition>
+        <argsstring></argsstring>
+        <name>kv_a_layernorm</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.kv_a_layernorm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="734" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a71018a8b18e43fc3eb602feb40f6f27f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::kv_b_proj</definition>
+        <argsstring></argsstring>
+        <name>kv_b_proj</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.kv_b_proj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="735" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a4ca46ab8a8834ac6f78efd4a8ba7e2fa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::o_proj</definition>
+        <argsstring></argsstring>
+        <name>o_proj</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.o_proj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="742" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="742" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a9c64003a9864d569a2a21ddf17ef125a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::softmax_scale</definition>
+        <argsstring></argsstring>
+        <name>softmax_scale</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.softmax_scale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="749" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="749" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a1251ce70b3712e5e7daff0f9b44d7297" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention::rotary_emb</definition>
+        <argsstring></argsstring>
+        <name>rotary_emb</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.rotary_emb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="759" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="759" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3Attention_1af98a39d0d876f3b54ff08c7387056498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention.__init__</definition>
+        <argsstring>(self, DeepseekV3Config config, Optional[int] layer_idx=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.__init__</qualifiedname>
+        <reimplementedby refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a206c4a159e26bc17a1d26b653abf4a73">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>DeepseekV3Config</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>layer_idx</declname>
+          <array>[int]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="690" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="690" bodyend="756"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a1c0152e78a4d68499bc73ba94f63de6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[torch.Tensor, Optional[torch.Tensor], Optional[Tuple[torch.Tensor]]]</type>
+        <definition> Tuple[torch.Tensor, Optional[torch.Tensor], Optional[Tuple[torch.Tensor]]] modeling_deepseek.DeepseekV3Attention.forward</definition>
+        <argsstring>(self, torch.Tensor hidden_states, Optional[torch.Tensor] attention_mask=None, Optional[torch.LongTensor] position_ids=None, Optional[Cache] past_key_value=None, bool output_attentions=False, bool use_cache=False, **kwargs)</argsstring>
+        <name>forward</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention.forward</qualifiedname>
+        <reimplementedby refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2_1a2b99380feb66ac755ca513ced0472aea">forward</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>torch.Tensor</type>
+          <declname>hidden_states</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>attention_mask</declname>
+          <array>[torch.Tensor]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>position_ids</declname>
+          <array>[torch.LongTensor]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>past_key_value</declname>
+          <array>[Cache]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>output_attentions</declname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_cache</declname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="810" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="819" bodyend="919"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3Attention_1af94174b8b0c46789f152137852a0772d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention._init_rope</definition>
+        <argsstring>(self)</argsstring>
+        <name>_init_rope</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention._init_rope</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="757" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="757" bodyend="802"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3Attention_1a0deae3082b58a29cbe17f5761ed7d3f8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3Attention._shape</definition>
+        <argsstring>(self, torch.Tensor tensor, int seq_len, int bsz)</argsstring>
+        <name>_shape</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3Attention._shape</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>torch.Tensor</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>seq_len</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bsz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="803" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="803" bodyend="809"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Multi-headed attention from &apos;Attention Is All You Need&apos; paper</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>modeling_deepseek.DeepseekV3Attention</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3Attention"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>modeling_deepseek.DeepseekV3FlashAttention2</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3FlashAttention2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn::Module</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>modeling_deepseek.DeepseekV3Attention</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3Attention"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn::Module</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="687" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="687" bodyend="919"/>
+    <listofallmembers>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1af98a39d0d876f3b54ff08c7387056498" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>__init__</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1af94174b8b0c46789f152137852a0772d" prot="protected" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>_init_rope</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a0deae3082b58a29cbe17f5761ed7d3f8" prot="protected" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>_shape</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a23c871a2bfab6ae4d668f5f11c377d11" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>attention_dropout</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a1c8144674d02a5016d53ce346a834635" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>config</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a1c0152e78a4d68499bc73ba94f63de6a" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>forward</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a50654aa78257260bec49426d84d51fd2" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>hidden_size</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1aa218d0a1c4085dfd2c671e9bc854c825" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>is_causal</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a7b8fb461c7671364ae3abade34e0b41a" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>kv_a_layernorm</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1aff10fd45c557e43af334db72bf01d4a0" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>kv_a_proj_with_mqa</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a71018a8b18e43fc3eb602feb40f6f27f" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>kv_b_proj</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a539d7500b502ff50d7bbc38edd33a73b" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>kv_lora_rank</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1acb98b03c694a7a30e512e64f162022c0" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>layer_idx</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1abd28a02abd5cb87bccbe03f62c0a32ef" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>max_position_embeddings</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a106f42b8983b3692f2bf53fb4ebfafec" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>num_heads</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a4ca46ab8a8834ac6f78efd4a8ba7e2fa" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>o_proj</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a37dc6c493e38448e95f12007fe3abd5e" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>q_a_layernorm</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1ae4b3cd0ae7aaca036aa15b0cd108c761" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>q_a_proj</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1ab02ecb424285128723576b38da574438" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>q_b_proj</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a9021aec986b43147703e3f62f78da126" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>q_head_dim</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a28efd11dc4520e5fc75f76b013526805" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>q_lora_rank</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1ac81d4a3c2486393475ff466c10d401df" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>q_proj</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1af16a31590d1f904d5c3d1ef5ecbd6425" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>qk_nope_head_dim</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a38ac896a065b4b2eb72d06bd4f04e7bb" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>qk_rope_head_dim</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a7586cfe9b481f9eef2e366c5911335f9" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>rope_theta</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a1251ce70b3712e5e7daff0f9b44d7297" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>rotary_emb</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1a9c64003a9864d569a2a21ddf17ef125a" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>softmax_scale</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3Attention_1afad36c4bc568470c3e63315c27dbf842" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3Attention</scope><name>v_head_dim</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
