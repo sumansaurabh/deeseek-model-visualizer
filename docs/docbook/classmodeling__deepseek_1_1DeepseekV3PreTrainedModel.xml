@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel" xml:lang="en-US">
+<title>modeling_deepseek.DeepseekV3PreTrainedModel Class Reference</title>
+<indexterm><primary>modeling_deepseek.DeepseekV3PreTrainedModel</primary></indexterm>
+Inheritance diagram for modeling_deepseek.DeepseekV3PreTrainedModel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for modeling_deepseek.DeepseekV3PreTrainedModel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a7d474bb0e4ceee261dbc5408308d19e5">config_class</link> = DeepseekV3Config</para>
+</listitem>
+            <listitem><para>str <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae91340ec2f86af3258cd154b9b9c37f7">base_model_prefix</link> = &quot;model&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a26ecbd5751fe120046a3ac63de76a119">supports_gradient_checkpointing</link> = True</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae39464b603daeade9cd604bbcb8a786a">_init_weights</link> (self, module)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a6dde6aaabc5e04752f0051ba1fe1d00d">_no_split_modules</link> = [&quot;DeepseekV3DecoderLayer&quot;]</para>
+</listitem>
+            <listitem><para>str <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a47f21952aca9700e377488241fd4c7b1">_skip_keys_device_placement</link> = &quot;past_key_values&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a5d49dfaef213615f338caaf8006e6961">_supports_flash_attn_2</link> = True</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a419ff99c5c6047a575432bbab7dbac66">_supports_cache_class</link> = True</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae39464b603daeade9cd604bbcb8a786a"/><section>
+    <title>_init_weights()</title>
+<indexterm><primary>_init_weights</primary><secondary>modeling_deepseek.DeepseekV3PreTrainedModel</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3PreTrainedModel</primary><secondary>_init_weights</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3PreTrainedModel._init_weights ( self,  module)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a6dde6aaabc5e04752f0051ba1fe1d00d"/><section>
+    <title>_no_split_modules</title>
+<indexterm><primary>_no_split_modules</primary><secondary>modeling_deepseek.DeepseekV3PreTrainedModel</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3PreTrainedModel</primary><secondary>_no_split_modules</secondary></indexterm>
+<para><computeroutput>list modeling_deepseek.DeepseekV3PreTrainedModel._no_split_modules = [&quot;DeepseekV3DecoderLayer&quot;]<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a47f21952aca9700e377488241fd4c7b1"/><section>
+    <title>_skip_keys_device_placement</title>
+<indexterm><primary>_skip_keys_device_placement</primary><secondary>modeling_deepseek.DeepseekV3PreTrainedModel</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3PreTrainedModel</primary><secondary>_skip_keys_device_placement</secondary></indexterm>
+<para><computeroutput>str modeling_deepseek.DeepseekV3PreTrainedModel._skip_keys_device_placement = &quot;past_key_values&quot;<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a419ff99c5c6047a575432bbab7dbac66"/><section>
+    <title>_supports_cache_class</title>
+<indexterm><primary>_supports_cache_class</primary><secondary>modeling_deepseek.DeepseekV3PreTrainedModel</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3PreTrainedModel</primary><secondary>_supports_cache_class</secondary></indexterm>
+<para><computeroutput>bool modeling_deepseek.DeepseekV3PreTrainedModel._supports_cache_class = True<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a5d49dfaef213615f338caaf8006e6961"/><section>
+    <title>_supports_flash_attn_2</title>
+<indexterm><primary>_supports_flash_attn_2</primary><secondary>modeling_deepseek.DeepseekV3PreTrainedModel</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3PreTrainedModel</primary><secondary>_supports_flash_attn_2</secondary></indexterm>
+<para><computeroutput>bool modeling_deepseek.DeepseekV3PreTrainedModel._supports_flash_attn_2 = True<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae91340ec2f86af3258cd154b9b9c37f7"/><section>
+    <title>base_model_prefix</title>
+<indexterm><primary>base_model_prefix</primary><secondary>modeling_deepseek.DeepseekV3PreTrainedModel</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3PreTrainedModel</primary><secondary>base_model_prefix</secondary></indexterm>
+<para><computeroutput>str modeling_deepseek.DeepseekV3PreTrainedModel.base_model_prefix = &quot;model&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a7d474bb0e4ceee261dbc5408308d19e5"/><section>
+    <title>config_class</title>
+<indexterm><primary>config_class</primary><secondary>modeling_deepseek.DeepseekV3PreTrainedModel</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3PreTrainedModel</primary><secondary>config_class</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3PreTrainedModel.config_class = DeepseekV3Config<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a26ecbd5751fe120046a3ac63de76a119"/><section>
+    <title>supports_gradient_checkpointing</title>
+<indexterm><primary>supports_gradient_checkpointing</primary><secondary>modeling_deepseek.DeepseekV3PreTrainedModel</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3PreTrainedModel</primary><secondary>supports_gradient_checkpointing</secondary></indexterm>
+<para><computeroutput>bool modeling_deepseek.DeepseekV3PreTrainedModel.supports_gradient_checkpointing = True<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/<link linkend="_modeling__deepseek_8py">modeling_deepseek.py</link></section>
+</section>

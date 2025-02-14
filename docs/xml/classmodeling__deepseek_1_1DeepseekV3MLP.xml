@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classmodeling__deepseek_1_1DeepseekV3MLP" kind="class" language="Python" prot="public">
+    <compoundname>modeling_deepseek::DeepseekV3MLP</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">nn.Module</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3MLP_1a21b62497b6d89e9367e3bfc2a0cdae23" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3MLP::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3MLP.config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="436" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="436" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3MoE_1a17e46f3082bc2c1cd4e74fe2ff2685c7" compoundref="modeling__deepseek_8py" startline="582" endline="593">modeling_deepseek.DeepseekV3MoE.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3MLP_1ad6ec7ad20f7ad22a1a3b4dfc08c77232" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3MLP::hidden_size</definition>
+        <argsstring></argsstring>
+        <name>hidden_size</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3MLP.hidden_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="437" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3MLP_1ad0dce99a7a4ce56663b7e56dc360c612" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3MLP::intermediate_size</definition>
+        <argsstring></argsstring>
+        <name>intermediate_size</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3MLP.intermediate_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="438" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3MLP_1a04c5b1fca10614d4ec0576a3328ed95a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3MLP::gate_proj</definition>
+        <argsstring></argsstring>
+        <name>gate_proj</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3MLP.gate_proj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="442" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="442" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a2d3ccef3b5a7595610caa94ae8076687" compoundref="modeling__deepseek_8py" startline="447" endline="451">modeling_deepseek.DeepseekV3MLP.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3MLP_1a7f3065c6feff10e2c47e6e4036c4d59d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3MLP::up_proj</definition>
+        <argsstring></argsstring>
+        <name>up_proj</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3MLP.up_proj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="443" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="443" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a2d3ccef3b5a7595610caa94ae8076687" compoundref="modeling__deepseek_8py" startline="447" endline="451">modeling_deepseek.DeepseekV3MLP.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3MLP_1a9f19556d227dc20ec1c038bf1c231702" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3MLP::down_proj</definition>
+        <argsstring></argsstring>
+        <name>down_proj</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3MLP.down_proj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="444" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="444" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a2d3ccef3b5a7595610caa94ae8076687" compoundref="modeling__deepseek_8py" startline="447" endline="451">modeling_deepseek.DeepseekV3MLP.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3MLP_1a6c78de28c06d079513715a8f72571fb8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3MLP::act_fn</definition>
+        <argsstring></argsstring>
+        <name>act_fn</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3MLP.act_fn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="445" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="445" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a2d3ccef3b5a7595610caa94ae8076687" compoundref="modeling__deepseek_8py" startline="447" endline="451">modeling_deepseek.DeepseekV3MLP.forward</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3MLP_1ae9b26577d4b936f5b0385dfa5f4f467d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3MLP.__init__</definition>
+        <argsstring>(self, config, hidden_size=None, intermediate_size=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3MLP.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a21b62497b6d89e9367e3bfc2a0cdae23" kindref="member">config</ref></type>
+          <defname>config</defname>
+        </param>
+        <param>
+          <type><ref refid="classmodeling__deepseek_1_1DeepseekV3MLP_1ad6ec7ad20f7ad22a1a3b4dfc08c77232" kindref="member">hidden_size</ref></type>
+          <defname>hidden_size</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classmodeling__deepseek_1_1DeepseekV3MLP_1ad0dce99a7a4ce56663b7e56dc360c612" kindref="member">intermediate_size</ref></type>
+          <defname>intermediate_size</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="434" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="434" bodyend="446"/>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3MLP_1ae9b26577d4b936f5b0385dfa5f4f467d" compoundref="modeling__deepseek_8py" startline="434" endline="446">modeling_deepseek.DeepseekV3MLP.__init__</references>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3MLP_1ae9b26577d4b936f5b0385dfa5f4f467d" compoundref="modeling__deepseek_8py" startline="434" endline="446">modeling_deepseek.DeepseekV3MLP.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3MLP_1a2d3ccef3b5a7595610caa94ae8076687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3MLP.forward</definition>
+        <argsstring>(self, x)</argsstring>
+        <name>forward</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3MLP.forward</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="447" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="447" bodyend="451"/>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a6c78de28c06d079513715a8f72571fb8" compoundref="modeling__deepseek_8py" startline="445">modeling_deepseek.DeepseekV3MLP.act_fn</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a9f19556d227dc20ec1c038bf1c231702" compoundref="modeling__deepseek_8py" startline="444">modeling_deepseek.DeepseekV3MLP.down_proj</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a04c5b1fca10614d4ec0576a3328ed95a" compoundref="modeling__deepseek_8py" startline="442">modeling_deepseek.DeepseekV3MLP.gate_proj</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a7f3065c6feff10e2c47e6e4036c4d59d" compoundref="modeling__deepseek_8py" startline="443">modeling_deepseek.DeepseekV3MLP.up_proj</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>modeling_deepseek.DeepseekV3MLP</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3MLP"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn.Module</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>modeling_deepseek.DeepseekV3MLP</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3MLP"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn.Module</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="433" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="433" bodyend="451"/>
+    <listofallmembers>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1ae9b26577d4b936f5b0385dfa5f4f467d" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3MLP</scope><name>__init__</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a6c78de28c06d079513715a8f72571fb8" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3MLP</scope><name>act_fn</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a21b62497b6d89e9367e3bfc2a0cdae23" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3MLP</scope><name>config</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a9f19556d227dc20ec1c038bf1c231702" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3MLP</scope><name>down_proj</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a2d3ccef3b5a7595610caa94ae8076687" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3MLP</scope><name>forward</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a04c5b1fca10614d4ec0576a3328ed95a" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3MLP</scope><name>gate_proj</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1ad6ec7ad20f7ad22a1a3b4dfc08c77232" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3MLP</scope><name>hidden_size</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1ad0dce99a7a4ce56663b7e56dc360c612" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3MLP</scope><name>intermediate_size</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3MLP_1a7f3065c6feff10e2c47e6e4036c4d59d" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3MLP</scope><name>up_proj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

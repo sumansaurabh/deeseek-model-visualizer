@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmodeling__deepseek_1_1DeepseekV3Model" xml:lang="en-US">
+<title>modeling_deepseek.DeepseekV3Model Class Reference</title>
+<indexterm><primary>modeling_deepseek.DeepseekV3Model</primary></indexterm>
+Inheritance diagram for modeling_deepseek.DeepseekV3Model:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3Model__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for modeling_deepseek.DeepseekV3Model:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3Model__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Model_1a0185e9c89d2431d6436819d9026272e8">__init__</link> (self, DeepseekV3Config config)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Model_1a520ce2820f7dc3ac6f4ac0c993d4d174">get_input_embeddings</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Model_1a3c509ee0055737fc20efddf9eaef30b9">set_input_embeddings</link> (self, value)</para>
+</listitem>
+            <listitem><para>Union[Tuple, BaseModelOutputWithPast] <link linkend="_classmodeling__deepseek_1_1DeepseekV3Model_1a52079f13dedc7af8e831139b6180b7c1">forward</link> (self, torch.LongTensor input_ids=None, Optional[torch.Tensor] attention_mask=None, Optional[torch.LongTensor] position_ids=None, Optional[List[torch.FloatTensor]] past_key_values=None, Optional[torch.FloatTensor] inputs_embeds=None, Optional[bool] use_cache=None, Optional[bool] output_attentions=None, Optional[bool] output_hidden_states=None, Optional[bool] return_dict=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Model_1abeef639068a6f00f0986c029c30ee089">padding_idx</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Model_1a7706358bbac28fbc7fe2f248721ff686">vocab_size</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Model_1a50d53b622234a098e9cb05bf3eb4b174">embed_tokens</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Model_1ac4ef5e6402248501a75e09fe50fc97d5">layers</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Model_1a543831f9b414c380f6ee9c64bb79bd03">norm</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Model_1ab4d2c150b00d38ba41b62f22259582b3">gradient_checkpointing</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3Model_1afca7caa92c5ca69a6376bbc3aee899bc">_use_flash_attention_2</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Static Public Attributes inherited from <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel">modeling_deepseek.DeepseekV3PreTrainedModel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a7d474bb0e4ceee261dbc5408308d19e5">config_class</link> = DeepseekV3Config</para>
+</listitem>
+            <listitem><para>str <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae91340ec2f86af3258cd154b9b9c37f7">base_model_prefix</link> = &quot;model&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a26ecbd5751fe120046a3ac63de76a119">supports_gradient_checkpointing</link> = True</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Member Functions inherited from <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel">modeling_deepseek.DeepseekV3PreTrainedModel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae39464b603daeade9cd604bbcb8a786a">_init_weights</link> (self, module)</para>
+</listitem>
+        </itemizedlist>
+Static Protected Attributes inherited from <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel">modeling_deepseek.DeepseekV3PreTrainedModel</link>        <itemizedlist>
+            <listitem><para>list <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a6dde6aaabc5e04752f0051ba1fe1d00d">_no_split_modules</link> = [&quot;DeepseekV3DecoderLayer&quot;]</para>
+</listitem>
+            <listitem><para>str <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a47f21952aca9700e377488241fd4c7b1">_skip_keys_device_placement</link> = &quot;past_key_values&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a5d49dfaef213615f338caaf8006e6961">_supports_flash_attn_2</link> = True</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a419ff99c5c6047a575432bbab7dbac66">_supports_cache_class</link> = True</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Transformer decoder consisting of *config.num_hidden_layers* layers. Each layer is a [`DeepseekV3DecoderLayer`]
+Args:
+    config: DeepseekV3Config
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3Model_1a0185e9c89d2431d6436819d9026272e8"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>modeling_deepseek.DeepseekV3Model</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3Model</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3Model.__init__ ( self, DeepseekV3Config config)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3Model_1a52079f13dedc7af8e831139b6180b7c1"/><section>
+    <title>forward()</title>
+<indexterm><primary>forward</primary><secondary>modeling_deepseek.DeepseekV3Model</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3Model</primary><secondary>forward</secondary></indexterm>
+<para><computeroutput> Union[Tuple, BaseModelOutputWithPast] modeling_deepseek.DeepseekV3Model.forward ( self, torch.LongTensor  input_ids = <computeroutput>None</computeroutput>
+, Optional[torch.Tensor]  attention_mask = <computeroutput>None</computeroutput>
+, Optional[torch.LongTensor]  position_ids = <computeroutput>None</computeroutput>
+, Optional[List[torch.FloatTensor]]  past_key_values = <computeroutput>None</computeroutput>
+, Optional[torch.FloatTensor]  inputs_embeds = <computeroutput>None</computeroutput>
+, Optional[bool]  use_cache = <computeroutput>None</computeroutput>
+, Optional[bool]  output_attentions = <computeroutput>None</computeroutput>
+, Optional[bool]  output_hidden_states = <computeroutput>None</computeroutput>
+, Optional[bool]  return_dict = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3Model_1a520ce2820f7dc3ac6f4ac0c993d4d174"/><section>
+    <title>get_input_embeddings()</title>
+<indexterm><primary>get_input_embeddings</primary><secondary>modeling_deepseek.DeepseekV3Model</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3Model</primary><secondary>get_input_embeddings</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3Model.get_input_embeddings ( self)</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3Model_1a3c509ee0055737fc20efddf9eaef30b9"/><section>
+    <title>set_input_embeddings()</title>
+<indexterm><primary>set_input_embeddings</primary><secondary>modeling_deepseek.DeepseekV3Model</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3Model</primary><secondary>set_input_embeddings</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3Model.set_input_embeddings ( self,  value)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3Model_1afca7caa92c5ca69a6376bbc3aee899bc"/><section>
+    <title>_use_flash_attention_2</title>
+<indexterm><primary>_use_flash_attention_2</primary><secondary>modeling_deepseek.DeepseekV3Model</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3Model</primary><secondary>_use_flash_attention_2</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3Model._use_flash_attention_2<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3Model_1a50d53b622234a098e9cb05bf3eb4b174"/><section>
+    <title>embed_tokens</title>
+<indexterm><primary>embed_tokens</primary><secondary>modeling_deepseek.DeepseekV3Model</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3Model</primary><secondary>embed_tokens</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3Model.embed_tokens</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3Model_1ab4d2c150b00d38ba41b62f22259582b3"/><section>
+    <title>gradient_checkpointing</title>
+<indexterm><primary>gradient_checkpointing</primary><secondary>modeling_deepseek.DeepseekV3Model</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3Model</primary><secondary>gradient_checkpointing</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3Model.gradient_checkpointing</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3Model_1ac4ef5e6402248501a75e09fe50fc97d5"/><section>
+    <title>layers</title>
+<indexterm><primary>layers</primary><secondary>modeling_deepseek.DeepseekV3Model</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3Model</primary><secondary>layers</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3Model.layers</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3Model_1a543831f9b414c380f6ee9c64bb79bd03"/><section>
+    <title>norm</title>
+<indexterm><primary>norm</primary><secondary>modeling_deepseek.DeepseekV3Model</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3Model</primary><secondary>norm</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3Model.norm</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3Model_1abeef639068a6f00f0986c029c30ee089"/><section>
+    <title>padding_idx</title>
+<indexterm><primary>padding_idx</primary><secondary>modeling_deepseek.DeepseekV3Model</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3Model</primary><secondary>padding_idx</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3Model.padding_idx</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3Model_1a7706358bbac28fbc7fe2f248721ff686"/><section>
+    <title>vocab_size</title>
+<indexterm><primary>vocab_size</primary><secondary>modeling_deepseek.DeepseekV3Model</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3Model</primary><secondary>vocab_size</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3Model.vocab_size</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/<link linkend="_modeling__deepseek_8py">modeling_deepseek.py</link></section>
+</section>
