@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmodeling__deepseek_1_1MoEGate" xml:lang="en-US">
+<title>modeling_deepseek.MoEGate Class Reference</title>
+<indexterm><primary>modeling_deepseek.MoEGate</primary></indexterm>
+Inheritance diagram for modeling_deepseek.MoEGate:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1MoEGate__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for modeling_deepseek.MoEGate:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1MoEGate__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1ac50ed7ab225f5cff4ae21ddf15de0cd5">__init__</link> (self, <link linkend="_classmodeling__deepseek_1_1MoEGate_1a175a68827b832da6b31df800506cd7cc">config</link>)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classmodeling__deepseek_1_1MoEGate_1a08b5f10d1d2dcd7922399d226056e1be">reset_parameters</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4">forward</link> (self, hidden_states)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1a175a68827b832da6b31df800506cd7cc">config</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1a5fe88e1d4ff6abb14c97196173a34f8e">top_k</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1a4c5d307e8b47dfd7d6302dcdeb0632c3">n_routed_experts</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1afee88d90fd7377e9d5e2e0ca3dd2c05d">routed_scaling_factor</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1a77ec2442dea904601fc1e35f890e1860">scoring_func</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1a9a42f726280fd1bc15330b7f3216e95b">seq_aux</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1afa00ffb1dabc5b300a441e48b241b412">topk_method</link></para>
+
+<para>select top-k experts </para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1ae44ae50f6e7b07c1ee1d265f3935f57c">n_group</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1a420ede75d878914bf57a1a8b0635022b">topk_group</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1a14f1676e0baa38cd3f641c97cb95c694">norm_topk_prob</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1a3aed25f433556ffd76640df5d7093be3">gating_dim</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1a75b199559cf3835df724f8c1c3485d28">weight</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1MoEGate_1a6496432799fc3ed30118819f88722080">e_score_correction_bias</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1ac50ed7ab225f5cff4ae21ddf15de0cd5"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.__init__ ( self,  config)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1MoEGate_ac50ed7ab225f5cff4ae21ddf15de0cd5_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1MoEGate_ac50ed7ab225f5cff4ae21ddf15de0cd5_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4"/><section>
+    <title>forward()</title>
+<indexterm><primary>forward</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>forward</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.forward ( self,  hidden_states)</computeroutput></para>
+<para><literallayout><computeroutput>Forward pass for the gating mechanism in a mixture of experts model.
+
+This method computes the gating scores based on the provided hidden
+states. It reshapes the hidden states and applies a linear
+transformation to obtain logits. Depending on the specified scoring
+function, it calculates the scores using either a sigmoid function or
+raises an error if the scoring function is unsupported. The method then
+selects the top-k experts based on the computed scores and applies a
+normalization step if required. Finally, it returns the indices of the
+top-k experts and their corresponding weights.
+
+Args:
+    hidden_states (torch.Tensor): A tensor of shape (batch_size, sequence_length, hidden_dim)
+        representing the hidden states from the previous layer.
+
+Returns:
+    tuple: A tuple containing:
+        - topk_idx (torch.Tensor): Indices of the selected top-k experts.
+        - topk_weight (torch.Tensor): Weights corresponding to the selected
+        top-k experts.
+
+Raises:
+    NotImplementedError: If an unsupported scoring function or top-k method is specified.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1a08b5f10d1d2dcd7922399d226056e1be"/><section>
+    <title>reset_parameters()</title>
+<indexterm><primary>reset_parameters</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>reset_parameters</secondary></indexterm>
+<para><computeroutput> None modeling_deepseek.MoEGate.reset_parameters ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Reset the parameters of the model&apos;s weight using Kaiming uniform
+initialization.
+
+This function applies Kaiming uniform initialization to the model&apos;s
+weight parameter. Kaiming initialization is designed to keep the
+variance of activations across layers in a neural network stable, which
+can help improve training performance.
+
+Returns:
+    None: This function does not return any value.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1a175a68827b832da6b31df800506cd7cc"/><section>
+    <title>config</title>
+<indexterm><primary>config</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>config</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.config</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1a6496432799fc3ed30118819f88722080"/><section>
+    <title>e_score_correction_bias</title>
+<indexterm><primary>e_score_correction_bias</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>e_score_correction_bias</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.e_score_correction_bias</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1a3aed25f433556ffd76640df5d7093be3"/><section>
+    <title>gating_dim</title>
+<indexterm><primary>gating_dim</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>gating_dim</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.gating_dim</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1ae44ae50f6e7b07c1ee1d265f3935f57c"/><section>
+    <title>n_group</title>
+<indexterm><primary>n_group</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>n_group</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.n_group</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1a4c5d307e8b47dfd7d6302dcdeb0632c3"/><section>
+    <title>n_routed_experts</title>
+<indexterm><primary>n_routed_experts</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>n_routed_experts</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.n_routed_experts</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1a14f1676e0baa38cd3f641c97cb95c694"/><section>
+    <title>norm_topk_prob</title>
+<indexterm><primary>norm_topk_prob</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>norm_topk_prob</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.norm_topk_prob</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1afee88d90fd7377e9d5e2e0ca3dd2c05d"/><section>
+    <title>routed_scaling_factor</title>
+<indexterm><primary>routed_scaling_factor</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>routed_scaling_factor</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.routed_scaling_factor</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1a77ec2442dea904601fc1e35f890e1860"/><section>
+    <title>scoring_func</title>
+<indexterm><primary>scoring_func</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>scoring_func</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.scoring_func</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1a9a42f726280fd1bc15330b7f3216e95b"/><section>
+    <title>seq_aux</title>
+<indexterm><primary>seq_aux</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>seq_aux</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.seq_aux</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1a5fe88e1d4ff6abb14c97196173a34f8e"/><section>
+    <title>top_k</title>
+<indexterm><primary>top_k</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>top_k</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.top_k</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1a420ede75d878914bf57a1a8b0635022b"/><section>
+    <title>topk_group</title>
+<indexterm><primary>topk_group</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>topk_group</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.topk_group</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1afa00ffb1dabc5b300a441e48b241b412"/><section>
+    <title>topk_method</title>
+<indexterm><primary>topk_method</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>topk_method</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.topk_method</computeroutput></para><para>
+
+<para>select top-k experts </para>
+</para>
+</section>
+<anchor xml:id="_classmodeling__deepseek_1_1MoEGate_1a75b199559cf3835df724f8c1c3485d28"/><section>
+    <title>weight</title>
+<indexterm><primary>weight</primary><secondary>modeling_deepseek.MoEGate</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.MoEGate</primary><secondary>weight</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.MoEGate.weight</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/<link linkend="_modeling__deepseek_8py">modeling_deepseek.py</link></section>
+</section>

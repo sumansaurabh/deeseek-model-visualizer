@@ -1,0 +1,642 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>deeseek-model-visualizer: modeling_deepseek.DeepseekV3ForCausalLM Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">deeseek-model-visualizer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classmodeling__deepseek_1_1DeepseekV3ForCausalLM.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
+<a href="classmodeling__deepseek_1_1DeepseekV3ForCausalLM-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">modeling_deepseek.DeepseekV3ForCausalLM Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for modeling_deepseek.DeepseekV3ForCausalLM:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmodeling__deepseek_1_1DeepseekV3ForCausalLM__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for modeling_deepseek.DeepseekV3ForCausalLM:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmodeling__deepseek_1_1DeepseekV3ForCausalLM__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aed4faa6621f4870fd6552fd04b92dc53" id="r_aed4faa6621f4870fd6552fd04b92dc53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed4faa6621f4870fd6552fd04b92dc53">__init__</a> (self, config)</td></tr>
+<tr class="separator:aed4faa6621f4870fd6552fd04b92dc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1878b3d66cfe81b5fbcec20780c9a8a" id="r_ab1878b3d66cfe81b5fbcec20780c9a8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1878b3d66cfe81b5fbcec20780c9a8a">get_input_embeddings</a> (self)</td></tr>
+<tr class="separator:ab1878b3d66cfe81b5fbcec20780c9a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b35f00f1a33c0d79b8b3535422fda6" id="r_af6b35f00f1a33c0d79b8b3535422fda6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6b35f00f1a33c0d79b8b3535422fda6">set_input_embeddings</a> (self, value)</td></tr>
+<tr class="separator:af6b35f00f1a33c0d79b8b3535422fda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d6acbb961f016ac722ce7750e9dee9" id="r_a34d6acbb961f016ac722ce7750e9dee9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34d6acbb961f016ac722ce7750e9dee9">get_output_embeddings</a> (self)</td></tr>
+<tr class="separator:a34d6acbb961f016ac722ce7750e9dee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c13f841d9294cfb47727ac3dc7030b5" id="r_a1c13f841d9294cfb47727ac3dc7030b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c13f841d9294cfb47727ac3dc7030b5">set_output_embeddings</a> (self, new_embeddings)</td></tr>
+<tr class="separator:a1c13f841d9294cfb47727ac3dc7030b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b823f01d922a75f964d72a9d28343f" id="r_a44b823f01d922a75f964d72a9d28343f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44b823f01d922a75f964d72a9d28343f">set_decoder</a> (self, decoder)</td></tr>
+<tr class="separator:a44b823f01d922a75f964d72a9d28343f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac922b83ff8476b87ba63d94d5836c2c5" id="r_ac922b83ff8476b87ba63d94d5836c2c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac922b83ff8476b87ba63d94d5836c2c5">get_decoder</a> (self)</td></tr>
+<tr class="separator:ac922b83ff8476b87ba63d94d5836c2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad418bf03e1ce9c23aa5e3ad6a4bf2672" id="r_ad418bf03e1ce9c23aa5e3ad6a4bf2672"><td class="memItemLeft" align="right" valign="top">Union[Tuple, CausalLMOutputWithPast]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad418bf03e1ce9c23aa5e3ad6a4bf2672">forward</a> (self, torch.LongTensor input_ids=None, Optional[torch.Tensor] attention_mask=None, Optional[torch.LongTensor] position_ids=None, Optional[List[torch.FloatTensor]] past_key_values=None, Optional[torch.FloatTensor] inputs_embeds=None, Optional[torch.LongTensor] labels=None, Optional[bool] use_cache=None, Optional[bool] output_attentions=None, Optional[bool] output_hidden_states=None, Optional[bool] return_dict=None)</td></tr>
+<tr class="separator:ad418bf03e1ce9c23aa5e3ad6a4bf2672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0665c472444548a23e07d2441a57990" id="r_aa0665c472444548a23e07d2441a57990"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0665c472444548a23e07d2441a57990">prepare_inputs_for_generation</a> (self, input_ids, past_key_values=None, attention_mask=None, inputs_embeds=None, **kwargs)</td></tr>
+<tr class="separator:aa0665c472444548a23e07d2441a57990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aad4697749ec5e14181f5180403c62678" id="r_aad4697749ec5e14181f5180403c62678"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad4697749ec5e14181f5180403c62678">model</a></td></tr>
+<tr class="separator:aad4697749ec5e14181f5180403c62678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083b08366f44ab692ef2667058e6fb6f" id="r_a083b08366f44ab692ef2667058e6fb6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a083b08366f44ab692ef2667058e6fb6f">vocab_size</a></td></tr>
+<tr class="separator:a083b08366f44ab692ef2667058e6fb6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be372824ccd084ed5cb22b425f4988c" id="r_a6be372824ccd084ed5cb22b425f4988c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6be372824ccd084ed5cb22b425f4988c">lm_head</a></td></tr>
+<tr class="separator:a6be372824ccd084ed5cb22b425f4988c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:add132503d3e9b761cf4bcfc9b254a1ed" id="r_add132503d3e9b761cf4bcfc9b254a1ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add132503d3e9b761cf4bcfc9b254a1ed">_reorder_cache</a> (past_key_values, beam_idx)</td></tr>
+<tr class="separator:add132503d3e9b761cf4bcfc9b254a1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a565a7fe638ed802fe23dc2d0460003f6" id="r_a565a7fe638ed802fe23dc2d0460003f6"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a565a7fe638ed802fe23dc2d0460003f6">_tied_weights_keys</a> = [&quot;lm_head.weight&quot;]</td></tr>
+<tr class="separator:a565a7fe638ed802fe23dc2d0460003f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel.html">modeling_deepseek.DeepseekV3PreTrainedModel</a></td></tr>
+<tr class="memitem:a6dde6aaabc5e04752f0051ba1fe1d00d inherit pro_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel" id="r_a6dde6aaabc5e04752f0051ba1fe1d00d"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel.html#a6dde6aaabc5e04752f0051ba1fe1d00d">_no_split_modules</a> = [&quot;DeepseekV3DecoderLayer&quot;]</td></tr>
+<tr class="separator:a6dde6aaabc5e04752f0051ba1fe1d00d inherit pro_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f21952aca9700e377488241fd4c7b1 inherit pro_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel" id="r_a47f21952aca9700e377488241fd4c7b1"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel.html#a47f21952aca9700e377488241fd4c7b1">_skip_keys_device_placement</a> = &quot;past_key_values&quot;</td></tr>
+<tr class="separator:a47f21952aca9700e377488241fd4c7b1 inherit pro_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d49dfaef213615f338caaf8006e6961 inherit pro_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel" id="r_a5d49dfaef213615f338caaf8006e6961"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel.html#a5d49dfaef213615f338caaf8006e6961">_supports_flash_attn_2</a> = True</td></tr>
+<tr class="separator:a5d49dfaef213615f338caaf8006e6961 inherit pro_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419ff99c5c6047a575432bbab7dbac66 inherit pro_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel" id="r_a419ff99c5c6047a575432bbab7dbac66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel.html#a419ff99c5c6047a575432bbab7dbac66">_supports_cache_class</a> = True</td></tr>
+<tr class="separator:a419ff99c5c6047a575432bbab7dbac66 inherit pro_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel.html">modeling_deepseek.DeepseekV3PreTrainedModel</a></td></tr>
+<tr class="memitem:a7d474bb0e4ceee261dbc5408308d19e5 inherit pub_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel" id="r_a7d474bb0e4ceee261dbc5408308d19e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel.html#a7d474bb0e4ceee261dbc5408308d19e5">config_class</a> = DeepseekV3Config</td></tr>
+<tr class="separator:a7d474bb0e4ceee261dbc5408308d19e5 inherit pub_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91340ec2f86af3258cd154b9b9c37f7 inherit pub_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel" id="r_ae91340ec2f86af3258cd154b9b9c37f7"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel.html#ae91340ec2f86af3258cd154b9b9c37f7">base_model_prefix</a> = &quot;model&quot;</td></tr>
+<tr class="separator:ae91340ec2f86af3258cd154b9b9c37f7 inherit pub_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ecbd5751fe120046a3ac63de76a119 inherit pub_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel" id="r_a26ecbd5751fe120046a3ac63de76a119"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel.html#a26ecbd5751fe120046a3ac63de76a119">supports_gradient_checkpointing</a> = True</td></tr>
+<tr class="separator:a26ecbd5751fe120046a3ac63de76a119 inherit pub_static_attribs_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel.html">modeling_deepseek.DeepseekV3PreTrainedModel</a></td></tr>
+<tr class="memitem:ae39464b603daeade9cd604bbcb8a786a inherit pro_methods_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel" id="r_ae39464b603daeade9cd604bbcb8a786a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3PreTrainedModel.html#ae39464b603daeade9cd604bbcb8a786a">_init_weights</a> (self, module)</td></tr>
+<tr class="separator:ae39464b603daeade9cd604bbcb8a786a inherit pro_methods_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aed4faa6621f4870fd6552fd04b92dc53" name="aed4faa6621f4870fd6552fd04b92dc53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed4faa6621f4870fd6552fd04b92dc53">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3ForCausalLM.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>config</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="add132503d3e9b761cf4bcfc9b254a1ed" name="add132503d3e9b761cf4bcfc9b254a1ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add132503d3e9b761cf4bcfc9b254a1ed">&#9670;&#160;</a></span>_reorder_cache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3ForCausalLM._reorder_cache </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>past_key_values</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>beam_idx</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Reorder the cached past key values based on beam indices.
+
+This function takes a collection of past key values and reorders them
+according to the specified beam indices. It iterates through each layer
+of past key values, selecting the relevant past states for the given
+beam indices and returning a new tuple containing the reordered past key
+values.
+
+Args:
+    past_key_values (tuple): A tuple of past key values, where each element corresponds to a layer of
+        past states.
+    beam_idx (Tensor): A tensor containing the indices used to reorder the past states.
+
+Returns:
+    tuple: A tuple containing the reordered past key values for each layer.
+</pre> 
+</div>
+</div>
+<a id="ad418bf03e1ce9c23aa5e3ad6a4bf2672" name="ad418bf03e1ce9c23aa5e3ad6a4bf2672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad418bf03e1ce9c23aa5e3ad6a4bf2672">&#9670;&#160;</a></span>forward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Union[Tuple, CausalLMOutputWithPast] modeling_deepseek.DeepseekV3ForCausalLM.forward </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">torch.LongTensor </td>          <td class="paramname"><span class="paramname"><em>input_ids</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[torch.Tensor] </td>          <td class="paramname"><span class="paramname"><em>attention_mask</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[torch.LongTensor] </td>          <td class="paramname"><span class="paramname"><em>position_ids</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[List[torch.FloatTensor]] </td>          <td class="paramname"><span class="paramname"><em>past_key_values</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[torch.FloatTensor] </td>          <td class="paramname"><span class="paramname"><em>inputs_embeds</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[torch.LongTensor] </td>          <td class="paramname"><span class="paramname"><em>labels</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[bool] </td>          <td class="paramname"><span class="paramname"><em>use_cache</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[bool] </td>          <td class="paramname"><span class="paramname"><em>output_attentions</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[bool] </td>          <td class="paramname"><span class="paramname"><em>output_hidden_states</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Optional[bool] </td>          <td class="paramname"><span class="paramname"><em>return_dict</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Forward pass for the model.
+
+This method performs a forward pass through the model, processing the
+input tensors and returning the model's output. It computes the logits
+for the input sequence and, if labels are provided, calculates the loss
+for masked language modeling. The method also supports various
+configurations such as attention masks, position IDs, and caching of
+past key values.
+
+Args:
+    input_ids (torch.LongTensor?): Input tensor containing token IDs.
+    attention_mask (torch.Tensor?): Mask to avoid performing attention on padding token indices.
+    position_ids (torch.LongTensor?): Optional position IDs for the input tokens.
+    past_key_values (List[torch.FloatTensor]?): Cached key and value pairs from previous decoder layers for faster
+        decoding.
+    inputs_embeds (torch.FloatTensor?): Optional input embeddings instead of input IDs.
+    labels (torch.LongTensor?): Labels for computing the masked language modeling loss. Indices should
+        either be in `[0, transformers.config.vocab_size]` or -100.
+        Tokens with indices set to `-100` are ignored (masked), and the loss is
+        only computed for tokens with valid labels.
+    use_cache (bool?): Whether to use cache for past key values.
+    output_attentions (bool?): Whether to return attention weights.
+    output_hidden_states (bool?): Whether to return hidden states.
+    return_dict (bool?): Whether to return a dictionary instead of a tuple.
+
+Returns:
+    Union[Tuple, CausalLMOutputWithPast]: If `return_dict` is False, returns a tuple containing the logits and
+        other outputs.
+        If `return_dict` is True, returns an instance of
+        `CausalLMOutputWithPast` containing loss, logits, past key values,
+        hidden states, and attentions.
+
+Examples:
+    ```python
+    &gt;&gt;&gt; from transformers import AutoTokenizer, DeepseekV3ForCausalLM
+    &gt;&gt;&gt; model =
+    DeepseekV3ForCausalLM.from_pretrained(PATH_TO_CONVERTED_WEIGHTS)
+    &gt;&gt;&gt; tokenizer =
+    AutoTokenizer.from_pretrained(PATH_TO_CONVERTED_TOKENIZER)
+    &gt;&gt;&gt; prompt = "Hey, are you conscious? Can you talk to me?"
+    &gt;&gt;&gt; inputs = tokenizer(prompt, return_tensors="pt")
+    &gt;&gt;&gt; # Generate
+    &gt;&gt;&gt; generate_ids = model.generate(inputs.input_ids, max_length=30)
+    &gt;&gt;&gt; tokenizer.batch_decode(generate_ids, skip_special_tokens=True,
+    clean_up_tokenization_spaces=False)[0]
+    "Hey, are you conscious? Can you talk to me?\nI'm not conscious, but I
+    can talk to you."
+    ```
+</pre> 
+</div>
+</div>
+<a id="ac922b83ff8476b87ba63d94d5836c2c5" name="ac922b83ff8476b87ba63d94d5836c2c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac922b83ff8476b87ba63d94d5836c2c5">&#9670;&#160;</a></span>get_decoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3ForCausalLM.get_decoder </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1878b3d66cfe81b5fbcec20780c9a8a" name="ab1878b3d66cfe81b5fbcec20780c9a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1878b3d66cfe81b5fbcec20780c9a8a">&#9670;&#160;</a></span>get_input_embeddings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3ForCausalLM.get_input_embeddings </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34d6acbb961f016ac722ce7750e9dee9" name="a34d6acbb961f016ac722ce7750e9dee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d6acbb961f016ac722ce7750e9dee9">&#9670;&#160;</a></span>get_output_embeddings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3ForCausalLM.get_output_embeddings </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0665c472444548a23e07d2441a57990" name="aa0665c472444548a23e07d2441a57990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0665c472444548a23e07d2441a57990">&#9670;&#160;</a></span>prepare_inputs_for_generation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3ForCausalLM.prepare_inputs_for_generation </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>input_ids</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>past_key_values</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>attention_mask</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>inputs_embeds</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">**</td>          <td class="paramname"><span class="paramname"><em>kwargs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Prepare inputs for the generation process.
+
+This function processes the input IDs, past key values, attention mask,
+and input embeddings to create a dictionary of model inputs suitable for
+the generation step. It handles various scenarios, such as adjusting the
+input IDs based on the past key values and attention mask, creating
+position IDs if not provided, and ensuring that the inputs do not exceed
+the maximum cache length.
+
+Args:
+    input_ids (Tensor): The input IDs for the generation process.
+    past_key_values (Cache or tuple?): The past key values used for caching. If provided, it
+        can be an instance of Cache or a tuple containing past key values.
+    attention_mask (Tensor?): The attention mask indicating which tokens should be attended to.
+    inputs_embeds (Tensor?): The input embeddings to be used instead of input IDs.
+    **kwargs: Additional keyword arguments that may include 'position_ids',
+        'use_cache', etc.
+
+Returns:
+    dict: A dictionary containing the prepared model inputs, which includes
+        'input_ids', 'position_ids',
+</pre> 
+</div>
+</div>
+<a id="a44b823f01d922a75f964d72a9d28343f" name="a44b823f01d922a75f964d72a9d28343f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b823f01d922a75f964d72a9d28343f">&#9670;&#160;</a></span>set_decoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3ForCausalLM.set_decoder </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>decoder</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6b35f00f1a33c0d79b8b3535422fda6" name="af6b35f00f1a33c0d79b8b3535422fda6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b35f00f1a33c0d79b8b3535422fda6">&#9670;&#160;</a></span>set_input_embeddings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3ForCausalLM.set_input_embeddings </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c13f841d9294cfb47727ac3dc7030b5" name="a1c13f841d9294cfb47727ac3dc7030b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c13f841d9294cfb47727ac3dc7030b5">&#9670;&#160;</a></span>set_output_embeddings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3ForCausalLM.set_output_embeddings </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>new_embeddings</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a565a7fe638ed802fe23dc2d0460003f6" name="a565a7fe638ed802fe23dc2d0460003f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a565a7fe638ed802fe23dc2d0460003f6">&#9670;&#160;</a></span>_tied_weights_keys</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list modeling_deepseek.DeepseekV3ForCausalLM._tied_weights_keys = [&quot;lm_head.weight&quot;]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6be372824ccd084ed5cb22b425f4988c" name="a6be372824ccd084ed5cb22b425f4988c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6be372824ccd084ed5cb22b425f4988c">&#9670;&#160;</a></span>lm_head</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3ForCausalLM.lm_head</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad4697749ec5e14181f5180403c62678" name="aad4697749ec5e14181f5180403c62678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad4697749ec5e14181f5180403c62678">&#9670;&#160;</a></span>model</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3ForCausalLM.model</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a083b08366f44ab692ef2667058e6fb6f" name="a083b08366f44ab692ef2667058e6fb6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a083b08366f44ab692ef2667058e6fb6f">&#9670;&#160;</a></span>vocab_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modeling_deepseek.DeepseekV3ForCausalLM.vocab_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/<a class="el" href="modeling__deepseek_8py.html">modeling_deepseek.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemodeling__deepseek.html">modeling_deepseek</a></li><li class="navelem"><a class="el" href="classmodeling__deepseek_1_1DeepseekV3ForCausalLM.html">DeepseekV3ForCausalLM</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

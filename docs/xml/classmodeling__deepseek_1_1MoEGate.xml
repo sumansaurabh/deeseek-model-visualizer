@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classmodeling__deepseek_1_1MoEGate" kind="class" language="Python" prot="public">
+    <compoundname>modeling_deepseek::MoEGate</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">nn.Module</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1MoEGate_1a175a68827b832da6b31df800506cd7cc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <qualifiedname>modeling_deepseek.MoEGate.config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="646" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="646" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3MoE_1a17e46f3082bc2c1cd4e74fe2ff2685c7" compoundref="modeling__deepseek_8py" startline="810" endline="838">modeling_deepseek.DeepseekV3MoE.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1MoEGate_1a5fe88e1d4ff6abb14c97196173a34f8e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate::top_k</definition>
+        <argsstring></argsstring>
+        <name>top_k</name>
+        <qualifiedname>modeling_deepseek.MoEGate.top_k</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="647" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="647" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4" compoundref="modeling__deepseek_8py" startline="685" endline="762">modeling_deepseek.MoEGate.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1MoEGate_1a4c5d307e8b47dfd7d6302dcdeb0632c3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate::n_routed_experts</definition>
+        <argsstring></argsstring>
+        <name>n_routed_experts</name>
+        <qualifiedname>modeling_deepseek.MoEGate.n_routed_experts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="648" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="648" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4" compoundref="modeling__deepseek_8py" startline="685" endline="762">modeling_deepseek.MoEGate.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1MoEGate_1afee88d90fd7377e9d5e2e0ca3dd2c05d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate::routed_scaling_factor</definition>
+        <argsstring></argsstring>
+        <name>routed_scaling_factor</name>
+        <qualifiedname>modeling_deepseek.MoEGate.routed_scaling_factor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="649" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="649" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4" compoundref="modeling__deepseek_8py" startline="685" endline="762">modeling_deepseek.MoEGate.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1MoEGate_1a77ec2442dea904601fc1e35f890e1860" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate::scoring_func</definition>
+        <argsstring></argsstring>
+        <name>scoring_func</name>
+        <qualifiedname>modeling_deepseek.MoEGate.scoring_func</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="650" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="650" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4" compoundref="modeling__deepseek_8py" startline="685" endline="762">modeling_deepseek.MoEGate.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1MoEGate_1a9a42f726280fd1bc15330b7f3216e95b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate::seq_aux</definition>
+        <argsstring></argsstring>
+        <name>seq_aux</name>
+        <qualifiedname>modeling_deepseek.MoEGate.seq_aux</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="651" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="651" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1MoEGate_1afa00ffb1dabc5b300a441e48b241b412" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate::topk_method</definition>
+        <argsstring></argsstring>
+        <name>topk_method</name>
+        <qualifiedname>modeling_deepseek.MoEGate.topk_method</qualifiedname>
+        <briefdescription>
+<para>select top-k experts </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="652" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="652" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4" compoundref="modeling__deepseek_8py" startline="685" endline="762">modeling_deepseek.MoEGate.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1MoEGate_1ae44ae50f6e7b07c1ee1d265f3935f57c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate::n_group</definition>
+        <argsstring></argsstring>
+        <name>n_group</name>
+        <qualifiedname>modeling_deepseek.MoEGate.n_group</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="653" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="653" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4" compoundref="modeling__deepseek_8py" startline="685" endline="762">modeling_deepseek.MoEGate.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1MoEGate_1a420ede75d878914bf57a1a8b0635022b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate::topk_group</definition>
+        <argsstring></argsstring>
+        <name>topk_group</name>
+        <qualifiedname>modeling_deepseek.MoEGate.topk_group</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="654" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="654" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4" compoundref="modeling__deepseek_8py" startline="685" endline="762">modeling_deepseek.MoEGate.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1MoEGate_1a14f1676e0baa38cd3f641c97cb95c694" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate::norm_topk_prob</definition>
+        <argsstring></argsstring>
+        <name>norm_topk_prob</name>
+        <qualifiedname>modeling_deepseek.MoEGate.norm_topk_prob</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="657" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="657" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4" compoundref="modeling__deepseek_8py" startline="685" endline="762">modeling_deepseek.MoEGate.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1MoEGate_1a3aed25f433556ffd76640df5d7093be3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate::gating_dim</definition>
+        <argsstring></argsstring>
+        <name>gating_dim</name>
+        <qualifiedname>modeling_deepseek.MoEGate.gating_dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="658" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="658" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1MoEGate_1a75b199559cf3835df724f8c1c3485d28" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <qualifiedname>modeling_deepseek.MoEGate.weight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="659" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="659" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1a2bb202d26033b0c66c354225063f05da" compoundref="modeling__deepseek_8py" startline="127" endline="151">modeling_deepseek.DeepseekV3RMSNorm.forward</referencedby>
+        <referencedby refid="classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4" compoundref="modeling__deepseek_8py" startline="685" endline="762">modeling_deepseek.MoEGate.forward</referencedby>
+        <referencedby refid="classmodeling__deepseek_1_1MoEGate_1a08b5f10d1d2dcd7922399d226056e1be" compoundref="modeling__deepseek_8py" startline="668" endline="684">modeling_deepseek.MoEGate.reset_parameters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1MoEGate_1a6496432799fc3ed30118819f88722080" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate::e_score_correction_bias</definition>
+        <argsstring></argsstring>
+        <name>e_score_correction_bias</name>
+        <qualifiedname>modeling_deepseek.MoEGate.e_score_correction_bias</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="663" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="663" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4" compoundref="modeling__deepseek_8py" startline="685" endline="762">modeling_deepseek.MoEGate.forward</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodeling__deepseek_1_1MoEGate_1ac50ed7ab225f5cff4ae21ddf15de0cd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate.__init__</definition>
+        <argsstring>(self, config)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>modeling_deepseek.MoEGate.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classmodeling__deepseek_1_1MoEGate_1a175a68827b832da6b31df800506cd7cc" kindref="member">config</ref></type>
+          <defname>config</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="644" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="644" bodyend="667"/>
+        <references refid="classmodeling__deepseek_1_1MoEGate_1ac50ed7ab225f5cff4ae21ddf15de0cd5" compoundref="modeling__deepseek_8py" startline="644" endline="667">modeling_deepseek.MoEGate.__init__</references>
+        <referencedby refid="classmodeling__deepseek_1_1MoEGate_1ac50ed7ab225f5cff4ae21ddf15de0cd5" compoundref="modeling__deepseek_8py" startline="644" endline="667">modeling_deepseek.MoEGate.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmodeling__deepseek_1_1MoEGate_1a08b5f10d1d2dcd7922399d226056e1be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None modeling_deepseek.MoEGate.reset_parameters</definition>
+        <argsstring>(self)</argsstring>
+        <name>reset_parameters</name>
+        <qualifiedname>modeling_deepseek.MoEGate.reset_parameters</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Reset the parameters of the model&apos;s weight using Kaiming uniform
+initialization.
+
+This function applies Kaiming uniform initialization to the model&apos;s
+weight parameter. Kaiming initialization is designed to keep the
+variance of activations across layers in a neural network stable, which
+can help improve training performance.
+
+Returns:
+    None: This function does not return any value.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="668" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="668" bodyend="684"/>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1aaa589372f55dbb8c3ebc78a3f9ea590f" compoundref="modeling__deepseek_8py" startline="124">modeling_deepseek.DeepseekV3RMSNorm.weight</references>
+        <references refid="classmodeling__deepseek_1_1MoEGate_1a75b199559cf3835df724f8c1c3485d28" compoundref="modeling__deepseek_8py" startline="659">modeling_deepseek.MoEGate.weight</references>
+      </memberdef>
+      <memberdef kind="function" id="classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.MoEGate.forward</definition>
+        <argsstring>(self, hidden_states)</argsstring>
+        <name>forward</name>
+        <qualifiedname>modeling_deepseek.MoEGate.forward</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>hidden_states</type>
+          <defname>hidden_states</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Forward pass for the gating mechanism in a mixture of experts model.
+
+This method computes the gating scores based on the provided hidden
+states. It reshapes the hidden states and applies a linear
+transformation to obtain logits. Depending on the specified scoring
+function, it calculates the scores using either a sigmoid function or
+raises an error if the scoring function is unsupported. The method then
+selects the top-k experts based on the computed scores and applies a
+normalization step if required. Finally, it returns the indices of the
+top-k experts and their corresponding weights.
+
+Args:
+    hidden_states (torch.Tensor): A tensor of shape (batch_size, sequence_length, hidden_dim)
+        representing the hidden states from the previous layer.
+
+Returns:
+    tuple: A tuple containing:
+        - topk_idx (torch.Tensor): Indices of the selected top-k experts.
+        - topk_weight (torch.Tensor): Weights corresponding to the selected
+        top-k experts.
+
+Raises:
+    NotImplementedError: If an unsupported scoring function or top-k method is specified.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="685" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="685" bodyend="762"/>
+        <references refid="classmodeling__deepseek_1_1MoEGate_1a6496432799fc3ed30118819f88722080" compoundref="modeling__deepseek_8py" startline="663">modeling_deepseek.MoEGate.e_score_correction_bias</references>
+        <references refid="classmodeling__deepseek_1_1MoEGate_1ae44ae50f6e7b07c1ee1d265f3935f57c" compoundref="modeling__deepseek_8py" startline="653">modeling_deepseek.MoEGate.n_group</references>
+        <references refid="classmodeling__deepseek_1_1MoEGate_1a4c5d307e8b47dfd7d6302dcdeb0632c3" compoundref="modeling__deepseek_8py" startline="648">modeling_deepseek.MoEGate.n_routed_experts</references>
+        <references refid="classmodeling__deepseek_1_1MoEGate_1a14f1676e0baa38cd3f641c97cb95c694" compoundref="modeling__deepseek_8py" startline="657">modeling_deepseek.MoEGate.norm_topk_prob</references>
+        <references refid="classmodeling__deepseek_1_1MoEGate_1afee88d90fd7377e9d5e2e0ca3dd2c05d" compoundref="modeling__deepseek_8py" startline="649">modeling_deepseek.MoEGate.routed_scaling_factor</references>
+        <references refid="classmodeling__deepseek_1_1MoEGate_1a77ec2442dea904601fc1e35f890e1860" compoundref="modeling__deepseek_8py" startline="650">modeling_deepseek.MoEGate.scoring_func</references>
+        <references refid="classmodeling__deepseek_1_1MoEGate_1a5fe88e1d4ff6abb14c97196173a34f8e" compoundref="modeling__deepseek_8py" startline="647">modeling_deepseek.MoEGate.top_k</references>
+        <references refid="classmodeling__deepseek_1_1MoEGate_1a420ede75d878914bf57a1a8b0635022b" compoundref="modeling__deepseek_8py" startline="654">modeling_deepseek.MoEGate.topk_group</references>
+        <references refid="classmodeling__deepseek_1_1MoEGate_1afa00ffb1dabc5b300a441e48b241b412" compoundref="modeling__deepseek_8py" startline="652">modeling_deepseek.MoEGate.topk_method</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3RMSNorm_1aaa589372f55dbb8c3ebc78a3f9ea590f" compoundref="modeling__deepseek_8py" startline="124">modeling_deepseek.DeepseekV3RMSNorm.weight</references>
+        <references refid="classmodeling__deepseek_1_1MoEGate_1a75b199559cf3835df724f8c1c3485d28" compoundref="modeling__deepseek_8py" startline="659">modeling_deepseek.MoEGate.weight</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>modeling_deepseek.MoEGate</label>
+        <link refid="classmodeling__deepseek_1_1MoEGate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn.Module</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>modeling_deepseek.MoEGate</label>
+        <link refid="classmodeling__deepseek_1_1MoEGate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn.Module</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="643" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="643" bodyend="762"/>
+    <listofallmembers>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1ac50ed7ab225f5cff4ae21ddf15de0cd5" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>__init__</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1a175a68827b832da6b31df800506cd7cc" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>config</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1a6496432799fc3ed30118819f88722080" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>e_score_correction_bias</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1aa6700ebbe1311738105223d9ab2638d4" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>forward</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1a3aed25f433556ffd76640df5d7093be3" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>gating_dim</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1ae44ae50f6e7b07c1ee1d265f3935f57c" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>n_group</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1a4c5d307e8b47dfd7d6302dcdeb0632c3" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>n_routed_experts</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1a14f1676e0baa38cd3f641c97cb95c694" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>norm_topk_prob</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1a08b5f10d1d2dcd7922399d226056e1be" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>reset_parameters</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1afee88d90fd7377e9d5e2e0ca3dd2c05d" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>routed_scaling_factor</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1a77ec2442dea904601fc1e35f890e1860" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>scoring_func</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1a9a42f726280fd1bc15330b7f3216e95b" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>seq_aux</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1a5fe88e1d4ff6abb14c97196173a34f8e" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>top_k</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1a420ede75d878914bf57a1a8b0635022b" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>topk_group</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1afa00ffb1dabc5b300a441e48b241b412" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>topk_method</name></member>
+      <member refid="classmodeling__deepseek_1_1MoEGate_1a75b199559cf3835df724f8c1c3485d28" prot="public" virt="non-virtual"><scope>modeling_deepseek::MoEGate</scope><name>weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

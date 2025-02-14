@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer" xml:lang="en-US">
+<title>modeling_deepseek.DeepseekV3DecoderLayer Class Reference</title>
+<indexterm><primary>modeling_deepseek.DeepseekV3DecoderLayer</primary></indexterm>
+Inheritance diagram for modeling_deepseek.DeepseekV3DecoderLayer:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3DecoderLayer__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for modeling_deepseek.DeepseekV3DecoderLayer:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3DecoderLayer__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1a4065b3e08dbfb6e735546322339d9134">__init__</link> (self, DeepseekV3Config config, int layer_idx)</para>
+</listitem>
+            <listitem><para>Tuple[ torch.FloatTensor, Optional[Tuple[torch.FloatTensor, torch.FloatTensor]]] <link linkend="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1ac380b4dd3b1abc3371cb2654a4e11071">forward</link> (self, torch.Tensor hidden_states, Optional[torch.Tensor] attention_mask=None, Optional[torch.LongTensor] position_ids=None, Optional[Tuple[torch.Tensor]] past_key_value=None, Optional[bool] output_attentions=False, Optional[bool] use_cache=False, **kwargs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1aafb921ae2f0eb627a0fadaa574547b59">hidden_size</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1af4a351d35571620416cd9097bac15779">self_attn</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1ac8f6b1665d09c12e725df870f2d294c3">mlp</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1a09e3b71724ac8f1936cffd262396fa3f">input_layernorm</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1a1b637af6c56f95970da448336bb826d7">post_attention_layernorm</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1a4065b3e08dbfb6e735546322339d9134"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>modeling_deepseek.DeepseekV3DecoderLayer</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3DecoderLayer</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3DecoderLayer.__init__ ( self, DeepseekV3Config config, int layer_idx)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1ac380b4dd3b1abc3371cb2654a4e11071"/><section>
+    <title>forward()</title>
+<indexterm><primary>forward</primary><secondary>modeling_deepseek.DeepseekV3DecoderLayer</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3DecoderLayer</primary><secondary>forward</secondary></indexterm>
+<para><computeroutput> Tuple[
+        torch.FloatTensor, Optional[Tuple[torch.FloatTensor, torch.FloatTensor]]
+    ] modeling_deepseek.DeepseekV3DecoderLayer.forward ( self, torch.Tensor hidden_states, Optional[torch.Tensor]  attention_mask = <computeroutput>None</computeroutput>
+, Optional[torch.LongTensor]  position_ids = <computeroutput>None</computeroutput>
+, Optional[Tuple[torch.Tensor]]  past_key_value = <computeroutput>None</computeroutput>
+, Optional[bool]  output_attentions = <computeroutput>False</computeroutput>
+, Optional[bool]  use_cache = <computeroutput>False</computeroutput>
+, ** kwargs)</computeroutput></para>
+<para><literallayout><computeroutput>Forward pass through the model layer.
+
+This method processes the input hidden states through a series of
+transformations, including layer normalization, self-attention, and a
+fully connected feed-forward network. It can also return attention
+weights and cached key-value states for efficient decoding.
+
+Args:
+    hidden_states (torch.FloatTensor): Input to the layer of shape `(batch, seq_len, embed_dim)`.
+    attention_mask (torch.FloatTensor?): Attention mask of size `(batch_size, sequence_length)` if flash
+        attention is used or
+        `(batch_size, 1, query_sequence_length, key_sequence_length)` if default
+        attention is used.
+    position_ids (torch.LongTensor?): Position IDs for the input tokens.
+    past_key_value (Tuple[torch.Tensor]?): Cached past key and value projection states.
+    output_attentions (bool?): Whether or not to return the attention tensors of all attention layers.
+        Defaults to False.
+    use_cache (bool?): If set to `True`, past key values are returned to speed up decoding.
+        Defaults to False.
+    **kwargs: Additional keyword arguments.
+
+Returns:
+    Tuple[torch.FloatTensor, Optional[Tuple[torch.FloatTensor, torch.FloatTensor]]]: A tuple containing the processed hidden states and optionally the
+        attention weights and
+        present key-value states if requested.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1aafb921ae2f0eb627a0fadaa574547b59"/><section>
+    <title>hidden_size</title>
+<indexterm><primary>hidden_size</primary><secondary>modeling_deepseek.DeepseekV3DecoderLayer</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3DecoderLayer</primary><secondary>hidden_size</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3DecoderLayer.hidden_size</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1a09e3b71724ac8f1936cffd262396fa3f"/><section>
+    <title>input_layernorm</title>
+<indexterm><primary>input_layernorm</primary><secondary>modeling_deepseek.DeepseekV3DecoderLayer</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3DecoderLayer</primary><secondary>input_layernorm</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3DecoderLayer.input_layernorm</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1ac8f6b1665d09c12e725df870f2d294c3"/><section>
+    <title>mlp</title>
+<indexterm><primary>mlp</primary><secondary>modeling_deepseek.DeepseekV3DecoderLayer</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3DecoderLayer</primary><secondary>mlp</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3DecoderLayer.mlp</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1a1b637af6c56f95970da448336bb826d7"/><section>
+    <title>post_attention_layernorm</title>
+<indexterm><primary>post_attention_layernorm</primary><secondary>modeling_deepseek.DeepseekV3DecoderLayer</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3DecoderLayer</primary><secondary>post_attention_layernorm</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3DecoderLayer.post_attention_layernorm</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer_1af4a351d35571620416cd9097bac15779"/><section>
+    <title>self_attn</title>
+<indexterm><primary>self_attn</primary><secondary>modeling_deepseek.DeepseekV3DecoderLayer</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3DecoderLayer</primary><secondary>self_attn</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3DecoderLayer.self_attn</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/<link linkend="_modeling__deepseek_8py">modeling_deepseek.py</link></section>
+</section>

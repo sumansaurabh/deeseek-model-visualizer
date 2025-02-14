@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacemodeling__deepseek" xml:lang="en-US">
+<title>modeling_deepseek Namespace Reference</title>
+<indexterm><primary>modeling_deepseek</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3Attention">DeepseekV3Attention</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3DecoderLayer">DeepseekV3DecoderLayer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding">DeepseekV3DynamicNTKScalingRotaryEmbedding</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3FlashAttention2">DeepseekV3FlashAttention2</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3ForCausalLM">DeepseekV3ForCausalLM</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification">DeepseekV3ForSequenceClassification</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding">DeepseekV3LinearScalingRotaryEmbedding</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3MLP">DeepseekV3MLP</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3Model">DeepseekV3Model</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3MoE">DeepseekV3MoE</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel">DeepseekV3PreTrainedModel</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3RMSNorm">DeepseekV3RMSNorm</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding">DeepseekV3RotaryEmbedding</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding">DeepseekV3YarnRotaryEmbedding</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classmodeling__deepseek_1_1MoEGate">MoEGate</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1aff225c90cb4b2622f8872d0c3f584b3d">_get_unpad_data</link> (attention_mask)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1a5773fca3051b7ea373ce0a49be2ea763">yarn_find_correction_dim</link> (num_rotations, dim, base=10000, max_position_embeddings=2048)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1ab17059a7c13afd5df5eda1a07fe7e6b7">yarn_find_correction_range</link> (low_rot, high_rot, dim, base=10000, max_position_embeddings=2048)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1a34b414bdb0bddfa5b31edbc45c4a85de">yarn_get_mscale</link> (scale=1, mscale=1)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1a241d0772b349f4669077765b46345cdf">yarn_linear_ramp_mask</link> (min, max, dim)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1ac3015cd18af85cbf60800ee0a8091b87">rotate_half</link> (x)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1a1a750b896c05148a865beae617cc3153">apply_rotary_pos_emb</link> (q, k, cos, sin, position_ids, unsqueeze_dim=1)</para>
+</listitem>
+            <listitem><para>torch.Tensor <link linkend="_namespacemodeling__deepseek_1a5bf7ad188a9dfd9846300c6e3708cd1a">repeat_kv</link> (torch.Tensor hidden_states, int n_rep)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1a8d9baef5b34c8ef4b2f1ea6334ba2266">_prepare_4d_causal_attention_mask</link> = torch.fx.wrap(_prepare_4d_causal_attention_mask)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemodeling__deepseek_1ae57b9b10039f9c6cc3805df718ae3968">logger</link> = logging.get_logger(__name__)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacemodeling__deepseek_1a881e5dbefaf2df66dcee12dbd1e82010">_CONFIG_FOR_DOC</link> = &quot;DeepseekV3Config&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_namespacemodeling__deepseek_1ab4fe0f13f22eb77598df89bc23c86276">ATTENTION_CLASSES</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacemodeling__deepseek_1ac35047c78f8be4b60c37f16178f47dbc">DeepseekV3_START_DOCSTRING</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacemodeling__deepseek_1a0da3ab896abddeea5125328ccd7ba754">DeepseekV3_INPUTS_DOCSTRING</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput> PyTorch DeepSeek model.</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacemodeling__deepseek_1aff225c90cb4b2622f8872d0c3f584b3d"/><section>
+    <title>_get_unpad_data()</title>
+<indexterm><primary>_get_unpad_data</primary><secondary>modeling_deepseek</secondary></indexterm>
+<indexterm><primary>modeling_deepseek</primary><secondary>_get_unpad_data</secondary></indexterm>
+<para><computeroutput>modeling_deepseek._get_unpad_data ( attention_mask)<computeroutput>[protected]</computeroutput></computeroutput></para>
+<para><literallayout><computeroutput>Retrieve unpadded data from the attention mask.
+
+This function processes the given attention mask to extract the indices
+of non-zero elements, compute cumulative sequence lengths, and determine
+the maximum sequence length in the batch. It is particularly useful in
+scenarios where attention masks are used to manage variable-length
+sequences in batch processing.
+
+Args:
+    attention_mask (torch.Tensor): A tensor representing the attention mask, where non-zero values
+        indicate valid tokens and zero values indicate padding.
+
+Returns:
+    tuple: A tuple containing:
+        - indices (torch.Tensor): A flattened tensor of indices corresponding to
+        non-zero elements
+        in the attention mask.
+        - cu_seqlens (torch.Tensor): A tensor of cumulative sequence lengths,
+        padded to facilitate
+        batch processing.
+        - max_seqlen_in_batch (int): The maximum sequence length found in the
+        input batch.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacemodeling__deepseek_1a1a750b896c05148a865beae617cc3153"/><section>
+    <title>apply_rotary_pos_emb()</title>
+<indexterm><primary>apply_rotary_pos_emb</primary><secondary>modeling_deepseek</secondary></indexterm>
+<indexterm><primary>modeling_deepseek</primary><secondary>apply_rotary_pos_emb</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.apply_rotary_pos_emb ( q,  k,  cos,  sin,  position_ids,  unsqueeze_dim = <computeroutput>1</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Applies Rotary Position Embedding to the query and key tensors.
+
+This function modifies the query and key tensors by applying rotary
+position embeddings using the provided cosine and sine tensors. The
+position indices are used to select the appropriate values from the
+cosine and sine tensors, which are then unsqueezed along the specified
+dimension to ensure they can be broadcasted correctly with the query and
+key tensors. This is particularly useful in transformer models for
+enhancing the positional encoding of tokens.
+
+Args:
+    q (`torch.Tensor`): The query tensor.
+    k (`torch.Tensor`): The key tensor.
+    cos (`torch.Tensor`): The cosine part of the rotary embedding.
+    sin (`torch.Tensor`): The sine part of the rotary embedding.
+    position_ids (`torch.Tensor`): The position indices of the tokens corresponding to the query and key
+        tensors. For example, this can be
+        used to pass offsetted position ids when working with a KV-cache.
+    unsqueeze_dim (`int`, *optional*, defaults to 1): The &apos;unsqueeze_dim&apos; argument specifies the dimension along which to
+        unsqueeze cos[position_ids] and
+        sin[position_ids] so that they can be properly broadcasted to the
+        dimensions of q and k. For example, note
+        that cos[position_ids] and sin[position_ids] have the shape [batch_size,
+        seq_len, head_dim]. Then, if q and
+        k have the shape [batch_size, heads, seq_len, head_dim], then setting
+        unsqueeze_dim=1 makes
+        cos[position_ids] and sin[position_ids] broadcastable to the shapes of q
+        and k. Similarly, if q and k have
+        the shape [batch_size, seq_len, heads, head_dim], then set
+        unsqueeze_dim=2.
+
+Returns:
+    the Rotary Position Embedding.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacemodeling__deepseek_a1a750b896c05148a865beae617cc3153_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacemodeling__deepseek_1a5bf7ad188a9dfd9846300c6e3708cd1a"/><section>
+    <title>repeat_kv()</title>
+<indexterm><primary>repeat_kv</primary><secondary>modeling_deepseek</secondary></indexterm>
+<indexterm><primary>modeling_deepseek</primary><secondary>repeat_kv</secondary></indexterm>
+<para><computeroutput> torch.Tensor modeling_deepseek.repeat_kv (torch.Tensor hidden_states, int n_rep)</computeroutput></para>
+<para><literallayout><computeroutput>Repeat key-value hidden states for attention mechanisms.
+
+This function takes the hidden states of a model and repeats them along
+the specified dimension, effectively expanding the representation of
+key-value pairs for attention heads. The input tensor is expected to
+have the shape (batch, num_key_value_heads, seqlen, head_dim) and will
+be reshaped to (batch, num_attention_heads, seqlen, head_dim) after
+repeating the key-value pairs.
+
+Args:
+    hidden_states (torch.Tensor): A tensor containing the hidden states with shape
+        (batch, num_key_value_heads, seqlen, head_dim).
+    n_rep (int): The number of times to repeat each key-value pair.
+
+Returns:
+    torch.Tensor: A tensor with the repeated hidden states, reshaped to
+        (batch, num_key_value_heads * n_rep, seqlen, head_dim).
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacemodeling__deepseek_1ac3015cd18af85cbf60800ee0a8091b87"/><section>
+    <title>rotate_half()</title>
+<indexterm><primary>rotate_half</primary><secondary>modeling_deepseek</secondary></indexterm>
+<indexterm><primary>modeling_deepseek</primary><secondary>rotate_half</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.rotate_half ( x)</computeroutput></para>
+<para><literallayout><computeroutput>Rotate half of the hidden dimensions of the input tensor.
+
+This function takes an input tensor and splits it into two halves along
+the last dimension. The first half is kept as is, while the second half
+is negated. The two halves are then concatenated along the last
+dimension to produce the output tensor.
+
+Args:
+    x (torch.Tensor): The input tensor with at least two dimensions.
+
+Returns:
+    torch.Tensor: A tensor with the same shape as the input, where the second half of the
+    last dimension has been negated.
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacemodeling__deepseek_ac3015cd18af85cbf60800ee0a8091b87_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacemodeling__deepseek_1a5773fca3051b7ea373ce0a49be2ea763"/><section>
+    <title>yarn_find_correction_dim()</title>
+<indexterm><primary>yarn_find_correction_dim</primary><secondary>modeling_deepseek</secondary></indexterm>
+<indexterm><primary>modeling_deepseek</primary><secondary>yarn_find_correction_dim</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.yarn_find_correction_dim ( num_rotations,  dim,  base = <computeroutput>10000</computeroutput>
+,  max_position_embeddings = <computeroutput>2048</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Calculate the corrected dimension based on the number of rotations.
+
+This function computes the corrected dimension using the inverse
+dimension formula. It takes into account the number of rotations and
+adjusts the dimension based on a logarithmic scale relative to a base
+value and the maximum position embeddings. The formula used is derived
+from mathematical principles related to dimensionality adjustments in
+various applications.
+
+Args:
+    num_rotations (int): The number of rotations to consider in the calculation.
+    dim (float): The initial dimension value to be corrected.
+    base (float?): The base value for logarithmic scaling. Defaults to 10000.
+    max_position_embeddings (int?): The maximum number of position embeddings.
+        Defaults to 2048.
+
+Returns:
+    float: The corrected dimension based on the provided parameters.
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacemodeling__deepseek_a5773fca3051b7ea373ce0a49be2ea763_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacemodeling__deepseek_1ab17059a7c13afd5df5eda1a07fe7e6b7"/><section>
+    <title>yarn_find_correction_range()</title>
+<indexterm><primary>yarn_find_correction_range</primary><secondary>modeling_deepseek</secondary></indexterm>
+<indexterm><primary>modeling_deepseek</primary><secondary>yarn_find_correction_range</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.yarn_find_correction_range ( low_rot,  high_rot,  dim,  base = <computeroutput>10000</computeroutput>
+,  max_position_embeddings = <computeroutput>2048</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Find the correction range bounds based on rotation values.
+
+This function calculates the lower and upper bounds for a correction
+range based on the provided rotation values. It uses the
+`yarn_find_correction_dim` function to determine the corresponding
+dimensions for the given low and high rotation inputs. The results are
+clamped to ensure they remain within valid bounds, specifically between
+0 and `dim - 1`.
+
+Args:
+    low_rot (float): The lower rotation value.
+    high_rot (float): The higher rotation value.
+    dim (int): The dimension size to constrain the bounds.
+    base (int?): The base value used in calculations. Defaults to 10000.
+    max_position_embeddings (int?): The maximum number of position embeddings. Defaults to 2048.
+
+Returns:
+    tuple: A tuple containing the clamped lower and upper bounds of the correction
+        range.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacemodeling__deepseek_ab17059a7c13afd5df5eda1a07fe7e6b7_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacemodeling__deepseek_1a34b414bdb0bddfa5b31edbc45c4a85de"/><section>
+    <title>yarn_get_mscale()</title>
+<indexterm><primary>yarn_get_mscale</primary><secondary>modeling_deepseek</secondary></indexterm>
+<indexterm><primary>modeling_deepseek</primary><secondary>yarn_get_mscale</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.yarn_get_mscale ( scale = <computeroutput>1</computeroutput>
+,  mscale = <computeroutput>1</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Calculate the modified scale based on the input scale and mscale.
+
+This function computes a modified scale value using a logarithmic
+transformation. If the input scale is less than or equal to 1, it
+returns a default value of 1.0. For scales greater than 1, it applies
+the formula: 0.1 * mscale * log(scale) + 1.0.
+
+Args:
+    scale (float?): The input scale value. Defaults to 1.
+    mscale (float?): The mscale value used in the calculation. Defaults to 1.
+
+Returns:
+    float: The modified scale value based on the input parameters.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacemodeling__deepseek_1a241d0772b349f4669077765b46345cdf"/><section>
+    <title>yarn_linear_ramp_mask()</title>
+<indexterm><primary>yarn_linear_ramp_mask</primary><secondary>modeling_deepseek</secondary></indexterm>
+<indexterm><primary>modeling_deepseek</primary><secondary>yarn_linear_ramp_mask</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.yarn_linear_ramp_mask ( min,  max,  dim)</computeroutput></para>
+<para><literallayout><computeroutput>Generate a linear ramp mask based on minimum and maximum values.
+
+This function creates a linear ramp mask that linearly interpolates
+values between a specified minimum and maximum. If the minimum and
+maximum values are equal, a small value is added to the maximum to
+prevent singularity. The resulting ramp is clamped between 0 and 1,
+ensuring that all values lie within this range.
+
+Args:
+    min (float): The minimum value for the ramp.
+    max (float): The maximum value for the ramp.
+    dim (int): The dimension of the output mask.
+
+Returns:
+    torch.Tensor: A tensor containing the linear ramp mask.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacemodeling__deepseek_1a881e5dbefaf2df66dcee12dbd1e82010"/><section>
+    <title>_CONFIG_FOR_DOC</title>
+<indexterm><primary>_CONFIG_FOR_DOC</primary><secondary>modeling_deepseek</secondary></indexterm>
+<indexterm><primary>modeling_deepseek</primary><secondary>_CONFIG_FOR_DOC</secondary></indexterm>
+<para><computeroutput>str modeling_deepseek._CONFIG_FOR_DOC = &quot;DeepseekV3Config&quot;<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_namespacemodeling__deepseek_1a8d9baef5b34c8ef4b2f1ea6334ba2266"/><section>
+    <title>_prepare_4d_causal_attention_mask</title>
+<indexterm><primary>_prepare_4d_causal_attention_mask</primary><secondary>modeling_deepseek</secondary></indexterm>
+<indexterm><primary>modeling_deepseek</primary><secondary>_prepare_4d_causal_attention_mask</secondary></indexterm>
+<para><computeroutput>modeling_deepseek._prepare_4d_causal_attention_mask = torch.fx.wrap(_prepare_4d_causal_attention_mask)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_namespacemodeling__deepseek_1ab4fe0f13f22eb77598df89bc23c86276"/><section>
+    <title>ATTENTION_CLASSES</title>
+<indexterm><primary>ATTENTION_CLASSES</primary><secondary>modeling_deepseek</secondary></indexterm>
+<indexterm><primary>modeling_deepseek</primary><secondary>ATTENTION_CLASSES</secondary></indexterm>
+<para><computeroutput>dict modeling_deepseek.ATTENTION_CLASSES</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;{
+2 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;eager&quot;</emphasis>:&#32;DeepseekV3Attention,
+3 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;flash_attention_2&quot;</emphasis>:&#32;DeepseekV3FlashAttention2,
+4 }
+</programlisting></section>
+<anchor xml:id="_namespacemodeling__deepseek_1a0da3ab896abddeea5125328ccd7ba754"/><section>
+    <title>DeepseekV3_INPUTS_DOCSTRING</title>
+<indexterm><primary>DeepseekV3_INPUTS_DOCSTRING</primary><secondary>modeling_deepseek</secondary></indexterm>
+<indexterm><primary>modeling_deepseek</primary><secondary>DeepseekV3_INPUTS_DOCSTRING</secondary></indexterm>
+<para><computeroutput>str modeling_deepseek.DeepseekV3_INPUTS_DOCSTRING</computeroutput></para></section>
+<anchor xml:id="_namespacemodeling__deepseek_1ac35047c78f8be4b60c37f16178f47dbc"/><section>
+    <title>DeepseekV3_START_DOCSTRING</title>
+<indexterm><primary>DeepseekV3_START_DOCSTRING</primary><secondary>modeling_deepseek</secondary></indexterm>
+<indexterm><primary>modeling_deepseek</primary><secondary>DeepseekV3_START_DOCSTRING</secondary></indexterm>
+<para><computeroutput>str modeling_deepseek.DeepseekV3_START_DOCSTRING</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;<emphasis role="stringliteral">r&quot;&quot;&quot;</emphasis>
+2 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;This&#32;model&#32;inherits&#32;from&#32;[`PreTrainedModel`].&#32;Check&#32;the&#32;superclass&#32;documentation&#32;for&#32;the&#32;generic&#32;methods&#32;the</emphasis>
+3 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;library&#32;implements&#32;for&#32;all&#32;its&#32;model&#32;(such&#32;as&#32;downloading&#32;or&#32;saving,&#32;resizing&#32;the&#32;input&#32;embeddings,&#32;pruning&#32;heads</emphasis>
+4 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;etc.)</emphasis>
+5 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;This&#32;model&#32;is&#32;also&#32;a&#32;PyTorch&#32;[torch.nn.Module](https://pytorch.org/docs/stable/nn.html#torch.nn.Module)&#32;subclass.</emphasis>
+6 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;Use&#32;it&#32;as&#32;a&#32;regular&#32;PyTorch&#32;Module&#32;and&#32;refer&#32;to&#32;the&#32;PyTorch&#32;documentation&#32;for&#32;all&#32;matter&#32;related&#32;to&#32;general&#32;usage</emphasis>
+7 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;and&#32;behavior.</emphasis>
+8 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;Parameters:</emphasis>
+9 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;config&#32;([`DeepseekV3Config`]):</emphasis>
+10 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Model&#32;configuration&#32;class&#32;with&#32;all&#32;the&#32;parameters&#32;of&#32;the&#32;model.&#32;Initializing&#32;with&#32;a&#32;config&#32;file&#32;does&#32;not</emphasis>
+11 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;load&#32;the&#32;weights&#32;associated&#32;with&#32;the&#32;model,&#32;only&#32;the&#32;configuration.&#32;Check&#32;out&#32;the</emphasis>
+12 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[`~PreTrainedModel.from_pretrained`]&#32;method&#32;to&#32;load&#32;the&#32;model&#32;weights.</emphasis>
+13 <emphasis role="stringliteral">&quot;&quot;&quot;</emphasis>
+</programlisting></section>
+<anchor xml:id="_namespacemodeling__deepseek_1ae57b9b10039f9c6cc3805df718ae3968"/><section>
+    <title>logger</title>
+<indexterm><primary>logger</primary><secondary>modeling_deepseek</secondary></indexterm>
+<indexterm><primary>modeling_deepseek</primary><secondary>logger</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.logger = logging.get_logger(__name__)</computeroutput></para></section>
+</section>
+</section>

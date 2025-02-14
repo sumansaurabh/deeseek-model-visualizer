@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding" kind="class" language="Python" prot="public">
+    <compoundname>modeling_deepseek::DeepseekV3RotaryEmbedding</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">nn.Module</basecompoundref>
+    <derivedcompoundref refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding" prot="public" virt="non-virtual">modeling_deepseek.DeepseekV3DynamicNTKScalingRotaryEmbedding</derivedcompoundref>
+    <derivedcompoundref refid="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding" prot="public" virt="non-virtual">modeling_deepseek.DeepseekV3LinearScalingRotaryEmbedding</derivedcompoundref>
+    <derivedcompoundref refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding" prot="public" virt="non-virtual">modeling_deepseek.DeepseekV3YarnRotaryEmbedding</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1aa8e8d5b5d8ed37578d435e3767839f23" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3RotaryEmbedding::dim</definition>
+        <argsstring></argsstring>
+        <name>dim</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3RotaryEmbedding.dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="159" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1aa2ff22ce2ac8aa4b7f5187637af71004" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3RotaryEmbedding::max_position_embeddings</definition>
+        <argsstring></argsstring>
+        <name>max_position_embeddings</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3RotaryEmbedding.max_position_embeddings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="160" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1a015f24ad70439d3fb24fc901df9f7309" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3RotaryEmbedding::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3RotaryEmbedding.base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="161" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1aaacc804689a5d12fc0b95ffa05cf224b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3RotaryEmbedding::max_seq_len_cached</definition>
+        <argsstring></argsstring>
+        <name>max_seq_len_cached</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3RotaryEmbedding.max_seq_len_cached</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="173" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="173" bodyend="-1"/>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1ae01ef97644accdcf3fe2fe1b1aef2ca2" compoundref="modeling__deepseek_8py" startline="175" endline="206">modeling_deepseek.DeepseekV3RotaryEmbedding._set_cos_sin_cache</referencedby>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1af3522f95c36edff62dcdf56d23ad6bfc" compoundref="modeling__deepseek_8py" startline="207" endline="236">modeling_deepseek.DeepseekV3RotaryEmbedding.forward</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1af854f8ee2ae1c1b1ee3cbb3a79f6aeff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3RotaryEmbedding.__init__</definition>
+        <argsstring>(self, dim, max_position_embeddings=2048, base=10000, device=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3RotaryEmbedding.__init__</qualifiedname>
+        <reimplementedby refid="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding_1a88b7ec792d696d9aca729412cc9cef65">__init__</reimplementedby>
+        <reimplementedby refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding_1ab9b04c5d525c2cab59b63c01d831887b">__init__</reimplementedby>
+        <reimplementedby refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1a7e381647020b937d72ecb2b8da32415f">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1aa8e8d5b5d8ed37578d435e3767839f23" kindref="member">dim</ref></type>
+          <defname>dim</defname>
+        </param>
+        <param>
+          <type><ref refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1aa2ff22ce2ac8aa4b7f5187637af71004" kindref="member">max_position_embeddings</ref></type>
+          <defname>max_position_embeddings</defname>
+          <defval>2048</defval>
+        </param>
+        <param>
+          <type><ref refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1a015f24ad70439d3fb24fc901df9f7309" kindref="member">base</ref></type>
+          <defname>base</defname>
+          <defval>10000</defval>
+        </param>
+        <param>
+          <type>device</type>
+          <defname>device</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="156" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="156" bodyend="174"/>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1af854f8ee2ae1c1b1ee3cbb3a79f6aeff" compoundref="modeling__deepseek_8py" startline="156" endline="174">modeling_deepseek.DeepseekV3RotaryEmbedding.__init__</references>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1af854f8ee2ae1c1b1ee3cbb3a79f6aeff" compoundref="modeling__deepseek_8py" startline="156" endline="174">modeling_deepseek.DeepseekV3RotaryEmbedding.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1af3522f95c36edff62dcdf56d23ad6bfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3RotaryEmbedding.forward</definition>
+        <argsstring>(self, x, seq_len=None)</argsstring>
+        <name>forward</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3RotaryEmbedding.forward</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>seq_len</type>
+          <defname>seq_len</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Compute the forward pass for the attention mechanism.
+
+This method calculates the cosine and sine values used in the attention
+mechanism based on the input tensor. If the sequence length exceeds the
+cached maximum sequence length, it updates the cosine and sine cache
+accordingly. The method returns the cached cosine and sine values for
+the specified sequence length.
+
+Args:
+    x (Tensor): Input tensor of shape [bs, num_attention_heads, seq_len, head_size].
+    seq_len (int?): The sequence length to compute the cosine and sine values for.
+        If not provided, defaults to None.
+
+Returns:
+    Tuple[Tensor, Tensor]: A tuple containing the cached cosine and sine tensors
+        for the specified sequence length.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="207" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="207" bodyend="236"/>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1ae01ef97644accdcf3fe2fe1b1aef2ca2" compoundref="modeling__deepseek_8py" startline="175" endline="206">modeling_deepseek.DeepseekV3RotaryEmbedding._set_cos_sin_cache</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding_1a8e7b2346a4ecceac9140a465b2798e09" compoundref="modeling__deepseek_8py" startline="251" endline="285">modeling_deepseek.DeepseekV3LinearScalingRotaryEmbedding._set_cos_sin_cache</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding_1a7bc816eb10147956ba9463291fe22749" compoundref="modeling__deepseek_8py" startline="300" endline="340">modeling_deepseek.DeepseekV3DynamicNTKScalingRotaryEmbedding._set_cos_sin_cache</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1a6f5c4d2f0bb03b152f6c4a6a6045f8ad" compoundref="modeling__deepseek_8py" startline="473" endline="538">modeling_deepseek.DeepseekV3YarnRotaryEmbedding._set_cos_sin_cache</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1aaacc804689a5d12fc0b95ffa05cf224b" compoundref="modeling__deepseek_8py" startline="173">modeling_deepseek.DeepseekV3RotaryEmbedding.max_seq_len_cached</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding_1a20f2051e0be20d6227f68ee713ea632b" compoundref="modeling__deepseek_8py" startline="272">modeling_deepseek.DeepseekV3LinearScalingRotaryEmbedding.max_seq_len_cached</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding_1a1aa7ce7af86c8ec232856099e8223969" compoundref="modeling__deepseek_8py" startline="317">modeling_deepseek.DeepseekV3DynamicNTKScalingRotaryEmbedding.max_seq_len_cached</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1a3f2beb6f11dce391469b0897ad79b447" compoundref="modeling__deepseek_8py" startline="494">modeling_deepseek.DeepseekV3YarnRotaryEmbedding.max_seq_len_cached</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1ae01ef97644accdcf3fe2fe1b1aef2ca2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>modeling_deepseek.DeepseekV3RotaryEmbedding._set_cos_sin_cache</definition>
+        <argsstring>(self, seq_len, device, dtype)</argsstring>
+        <name>_set_cos_sin_cache</name>
+        <qualifiedname>modeling_deepseek.DeepseekV3RotaryEmbedding._set_cos_sin_cache</qualifiedname>
+        <reimplementedby refid="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding_1a8e7b2346a4ecceac9140a465b2798e09">_set_cos_sin_cache</reimplementedby>
+        <reimplementedby refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding_1a7bc816eb10147956ba9463291fe22749">_set_cos_sin_cache</reimplementedby>
+        <reimplementedby refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1a6f5c4d2f0bb03b152f6c4a6a6045f8ad">_set_cos_sin_cache</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>seq_len</type>
+          <defname>seq_len</defname>
+        </param>
+        <param>
+          <type>device</type>
+          <defname>device</defname>
+        </param>
+        <param>
+          <type>dtype</type>
+          <defname>dtype</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the cosine and sine cache for positional embeddings.
+
+This method computes the cosine and sine values for a given sequence
+length and stores them in buffers. It first creates a tensor of values
+based on the sequence length and then calculates the outer product with
+the inverse frequency. The resulting tensor is then processed to obtain
+the cosine and sine values, which are stored as non-persistent buffers
+for efficient retrieval during subsequent operations.
+
+Args:
+    seq_len (int): The length of the sequence for which to cache cosine and sine values.
+    device (torch.device): The device on which to create the tensors (e.g., CPU or GPU).
+    dtype (torch.dtype): The data type of the tensors to be created.
+
+Returns:
+    None: This method does not return any value, but it modifies the internal
+        state
+    of the object by caching the computed cosine and sine values.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="175" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="175" bodyend="206"/>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1aaacc804689a5d12fc0b95ffa05cf224b" compoundref="modeling__deepseek_8py" startline="173">modeling_deepseek.DeepseekV3RotaryEmbedding.max_seq_len_cached</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding_1a20f2051e0be20d6227f68ee713ea632b" compoundref="modeling__deepseek_8py" startline="272">modeling_deepseek.DeepseekV3LinearScalingRotaryEmbedding.max_seq_len_cached</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding_1a1aa7ce7af86c8ec232856099e8223969" compoundref="modeling__deepseek_8py" startline="317">modeling_deepseek.DeepseekV3DynamicNTKScalingRotaryEmbedding.max_seq_len_cached</references>
+        <references refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding_1a3f2beb6f11dce391469b0897ad79b447" compoundref="modeling__deepseek_8py" startline="494">modeling_deepseek.DeepseekV3YarnRotaryEmbedding.max_seq_len_cached</references>
+        <referencedby refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1af3522f95c36edff62dcdf56d23ad6bfc" compoundref="modeling__deepseek_8py" startline="207" endline="236">modeling_deepseek.DeepseekV3RotaryEmbedding.forward</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>modeling_deepseek.DeepseekV3RotaryEmbedding</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>modeling_deepseek.DeepseekV3DynamicNTKScalingRotaryEmbedding</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3DynamicNTKScalingRotaryEmbedding"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>modeling_deepseek.DeepseekV3LinearScalingRotaryEmbedding</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3LinearScalingRotaryEmbedding"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>modeling_deepseek.DeepseekV3YarnRotaryEmbedding</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3YarnRotaryEmbedding"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn.Module</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>modeling_deepseek.DeepseekV3RotaryEmbedding</label>
+        <link refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn.Module</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" line="155" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/modeling_deepseek.py" bodystart="155" bodyend="236"/>
+    <listofallmembers>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1af854f8ee2ae1c1b1ee3cbb3a79f6aeff" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3RotaryEmbedding</scope><name>__init__</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1ae01ef97644accdcf3fe2fe1b1aef2ca2" prot="protected" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3RotaryEmbedding</scope><name>_set_cos_sin_cache</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1a015f24ad70439d3fb24fc901df9f7309" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3RotaryEmbedding</scope><name>base</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1aa8e8d5b5d8ed37578d435e3767839f23" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3RotaryEmbedding</scope><name>dim</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1af3522f95c36edff62dcdf56d23ad6bfc" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3RotaryEmbedding</scope><name>forward</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1aa2ff22ce2ac8aa4b7f5187637af71004" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3RotaryEmbedding</scope><name>max_position_embeddings</name></member>
+      <member refid="classmodeling__deepseek_1_1DeepseekV3RotaryEmbedding_1aaacc804689a5d12fc0b95ffa05cf224b" prot="public" virt="non-virtual"><scope>modeling_deepseek::DeepseekV3RotaryEmbedding</scope><name>max_seq_len_cached</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

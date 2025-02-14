@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification" xml:lang="en-US">
+<title>modeling_deepseek.DeepseekV3ForSequenceClassification Class Reference</title>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForSequenceClassification</primary></indexterm>
+Inheritance diagram for modeling_deepseek.DeepseekV3ForSequenceClassification:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for modeling_deepseek.DeepseekV3ForSequenceClassification:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1ad3f02d6db56704c70fd4599cd00d38e1">__init__</link> (self, config)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a59604452d77a43090aa4b2013f72c1f8">get_input_embeddings</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a5ddc1b3a59c71d5951369ec1ae9d6807">set_input_embeddings</link> (self, value)</para>
+</listitem>
+            <listitem><para>Union[Tuple, SequenceClassifierOutputWithPast] <link linkend="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a392a427c3f5ed209e815703be6ba6b93">forward</link> (self, torch.LongTensor input_ids=None, Optional[torch.Tensor] attention_mask=None, Optional[torch.LongTensor] position_ids=None, Optional[List[torch.FloatTensor]] past_key_values=None, Optional[torch.FloatTensor] inputs_embeds=None, Optional[torch.LongTensor] labels=None, Optional[bool] use_cache=None, Optional[bool] output_attentions=None, Optional[bool] output_hidden_states=None, Optional[bool] return_dict=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a1f6de83af3dd6afb28cbbb210140ef5e">num_labels</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1acb029dadf3b1efc6c53745e936d9196c">model</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a42e3c0a1e37298d4bf81407969d258f3">score</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Static Public Attributes inherited from <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel">modeling_deepseek.DeepseekV3PreTrainedModel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a7d474bb0e4ceee261dbc5408308d19e5">config_class</link> = DeepseekV3Config</para>
+</listitem>
+            <listitem><para>str <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae91340ec2f86af3258cd154b9b9c37f7">base_model_prefix</link> = &quot;model&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a26ecbd5751fe120046a3ac63de76a119">supports_gradient_checkpointing</link> = True</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Member Functions inherited from <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel">modeling_deepseek.DeepseekV3PreTrainedModel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1ae39464b603daeade9cd604bbcb8a786a">_init_weights</link> (self, module)</para>
+</listitem>
+        </itemizedlist>
+Static Protected Attributes inherited from <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel">modeling_deepseek.DeepseekV3PreTrainedModel</link>        <itemizedlist>
+            <listitem><para>list <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a6dde6aaabc5e04752f0051ba1fe1d00d">_no_split_modules</link> = [&quot;DeepseekV3DecoderLayer&quot;]</para>
+</listitem>
+            <listitem><para>str <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a47f21952aca9700e377488241fd4c7b1">_skip_keys_device_placement</link> = &quot;past_key_values&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a5d49dfaef213615f338caaf8006e6961">_supports_flash_attn_2</link> = True</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classmodeling__deepseek_1_1DeepseekV3PreTrainedModel_1a419ff99c5c6047a575432bbab7dbac66">_supports_cache_class</link> = True</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1ad3f02d6db56704c70fd4599cd00d38e1"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>modeling_deepseek.DeepseekV3ForSequenceClassification</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForSequenceClassification</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForSequenceClassification.__init__ ( self,  config)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a392a427c3f5ed209e815703be6ba6b93"/><section>
+    <title>forward()</title>
+<indexterm><primary>forward</primary><secondary>modeling_deepseek.DeepseekV3ForSequenceClassification</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForSequenceClassification</primary><secondary>forward</secondary></indexterm>
+<para><computeroutput> Union[Tuple, SequenceClassifierOutputWithPast] modeling_deepseek.DeepseekV3ForSequenceClassification.forward ( self, torch.LongTensor  input_ids = <computeroutput>None</computeroutput>
+, Optional[torch.Tensor]  attention_mask = <computeroutput>None</computeroutput>
+, Optional[torch.LongTensor]  position_ids = <computeroutput>None</computeroutput>
+, Optional[List[torch.FloatTensor]]  past_key_values = <computeroutput>None</computeroutput>
+, Optional[torch.FloatTensor]  inputs_embeds = <computeroutput>None</computeroutput>
+, Optional[torch.LongTensor]  labels = <computeroutput>None</computeroutput>
+, Optional[bool]  use_cache = <computeroutput>None</computeroutput>
+, Optional[bool]  output_attentions = <computeroutput>None</computeroutput>
+, Optional[bool]  output_hidden_states = <computeroutput>None</computeroutput>
+, Optional[bool]  return_dict = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Forward pass for the model, computing logits and optionally the loss.
+
+This method processes the input tensors through the model to obtain the
+output logits. It can also compute the loss if labels are provided. The
+function handles various configurations for sequence classification or
+regression tasks based on the number of labels and the specified problem
+type. Additionally, it manages attention masks, position IDs, and past
+key values to optimize the transformer model&apos;s performance.
+
+Args:
+    input_ids (torch.LongTensor?): Tensor of input token IDs.
+    attention_mask (torch.Tensor?): Mask to avoid attending to padding tokens.
+    position_ids (torch.LongTensor?): Tensor of position IDs for input tokens.
+    past_key_values (List[torch.FloatTensor]?): Past key values for caching.
+    inputs_embeds (torch.FloatTensor?): Precomputed embeddings for input tokens.
+    labels (torch.LongTensor?): Labels for computing the sequence classification/regression loss.
+    use_cache (bool?): Whether to use cache for past key values.
+    output_attentions (bool?): Whether to return attention weights.
+    output_hidden_states (bool?): Whether to return hidden states.
+    return_dict (bool?): Whether to return a dictionary instead of a tuple.
+
+Returns:
+    Union[Tuple, SequenceClassifierOutputWithPast]: The output logits and optionally the loss
+    and other outputs depending on the return_dict flag.
+
+Raises:
+    ValueError: If batch sizes greater than 1 are provided without a defined padding
+        token.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a59604452d77a43090aa4b2013f72c1f8"/><section>
+    <title>get_input_embeddings()</title>
+<indexterm><primary>get_input_embeddings</primary><secondary>modeling_deepseek.DeepseekV3ForSequenceClassification</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForSequenceClassification</primary><secondary>get_input_embeddings</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForSequenceClassification.get_input_embeddings ( self)</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a5ddc1b3a59c71d5951369ec1ae9d6807"/><section>
+    <title>set_input_embeddings()</title>
+<indexterm><primary>set_input_embeddings</primary><secondary>modeling_deepseek.DeepseekV3ForSequenceClassification</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForSequenceClassification</primary><secondary>set_input_embeddings</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForSequenceClassification.set_input_embeddings ( self,  value)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1acb029dadf3b1efc6c53745e936d9196c"/><section>
+    <title>model</title>
+<indexterm><primary>model</primary><secondary>modeling_deepseek.DeepseekV3ForSequenceClassification</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForSequenceClassification</primary><secondary>model</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForSequenceClassification.model</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a1f6de83af3dd6afb28cbbb210140ef5e"/><section>
+    <title>num_labels</title>
+<indexterm><primary>num_labels</primary><secondary>modeling_deepseek.DeepseekV3ForSequenceClassification</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForSequenceClassification</primary><secondary>num_labels</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForSequenceClassification.num_labels</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3ForSequenceClassification_1a42e3c0a1e37298d4bf81407969d258f3"/><section>
+    <title>score</title>
+<indexterm><primary>score</primary><secondary>modeling_deepseek.DeepseekV3ForSequenceClassification</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3ForSequenceClassification</primary><secondary>score</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3ForSequenceClassification.score</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/<link linkend="_modeling__deepseek_8py">modeling_deepseek.py</link></section>
+</section>

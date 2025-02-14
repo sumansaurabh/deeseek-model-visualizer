@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmodeling__deepseek_1_1DeepseekV3MLP" xml:lang="en-US">
+<title>modeling_deepseek.DeepseekV3MLP Class Reference</title>
+<indexterm><primary>modeling_deepseek.DeepseekV3MLP</primary></indexterm>
+Inheritance diagram for modeling_deepseek.DeepseekV3MLP:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3MLP__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for modeling_deepseek.DeepseekV3MLP:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3MLP__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MLP_1ae9b26577d4b936f5b0385dfa5f4f467d">__init__</link> (self, <link linkend="_classmodeling__deepseek_1_1DeepseekV3MLP_1a21b62497b6d89e9367e3bfc2a0cdae23">config</link>, <link linkend="_classmodeling__deepseek_1_1DeepseekV3MLP_1ad6ec7ad20f7ad22a1a3b4dfc08c77232">hidden_size</link>=None, <link linkend="_classmodeling__deepseek_1_1DeepseekV3MLP_1ad0dce99a7a4ce56663b7e56dc360c612">intermediate_size</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MLP_1a2d3ccef3b5a7595610caa94ae8076687">forward</link> (self, x)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MLP_1a21b62497b6d89e9367e3bfc2a0cdae23">config</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MLP_1ad6ec7ad20f7ad22a1a3b4dfc08c77232">hidden_size</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MLP_1ad0dce99a7a4ce56663b7e56dc360c612">intermediate_size</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MLP_1a04c5b1fca10614d4ec0576a3328ed95a">gate_proj</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MLP_1a7f3065c6feff10e2c47e6e4036c4d59d">up_proj</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MLP_1a9f19556d227dc20ec1c038bf1c231702">down_proj</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3MLP_1a6c78de28c06d079513715a8f72571fb8">act_fn</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MLP_1ae9b26577d4b936f5b0385dfa5f4f467d"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>modeling_deepseek.DeepseekV3MLP</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MLP</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MLP.__init__ ( self,  config,  hidden_size = <computeroutput>None</computeroutput>
+,  intermediate_size = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3MLP_ae9b26577d4b936f5b0385dfa5f4f467d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3MLP_ae9b26577d4b936f5b0385dfa5f4f467d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MLP_1a2d3ccef3b5a7595610caa94ae8076687"/><section>
+    <title>forward()</title>
+<indexterm><primary>forward</primary><secondary>modeling_deepseek.DeepseekV3MLP</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MLP</primary><secondary>forward</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MLP.forward ( self,  x)</computeroutput></para>
+<para><literallayout><computeroutput>Forward pass through the neural network layer.
+
+This method computes the forward pass by applying a series of
+transformations to the input tensor `x`. It first applies the gate
+projection followed by an activation function, then multiplies the
+result with the output of the upward projection. Finally, it applies the
+downward projection to produce the final output.
+
+Args:
+    x (Tensor): The input tensor to the layer.
+
+Returns:
+    Tensor: The output tensor after applying the forward pass transformations.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MLP_1a6c78de28c06d079513715a8f72571fb8"/><section>
+    <title>act_fn</title>
+<indexterm><primary>act_fn</primary><secondary>modeling_deepseek.DeepseekV3MLP</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MLP</primary><secondary>act_fn</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MLP.act_fn</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MLP_1a21b62497b6d89e9367e3bfc2a0cdae23"/><section>
+    <title>config</title>
+<indexterm><primary>config</primary><secondary>modeling_deepseek.DeepseekV3MLP</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MLP</primary><secondary>config</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MLP.config</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MLP_1a9f19556d227dc20ec1c038bf1c231702"/><section>
+    <title>down_proj</title>
+<indexterm><primary>down_proj</primary><secondary>modeling_deepseek.DeepseekV3MLP</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MLP</primary><secondary>down_proj</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MLP.down_proj</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MLP_1a04c5b1fca10614d4ec0576a3328ed95a"/><section>
+    <title>gate_proj</title>
+<indexterm><primary>gate_proj</primary><secondary>modeling_deepseek.DeepseekV3MLP</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MLP</primary><secondary>gate_proj</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MLP.gate_proj</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MLP_1ad6ec7ad20f7ad22a1a3b4dfc08c77232"/><section>
+    <title>hidden_size</title>
+<indexterm><primary>hidden_size</primary><secondary>modeling_deepseek.DeepseekV3MLP</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MLP</primary><secondary>hidden_size</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MLP.hidden_size</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MLP_1ad0dce99a7a4ce56663b7e56dc360c612"/><section>
+    <title>intermediate_size</title>
+<indexterm><primary>intermediate_size</primary><secondary>modeling_deepseek.DeepseekV3MLP</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MLP</primary><secondary>intermediate_size</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MLP.intermediate_size</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3MLP_1a7f3065c6feff10e2c47e6e4036c4d59d"/><section>
+    <title>up_proj</title>
+<indexterm><primary>up_proj</primary><secondary>modeling_deepseek.DeepseekV3MLP</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3MLP</primary><secondary>up_proj</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3MLP.up_proj</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/<link linkend="_modeling__deepseek_8py">modeling_deepseek.py</link></section>
+</section>

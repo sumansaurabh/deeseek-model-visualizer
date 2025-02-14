@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmodeling__deepseek_1_1DeepseekV3RMSNorm" xml:lang="en-US">
+<title>modeling_deepseek.DeepseekV3RMSNorm Class Reference</title>
+<indexterm><primary>modeling_deepseek.DeepseekV3RMSNorm</primary></indexterm>
+Inheritance diagram for modeling_deepseek.DeepseekV3RMSNorm:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3RMSNorm__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for modeling_deepseek.DeepseekV3RMSNorm:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3RMSNorm__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3RMSNorm_1af2508deb9797766a4044f127e7726f0f">__init__</link> (self, hidden_size, eps=1e-6)</para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3RMSNorm_1a2bb202d26033b0c66c354225063f05da">forward</link> (self, hidden_states)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3RMSNorm_1aaa589372f55dbb8c3ebc78a3f9ea590f">weight</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmodeling__deepseek_1_1DeepseekV3RMSNorm_1a0f2b51b768f967bd503eb17b34a55d26">variance_epsilon</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3RMSNorm_1af2508deb9797766a4044f127e7726f0f"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>modeling_deepseek.DeepseekV3RMSNorm</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3RMSNorm</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3RMSNorm.__init__ ( self,  hidden_size,  eps = <computeroutput>1e-6</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>DeepseekV3RMSNorm is equivalent to T5LayerNorm
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3RMSNorm_af2508deb9797766a4044f127e7726f0f_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmodeling__deepseek_1_1DeepseekV3RMSNorm_af2508deb9797766a4044f127e7726f0f_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3RMSNorm_1a2bb202d26033b0c66c354225063f05da"/><section>
+    <title>forward()</title>
+<indexterm><primary>forward</primary><secondary>modeling_deepseek.DeepseekV3RMSNorm</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3RMSNorm</primary><secondary>forward</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3RMSNorm.forward ( self,  hidden_states)</computeroutput></para>
+<para><literallayout><computeroutput>Apply forward transformation to hidden states.
+
+This function takes the hidden states as input, normalizes them by
+calculating their variance, and scales them using a weight parameter.
+The normalization is performed by converting the hidden states to a
+float32 type, computing the variance, and then applying the inverse
+square root of the variance (with a small epsilon added for numerical
+stability). Finally, the function returns the scaled hidden states
+converted back to their original data type.
+
+Args:
+    hidden_states (torch.Tensor): A tensor representing the hidden states.
+
+Returns:
+    torch.Tensor: The transformed hidden states after scaling.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3RMSNorm_1a0f2b51b768f967bd503eb17b34a55d26"/><section>
+    <title>variance_epsilon</title>
+<indexterm><primary>variance_epsilon</primary><secondary>modeling_deepseek.DeepseekV3RMSNorm</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3RMSNorm</primary><secondary>variance_epsilon</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3RMSNorm.variance_epsilon</computeroutput></para></section>
+<anchor xml:id="_classmodeling__deepseek_1_1DeepseekV3RMSNorm_1aaa589372f55dbb8c3ebc78a3f9ea590f"/><section>
+    <title>weight</title>
+<indexterm><primary>weight</primary><secondary>modeling_deepseek.DeepseekV3RMSNorm</secondary></indexterm>
+<indexterm><primary>modeling_deepseek.DeepseekV3RMSNorm</primary><secondary>weight</secondary></indexterm>
+<para><computeroutput>modeling_deepseek.DeepseekV3RMSNorm.weight</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/sumansaurabh/deeseek-model-visualizer/<link linkend="_modeling__deepseek_8py">modeling_deepseek.py</link></section>
+</section>
